@@ -100,7 +100,7 @@ h5,
 h6,
 .h6 {
 	color: var(--fio-sys-color-primary-dark);
-	font-family: var(--fio-sys-typography-family-primary-black);
+	font-family: var(--fio-sys-typography-family-primary-black) !important;
 	line-height: var(--fio-sys-typography-height-125);
 }
 h1,
@@ -121,12 +121,12 @@ h3,
 h4,
 .h4 {
 	/* font-size: calc(var(--fio-sys-typography-head-md-size) * 0.8); */
-	font-size: var(--fio-sys-typography-size-3);
+	font-size: var(--fio-sys-typography-size-3) !important;
 }
 h5,
 .h5 {
 	/* font-size: calc(var(--fio-sys-typography-head-sm-size) * 0.8); */
-	font-size: var(--fio-sys-typography-size-2);
+	font-size: var(--fio-sys-typography-size-2) !important;
 }
 h6,
 .h6 {
@@ -182,7 +182,7 @@ blockquote {
 .heading__block span {
     font-family: var(--fio-sys-typography-family-primary-medium);
     display: block;
-    font-size: var(--fio-sys-typography-size-0) !important;
+    font-size: var(--fio-sys-typography-size-0);
     color: var(--fio-sys-color-primary-dark);
     margin-bottom: var(--fio-sys-size-margin-sm);
 }
