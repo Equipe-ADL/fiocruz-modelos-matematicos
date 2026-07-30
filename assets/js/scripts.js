@@ -1,20 +1,23 @@
+// Iniciar o AOS
+window.addEventListener('DOMContentLoaded', () => AOS.init());
+
 // Stick Header
 
 window.addEventListener("scroll", function () {
-	const header = document.querySelector(".header");
-	const titleHeight = document.querySelector(".header").scrollHeight;
+    const header = document.querySelector(".header");
+    const titleHeight = document.querySelector(".header").scrollHeight;
 
-	if (window.scrollY > 150) {
-		header.classList.add("header--sticky");
-	} else {
-		header.classList.remove("header--sticky");
-	}
+    if (window.scrollY > 150) {
+        header.classList.add("header--sticky");
+    } else {
+        header.classList.remove("header--sticky");
+    }
 });
 
 // Popover
 var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'));
 var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
-	return new bootstrap.Popover(popoverTriggerEl);
+    return new bootstrap.Popover(popoverTriggerEl);
 });
 
 // //Swiper (inicialização)
@@ -80,33 +83,33 @@ var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
 const copyButton = document.querySelectorAll(".copy-to-clip");
 
 copyButton.forEach((btn) => {
-	btn.addEventListener("click", () => {
-		copyToClipboard(btn);
-		// tooltipShow(btn);
+    btn.addEventListener("click", () => {
+        copyToClipboard(btn);
+        // tooltipShow(btn);
 
-		tooltipFeedback(btn);
-	});
+        tooltipFeedback(btn);
+    });
 });
 
 function copyToClipboard(e) {
-	const textToCopy = e.getAttribute("data-link");
-	const textarea = document.createElement("textarea");
-	textarea.setAttribute("readonly", "");
-	textarea.style.position = "absolute";
-	textarea.value = textToCopy;
-	document.body.appendChild(textarea);
-	textarea.select();
-	document.execCommand("copy");
-	document.body.removeChild(textarea);
+    const textToCopy = e.getAttribute("data-link");
+    const textarea = document.createElement("textarea");
+    textarea.setAttribute("readonly", "");
+    textarea.style.position = "absolute";
+    textarea.value = textToCopy;
+    document.body.appendChild(textarea);
+    textarea.select();
+    document.execCommand("copy");
+    document.body.removeChild(textarea);
 }
 function tooltipFeedback(b) {
-	let feedback = $('[data-toggle="tooltip"]');
+    let feedback = $('[data-toggle="tooltip"]');
 
-	// feedback.tooltip('show');
+    // feedback.tooltip('show');
 
-	b.addEventListener("mouseout", () => {
-		feedback.tooltip("hide");
-	});
+    b.addEventListener("mouseout", () => {
+        feedback.tooltip("hide");
+    });
 }
 
 // Lightbox (insert the class "lightbox" into <figure>)
@@ -117,36 +120,36 @@ const imageToLightbox = document.querySelectorAll(".lightbox");
 console.log(imageToLightbox);
 
 imageToLightbox.forEach((image) => {
-	image.addEventListener("click", () => {
-		if (!image.classList.contains("lightbox--show")) {
-			const getImage = image.querySelector("img");
-			const getImageSrc = getImage.getAttribute("src");
-			const imageLightbox = document.createElement("div");
+    image.addEventListener("click", () => {
+        if (!image.classList.contains("lightbox--show")) {
+            const getImage = image.querySelector("img");
+            const getImageSrc = getImage.getAttribute("src");
+            const imageLightbox = document.createElement("div");
 
-			imageLightbox.classList.add("lightbox__image");
+            imageLightbox.classList.add("lightbox__image");
 
-			document.body.appendChild(imageLightbox);
-			imageLightbox.innerHTML = `<img src="${getImageSrc}"/>`;
-			console.log(getImageSrc);
+            document.body.appendChild(imageLightbox);
+            imageLightbox.innerHTML = `<img src="${getImageSrc}">`;
+            console.log(getImageSrc);
 
-			image.classList.add("lightbox--show");
+            image.classList.add("lightbox--show");
 
-			document.body.style.overflow = "hidden";
-			document.body.style.userSelect = "none";
+            document.body.style.overflow = "hidden";
+            document.body.style.userSelect = "none";
 
-			closeLightbox(imageLightbox);
-		}
+            closeLightbox(imageLightbox);
+        }
 
-		function closeLightbox(e) {
-			const lightboxOpen = document.querySelector(".lightbox__image");
-			e.addEventListener("click", () => {
-				document.body.removeChild(e);
-				image.classList.remove("lightbox--show");
-				document.body.style.overflow = "auto";
-				document.body.style.userSelect = "auto";
-			});
-		}
-	});
+        function closeLightbox(e) {
+            const lightboxOpen = document.querySelector(".lightbox__image");
+            e.addEventListener("click", () => {
+                document.body.removeChild(e);
+                image.classList.remove("lightbox--show");
+                document.body.style.overflow = "auto";
+                document.body.style.userSelect = "auto";
+            });
+        }
+    });
 });
 
 // Boxes - inserir o título de acordo com o atributo
@@ -154,21 +157,21 @@ imageToLightbox.forEach((image) => {
 const boxes = document.querySelectorAll(".box");
 
 boxes.forEach((box) => {
-	const boxAttribute = box.getAttribute("data-box");
+    const boxAttribute = box.getAttribute("data-box");
 
-	const boxLabel = box.querySelector(".label");
+    const boxLabel = box.querySelector(".label");
 
-	boxLabel.innerHTML = boxAttribute;
+    boxLabel.innerHTML = boxAttribute;
 });
 
 // Modal - Criação dos modais principais
 
 const modalInfos = {
-	creditos: {
-		ariaLabel: "creditos",
-		modalSize: "modal-lg",
-		modalTitle: "Créditos",
-		modalBody: `
+    creditos: {
+        ariaLabel: "creditos",
+        modalSize: "modal-lg",
+        modalTitle: "Créditos",
+        modalBody: `
 			<div class="row justify-content-center pt-5">
 				<div class="col-12 col-md-10 col-lg-10">
 					<span class="h5 mb-3 d-block">Ministério da Saúde</span>
@@ -313,12 +316,12 @@ const modalInfos = {
 				</div>
 			</div>
 		`,
-	},
-	bibliografiaMod1: {
-		ariaLabel: "bibliografiaMod1",
-		modalSize: "modal-xl",
-		modalTitle: "Bibliografia Módulo 1",
-		modalBody: `
+    },
+    bibliografiaMod1: {
+        ariaLabel: "bibliografiaMod1",
+        modalSize: "modal-xl",
+        modalTitle: "Bibliografia Módulo 1",
+        modalBody: `
 			<div class="row justify-content-center pt-5">
 				<div class="col-12 col-md-11">
 					<div class="mb-5">
@@ -368,12 +371,12 @@ const modalInfos = {
 				</div>
 			</div>
 		`,
-	},
-	bibliografiaMod2: {
-		ariaLabel: "bibliografiaMod2",
-		modalSize: "modal-xl",
-		modalTitle: "Bibliografia Módulo 2",
-		modalBody: `
+    },
+    bibliografiaMod2: {
+        ariaLabel: "bibliografiaMod2",
+        modalSize: "modal-xl",
+        modalTitle: "Bibliografia Módulo 2",
+        modalBody: `
 			<div class="row justify-content-center pt-5">
 				<div class="col-12 col-md-11">
 					<div class="mb-5">
@@ -452,12 +455,12 @@ const modalInfos = {
 				</div>
 			</div>
 		`,
-	},
-	bibliografiaMod3: {
-		ariaLabel: "bibliografiaMod3",
-		modalSize: "modal-xl",
-		modalTitle: "Bibliografia Módulo 3",
-		modalBody: `
+    },
+    bibliografiaMod3: {
+        ariaLabel: "bibliografiaMod3",
+        modalSize: "modal-xl",
+        modalTitle: "Bibliografia Módulo 3",
+        modalBody: `
 			<div class="row justify-content-center pt-5">
 				<div class="col-12 col-md-11">
 					<div class="mb-5">
@@ -578,12 +581,12 @@ const modalInfos = {
 				</div>
 			</div>
 		`,
-	},
-	autorMod1Aula1: {
-		ariaLabel: "autorMod1Aula1",
-		modalSize: "modal-xl",
-		modalTitle: "Sobre os autores",
-		modalBody: `
+    },
+    autorMod1Aula1: {
+        ariaLabel: "autorMod1Aula1",
+        modalSize: "modal-xl",
+        modalTitle: "Sobre os autores",
+        modalBody: `
 			<div class="row justify-content-center pt-5">
 				<div class="col-12 col-md-10 col-lg-10">
 					<div class="mb-5">
@@ -599,12 +602,12 @@ const modalInfos = {
 				</div>
 			</div>
 		`,
-	},
-	glossario: {
-		ariaLabel: "glossario",
-		modalSize: "modal-lg",
-		modalTitle: "Glossário",
-		modalBody: `
+    },
+    glossario: {
+        ariaLabel: "glossario",
+        modalSize: "modal-lg",
+        modalTitle: "Glossário",
+        modalBody: `
 			<div class="accordion accordion-flush" id="accordionExample2">
 	<div class="accordion-item">
 		<h2 class="accordion-header" id="heading1-c">
@@ -752,42 +755,42 @@ const modalInfos = {
 	</div>
 </div>
 		`,
-	},
+    },
 };
 
 // Get all buttons and links that have "modal" in the data-bs-toggle
 const modalButtons = document.querySelectorAll('[data-bs-toggle="modal"]');
 
 document.addEventListener("DOMContentLoaded", function (event) {
-	//do work
+    //do work
 
-	modalButtons.forEach((btn) => {
-		// Check if the modal exist
-		const modalId = btn.getAttribute("data-bs-target").slice(1);
-		const createdModalId = document.getElementById(modalId);
-		const modalOrigin = btn.getAttribute("data-bs-target").slice(7);
-		const hasPropriety = Object.hasOwn(modalInfos, modalOrigin);
+    modalButtons.forEach((btn) => {
+        // Check if the modal exist
+        const modalId = btn.getAttribute("data-bs-target").slice(1);
+        const createdModalId = document.getElementById(modalId);
+        const modalOrigin = btn.getAttribute("data-bs-target").slice(7);
+        const hasPropriety = Object.hasOwn(modalInfos, modalOrigin);
 
-		if (!createdModalId && hasPropriety) {
-			// console.log('modalOrigin: ' + modalOrigin + ' hasPropriety: ' + hasPropriety);
+        if (!createdModalId && hasPropriety) {
+            // console.log('modalOrigin: ' + modalOrigin + ' hasPropriety: ' + hasPropriety);
 
-			// If don't exist create one
-			createModal(modalId);
-		}
-	});
+            // If don't exist create one
+            createModal(modalId);
+        }
+    });
 });
 
 function createModal(id) {
-	const newModal = document.createElement("div");
-	const modalLabel = id.slice(6);
+    const newModal = document.createElement("div");
+    const modalLabel = id.slice(6);
 
-	newModal.classList.add("modal", "fade");
-	newModal.setAttribute("id", id);
-	newModal.setAttribute("tabindex", "-1");
-	newModal.setAttribute("aria-labelledby", modalLabel);
-	newModal.setAttribute("aria-hidden", "true");
+    newModal.classList.add("modal", "fade");
+    newModal.setAttribute("id", id);
+    newModal.setAttribute("tabindex", "-1");
+    newModal.setAttribute("aria-labelledby", modalLabel);
+    newModal.setAttribute("aria-hidden", "true");
 
-	newModal.innerHTML = `
+    newModal.innerHTML = `
 		<div class="modal-dialog ${modalInfos[modalLabel].modalSize}">
 			<div class="modal-content">
 				<div class="modal-header">
@@ -804,11 +807,11 @@ function createModal(id) {
 		</div>
 	`;
 
-	document.body.appendChild(newModal);
+    document.body.appendChild(newModal);
 }
 
 //Before and after
 const container = document.querySelector(".antes-e-depois--container");
 document.querySelector(".antes-e-depois--slider").addEventListener("input", (e) => {
-	container.style.setProperty("--position", `${e.target.value}%`);
+    container.style.setProperty("--position", `${e.target.value}%`);
 });
