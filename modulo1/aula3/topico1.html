@@ -57,7 +57,14 @@
 </head>
 
 <body>
-    <header class="header">
+    <div id="links-acessibilidade">
+        <a href="#links-acessibilidade" accesskey="1" class="skip-link">Aperte TAB e escolha uma área da página</a>
+        <a href="#menu-global" accesskey="2" class="skip-link">Ir para o menu global de navegação</a>
+        <a href="#sidebar" accesskey="3" class="skip-link">Ir para o menu de navegação dos módulos</a>
+        <a href="#page-title" accesskey="4" class="skip-link">Ir para o conteúdo da página</a>
+        <a href="#nav-topics" accesskey="5" class="skip-link">Ir para o final da página</a>
+    </div>
+    <header id="menu-global" class="header">
         <div class="mobile-toggle-open">
             <a class="mobile-toggle__button" tabindex="0" role="button">
                 <span class="icon material-symbols-rounded">read_more</span>
@@ -75,7 +82,7 @@
         </ul>
     </header>
     <div class="main">
-        <div class="sidebar" role="navigation">
+        <div id="sidebar" class="sidebar" role="navigation">
             <div class="sidebar__inner" style="position: relative">
                 <div class="sidebar__group d-lg-none">
                     <div class="sidebar__group-item">
@@ -262,7 +269,7 @@
             </div>
 
             <!-- Navegação da aula -->
-            <section>
+            <section id="nav-topics">
                 <div class="container">
                     <div class="row justify-content-center">
                         <div class="col-12 col-md-10 col-lg-8">
