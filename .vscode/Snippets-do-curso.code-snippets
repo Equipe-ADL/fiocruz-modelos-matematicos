@@ -790,8 +790,8 @@
     "Inserir Link para Popover": {
         "prefix": "Popover",
         "body": [
-            "<a href=\"#\" data-bs-toggle=\"modal\" data-bs-target=\"#id-do-modal\">Modal com texto</a>"
-        ],
+			"<a class=\"\" tabindex=\"0\" role=\"button\" data-bs-toggle=\"popover\" data-bs-trigger=\"focus\" title=\"\" data-bs-html='true' data-bs-content=\"<p>Ciência e atividades relativas à identificação, avaliação, compreensão e prevenção de efeitos adversos ou quaisquer problemas relacionados ao uso de medicamentos.</p>\" data-bs-original-title=\"Farmacovigilância\">Popover</a>"
+		],
         "description": "Inserir Link para Popover"
     },
     "Inserir Swiper Navigation": {

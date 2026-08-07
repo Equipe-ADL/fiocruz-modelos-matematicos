@@ -257,6 +257,90 @@
                                     <h3 class="heading__title">Apache Parquet</h3>
                                 </div>
 
+                                <p>O <strong>Apache Parquet</strong> é um formato de arquivo de dados de código aberto, orientado a colunas, projetado para armazenamento e recuperação eficientes de dados. Ele fornece esquemas de compressão e codificação de alto desempenho para lidar com dados complexos em massa e é suportado em muitas linguagens de programação e ferramentas analíticas.</p>
+
+                                <p>O formato Parquet permite que operações que precisam acessar apenas algumas colunas de um conjunto de dados sejam realizadas mais rapidamente, pois não é necessário ler todas as linhas. Isso também melhora o desempenho em consultas analíticas, uma vez que operações como agregações e filtros leem apenas as colunas necessárias. Desse modo, é uma escolha comum para armazenamento e processamento de grandes volumes de dados, pois oferece vantagens em eficiência de armazenamento e velocidade de leitura. </p>
+                            </div>
+                        </div>
+
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-md-11 col-lg-10">
+                                <!-- Tabela -->
+                                <div class="table-responsive aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
+                                    <table class="table table-bordered">
+                                        <thead>
+                                            <tr class="text-center">
+                                                <th>Característica</th>
+                                                <th>CSV</th>
+                                                <th>Excel (.xlsx)</th>
+                                                <th>Parquet</th>
+                                            </tr>
+                                        </thead>
+
+                                        <tbody>
+                                            <tr class="text-center">
+                                                <td><strong>Compressão</strong></td>
+                                                <td>Nenhuma (texto puro).</td>
+                                                <td>Básica (ZIP interno).</td>
+                                                <td>Alta.</td>
+                                            </tr>
+                                            <tr class="text-center">
+                                                <td><strong>Tamanho do arquivo</strong></td>
+                                                <td>Grande.</td>
+                                                <td>Médio-grande.</td>
+                                                <td>Pequeno (até 90% menor do que CSV).</td>
+                                            </tr>
+                                            <tr class="text-center">
+                                                <td><strong>Velocidade de leitura</strong></td>
+                                                <td>Lenta em arquivos grandes.</td>
+                                                <td>Muito lenta.</td>
+                                                <td>Muito rápida.</td>
+                                            </tr>
+                                            <tr class="text-center">
+                                                <td><strong>Armazenamento</strong></td>
+                                                <td>Por linhas.</td>
+                                                <td>Por linhas.</td>
+                                                <td>Por colunas (colunar).</td>
+                                            </tr>
+                                            <tr class="text-center">
+                                                <td><strong>Tipos de dados</strong></td>
+                                                <td>Não preserva (tudo é texto).</td>
+                                                <td>Preserva parcialmente.</td>
+                                                <td>Preserva completamente.</td>
+                                            </tr>
+                                            <tr class="text-center">
+                                                <td><strong>Leitura parcial</strong></td>
+                                                <td>Não (lê arquivo inteiro).</td>
+                                                <td>Não.</td>
+                                                <td>Sim (lê apenas colunas necessárias).</td>
+                                            </tr>
+                                            <tr class="text-center">
+                                                <td><strong>Limite de linhas</strong></td>
+                                                <td>Sem limite técnico.</td>
+                                                <td>~1 milhão.</td>
+                                                <td>Sem limite.</td>
+                                            </tr>
+                                            <tr class="text-center">
+                                                <td><strong>Uso de memória</strong></td>
+                                                <td>Alto.</td>
+                                                <td>Muito alto.</td>
+                                                <td>Baixo.</td>
+                                            </tr>
+                                            <tr class="text-center">
+                                                <td><strong>Compatibilidade</strong></td>
+                                                <td>Universal.</td>
+                                                <td>Microsoft/LibreOffice.</td>
+                                                <td>Python, R, Spark, ou ferramentas que tenha suporte.</td>
+                                            </tr>
+                                            <tr class="text-center">
+                                                <td><strong>Edição manual</strong></td>
+                                                <td>Sim (qualquer editor).</td>
+                                                <td>Sim (planilha).</td>
+                                                <td>Não (formato binário).</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
                             </div>
                         </div>
                     </div>

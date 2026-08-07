@@ -240,7 +240,7 @@
                             <h2 class="title">
                                 <span class="label">Módulo 1 | Aula 3</span>
                                 <br>
-                                ETL (Extract, Load, Transfom)
+                                ETL (<em>Extract, Load, Transfom</em>)
                             </h2>
                         </div>
                     </div>
@@ -255,9 +255,218 @@
                             <div class="col-12 col-md-10 col-lg-8 mb-5">
                                 <div class="heading__block">
                                     <span class="small">Tópico 4</span>
-                                    <h3 class="heading__title">Transformação (Transform)</h3>
+                                    <h3 class="heading__title">Transformação (<em>Transform</em>)</h3>
                                 </div>
 
+                                <p>A transformação é onde acontece o "trabalho pesado" de preparação dos dados. É equivalente a tudo que você faz no Excel antes de criar suas tabelas e gráficos.</p>
+                            </div>
+                        </div>
+
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-md-11 col-lg-10 mb-5">
+                                <!-- Timeline Vertical -->
+                                <div class="timeline-vertical">
+                                    <div class="cd-timeline js-cd-timeline">
+                                        <div class="cd-timeline__container">
+                                            <div class="cd-timeline__block js-cd-block">
+                                                <div class="cd-timeline__img cd-timeline__option1">
+                                                    <span class="ano"><strong>1</strong></span>
+                                                </div>
+
+                                                <div class="cd-timeline__content js-cd-content bounce-left animate__animated animate__fadeInLeft">
+                                                    <div class="card card--out">
+                                                        <div class="card-header">
+                                                            <span class="">Limpeza de dados</span>
+                                                        </div>
+                                                        <div class="card-body">
+                                                            <!-- Lista Não-Ordenada -->
+                                                            <div class="list">
+                                                                <ul class="list-group">
+                                                                    <li class="list-group-item" list-style="default">Remover registros duplicados.</li>
+
+                                                                    <li class="list-group-item" list-style="default">Tratar valores faltantes (campos em branco, 999, "IGN").</li>
+
+                                                                    <li class="list-group-item" list-style="default">Corrigir erros de digitação (ex.: idade = 999 anos).</li>
+
+                                                                    <li class="list-group-item" list-style="default">Padronizar texto (maiúsculas, acentos).</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="cd-timeline__block js-cd-block">
+                                                <div class="cd-timeline__img cd-timeline__option1">
+                                                    <span class="ano"><strong>2</strong></span>
+                                                </div>
+
+                                                <div class="cd-timeline__content js-cd-content bounce-right animate__animated animate__fadeOutRight">
+                                                    <div class="card card--out">
+                                                        <div class="card-header">
+                                                            <span class="">Padronização de códigos</span>
+                                                        </div>
+                                                        <div class="card-body">
+                                                            <!-- Lista Não-Ordenada -->
+                                                            <div class="list">
+                                                                <ul class="list-group">
+                                                                    <li class="list-group-item" list-style="default">Códigos de município (IBGE 6 ou 7 dígitos).</li>
+
+                                                                    <li class="list-group-item" list-style="default">Códigos CID-10 (com ou sem ponto).</li>
+
+                                                                    <li class="list-group-item" list-style="default">Códigos de ocupação (CBO).</li>
+
+                                                                    <li class="list-group-item" list-style="default">Datas em diferentes formatos (DD/MM/AAAA vs AAAA-MM-DD).</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="cd-timeline__block js-cd-block">
+                                                <div class="cd-timeline__img cd-timeline__option1">
+                                                    <span class="ano"><strong>3</strong></span>
+                                                </div>
+
+                                                <div class="cd-timeline__content js-cd-content bounce-left animate__animated animate__fadeOutLeft">
+                                                    <div class="card card--out">
+                                                        <div class="card-header">
+                                                            <span class="">Criação de variáveis derivadas</span>
+                                                        </div>
+                                                        <div class="card-body">
+                                                            <!-- Lista Não-Ordenada -->
+                                                            <div class="list">
+                                                                <ul class="list-group">
+                                                                    <li class="list-group-item" list-style="default">Faixa etária a partir da idade.</li>
+
+                                                                    <li class="list-group-item" list-style="default">Região de saúde a partir do município.</li>
+
+                                                                    <li class="list-group-item" list-style="default">Tempo de internação (data alta - data entrada).</li>
+
+                                                                    <li class="list-group-item" list-style="default">Classificação de risco.</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="cd-timeline__block js-cd-block">
+                                                <div class="cd-timeline__img cd-timeline__option1">
+                                                    <span class="ano"><strong>4</strong></span>
+                                                </div>
+
+                                                <div class="cd-timeline__content js-cd-content bounce-right animate__animated animate__fadeOutRight">
+                                                    <div class="card card--out">
+                                                        <div class="card-header">
+                                                            <span class="">Filtros e seleções</span>
+                                                        </div>
+                                                        <div class="card-body">
+                                                            <!-- Lista Não-Ordenada -->
+                                                            <div class="list">
+                                                                <ul class="list-group">
+                                                                    <li class="list-group-item" list-style="default">Período de análise.</li>
+
+                                                                    <li class="list-group-item" list-style="default">Área geográfica.</li>
+
+                                                                    <li class="list-group-item" list-style="default">Condição clínica específica.</li>
+
+                                                                    <li class="list-group-item" list-style="default">População de interesse.</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="cd-timeline__block js-cd-block">
+                                                <div class="cd-timeline__img cd-timeline__option1">
+                                                    <span class="ano"><strong>5</strong></span>
+                                                </div>
+
+                                                <div class="cd-timeline__content js-cd-content bounce-left animate__animated animate__fadeOutLeft">
+                                                    <div class="card card--out">
+                                                        <div class="card-header">
+                                                            <span class="">Agregações</span>
+                                                        </div>
+                                                        <div class="card-body">
+                                                            <!-- Lista Não-Ordenada -->
+                                                            <div class="list">
+                                                                <ul class="list-group">
+                                                                    <li class="list-group-item" list-style="default">Contagem de casos por município.</li>
+
+                                                                    <li class="list-group-item" list-style="default">Soma de procedimentos por tipo.</li>
+
+                                                                    <li class="list-group-item" list-style="default">Média de tempo de espera.</li>
+
+                                                                    <li class="list-group-item" list-style="default">Taxa de incidência por 100.000 habitantes.</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-md-10 col-lg-8 mb-5">
+                                <p>Problemas que podemos encontrar ao analisar grandes bases de dados: </p>
+                            </div>
+                        </div>
+
+                        <!--Diferença-->
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-md-4 mb-5">
+                                <div class="card h-100">
+                                    <div class="card-header">
+                                        <span class="h6">Problema encontrado</span>
+                                    </div>
+                                    <div class="card-body">
+                                        <!-- Lista Não-Ordenada -->
+                                        <div class="list">
+                                            <ul class="list-group">
+                                                <li class="list-group-item" list-style="none">Campo UF vazio em alguns registros.</li>
+
+                                                <li class="list-group-item" list-style="none">Idade em dias, meses e anos misturados.</li>
+
+                                                <li class="list-group-item" list-style="none">Evolução com código 9 (ignorado).</li>
+
+                                                <li class="list-group-item" list-style="none">Datas como texto.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-md-1 align-self-center mb-5 compare-symbol different">
+                                <span class="d-block text-center mx-auto"><strong>X</strong></span>
+                            </div>
+
+                            <div class="col-12 col-md-4 mb-5">
+                                <div class="card h-100">
+                                    <div class="card-header">
+                                        <span class="h6">Solução aplicada</span>
+                                    </div>
+                                    <div class="card-body">
+                                        <!-- Lista Não-Ordenada -->
+                                        <div class="list">
+                                            <ul class="list-group">
+                                                <li class="list-group-item" list-style="none">Filtrar !is.na(SG_UF)</li>
+
+                                                <li class="list-group-item" list-style="none">Criar variável IDADE_ANOS padronizada</li>
+
+                                                <li class="list-group-item" list-style="none">Decidir: excluir ou manter?</li>
+
+                                                <li class="list-group-item" list-style="none">Converter para formato Date</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>

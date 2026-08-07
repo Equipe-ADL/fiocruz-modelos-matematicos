@@ -240,7 +240,7 @@
                             <h2 class="title">
                                 <span class="label">Módulo 1 | Aula 3</span>
                                 <br>
-                                ETL (Extract, Load, Transfom)
+                                ETL (<em>Extract, Load, Transfom</em>)
                             </h2>
                         </div>
                     </div>
@@ -255,11 +255,121 @@
                             <div class="col-12 col-md-10 col-lg-8 mb-5">
                                 <div class="heading__block">
                                     <span class="small">Tópico 2</span>
-                                    <h3 class="heading__title">Extração (Extract)</h3>
+                                    <h3 class="heading__title">Extração (<em>Extract</em>)</h3>
+                                </div>
+
+                                <p>A extração é o primeiro passo: obter os dados brutos de onde eles estão armazena-dos.</p>
+                            </div>
+                        </div>
+
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-md-10 col-lg-8 mb-5">
+                                <!-- Tabela -->
+                                <div class="table-responsive aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
+                                    <table class="table table-bordered">
+                                        <thead>
+                                            <tr>
+                                                <th class="text-center" colspan="4">Fontes de dados comuns no SUS</th>
+                                            </tr>
+                                            <tr class="text-center">
+                                                <th width="25%">Fonte</th>
+                                                <th width="25%">Sistema</th>
+                                                <th width="25%">Formato típico</th>
+                                                <th width="25%">Exemplo de uso</th>
+                                            </tr>
+                                        </thead>
+
+                                        <tbody>
+                                            <tr class="text-center">
+                                                <td>Vigilância</td>
+                                                <td>SINAN</td>
+                                                <td>DBF, CSV</td>
+                                                <td>Notificações de dengue, COVID, tuberculose e outras.</td>
+                                            </tr>
+                                            <tr class="text-center">
+                                                <td>Mortalidade</td>
+                                                <td>SIM</td>
+                                                <td>DBC, CSV</td>
+                                                <td>Óbitos por causas específicas.</td>
+                                            </tr>
+                                            <tr class="text-center">
+                                                <td>Nascidos vivos</td>
+                                                <td>SINASC</td>
+                                                <td>DBC, CSV</td>
+                                                <td>Indicadores de saúde materna.</td>
+                                            </tr>
+                                            <tr class="text-center">
+                                                <td>Internações</td>
+                                                <td>SIH-SUS</td>
+                                                <td>DBC, CSV</td>
+                                                <td>Custos hospitalares, procedimentos.</td>
+                                            </tr>
+                                            <tr class="text-center">
+                                                <td>Atenção básica</td>
+                                                <td>e-SUS AB</td>
+                                                <td>CSV, API</td>
+                                                <td>Atendimentos nas UBS.</td>
+                                            </tr>
+                                            <tr class="text-center">
+                                                <td>Imunização</td>
+                                                <td>SI-PNI</td>
+                                                <td>CSV</td>
+                                                <td>Cobertura vacinal.</td>
+                                            </tr>
+                                            <tr class="text-center">
+                                                <td>OpenDataSUS</td>
+                                                <td>Portal</td>
+                                                <td>CSV, Parquet</td>
+                                                <td>Bases consolidadas nacionais.</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
                                 </div>
                             </div>
                         </div>
 
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-md-10 col-lg-8 mb-5">
+                                <p><strong>Desafios comuns na extração:</strong></p>
+
+                                <!-- Lista Não-Ordenada -->
+                                <div class="list">
+                                    <ul class="list-group">
+                                        <li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">Arquivos muito grandes que travam o Excel.</li>
+
+                                        <li class="list-group-item aos-init aos-animate" list-style='default' data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" data-aos-delay="100">Formatos antigos (DBF, DBC) que precisam de conversão.</li>
+
+                                        <li class="list-group-item aos-init aos-animate" list-style='default' data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" data-aos-delay="200">Dados espalhados em múltiplos arquivos (um por mês/ano).</li>
+
+                                        <li class="list-group-item aos-init aos-animate" list-style='default' data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" data-aos-delay="300">Atualizações frequentes que exigem re-download.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-md-10 col-lg-8">
+                                <!-- EXEMPLO DE APLICAÇÃO -->
+                                <div class="code-container aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="600">
+                                    <span class="h5 pb-3 d-block">Exemplo de aplicação</span>
+
+                                    <p>SINAN: suponha que você precisa analisar os casos de dengue dos últimos 5 anos no seu estado. Você teria que:</p>
+
+                                    <!-- Lista Ordenada -->
+                                    <div class="list">
+                                        <ol class="list-group list-group-numbered">
+                                            <li class="list-group-item">Baixar os arquivos do DATASUS.</li>
+
+                                            <li class="list-group-item">Baixar um arquivo para cada ano.</li>
+
+                                            <li class="list-group-item">Cada arquivo pode ter mais de 500.000 linhas.</li>
+                                        </ol>
+                                    </div>
+
+                                    <p>Com ELT automatizado, você cria um script que faz isso automaticamente.</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </section>
             </div>
