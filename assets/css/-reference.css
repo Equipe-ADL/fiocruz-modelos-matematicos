@@ -2,8 +2,8 @@
 
 :root {
 	/* --- KEY COLORS - HSL format --- */
-	--fio-ref-color-primary: 248, 50%; /* Roxo */ /* hue, saturation% */
-	--fio-ref-color-secondary: 177, 60%; /* Verde */ 
+	--fio-ref-color-primary: 280, 65%; /* Roxo */ /* hue, saturation% */
+	--fio-ref-color-secondary: 177, 60%; /* Verde */
 	--fio-ref-color-tertiary: 224, 69%; /* Azul */
 
 	--fio-ref-color-text: 222, 47%;
@@ -22,12 +22,12 @@
 	--fio-ref-color-primary-30: hsl(var(--fio-ref-color-primary), 30%);
 	--fio-ref-color-primary-40: hsl(var(--fio-ref-color-primary), 40%);
 	--fio-ref-color-primary-50: hsl(var(--fio-ref-color-primary), 50%);
-	--fio-ref-color-primary-60: hsl(248, 65%, 60%);
-	--fio-ref-color-primary-70: hsl(248, 87%, 70%);
-	--fio-ref-color-primary-80: hsl(248, 80%, 80%);
-	--fio-ref-color-primary-90: hsl(248, 69%, 90%);
-	--fio-ref-color-primary-95: hsl(247, 69%, 95%);
-	--fio-ref-color-primary-99: hsl(247, 69%, 98%);
+	--fio-ref-color-primary-60: hsl(var(--fio-ref-color-primary), 60%);
+	--fio-ref-color-primary-70: hsl(var(--fio-ref-color-primary), 70%);
+	--fio-ref-color-primary-80: hsl(var(--fio-ref-color-primary), 80%);
+	--fio-ref-color-primary-90: hsl(var(--fio-ref-color-primary), 90%);
+	--fio-ref-color-primary-95: hsl(var(--fio-ref-color-primary), 95%);
+	--fio-ref-color-primary-99: hsl(var(--fio-ref-color-primary), 98%);
 	--fio-ref-color-primary-100: hsl(0, 0%, 100%);
 
 	/* Verde */
@@ -59,8 +59,6 @@
 	--fio-ref-color-tertiary-95: hsl(223, 84%, 95%);
 	--fio-ref-color-tertiary-99: hsl(225, 80%, 98%);
 	--fio-ref-color-tertiary-100: hsl(0, 0%, 100%);
-
-
 
 	--fio-ref-color-neutral-0: hsl(203, 10%, 0%);
 	--fio-ref-color-neutral-10: hsl(203, 10%, 10%);
