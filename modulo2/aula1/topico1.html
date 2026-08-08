@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="robots" content="noindex">
+    <meta name="author" content="Fiocruz, Campus Virtual">
+    <meta name="description" content="Curso Modelos Matemáticos e Computacionais aplicados à Pesquisa em Saúde">
+
+    <!-- Facebook Open Graph -->
+    <meta property="og:url" content="https://mooc.campusvirtual.fiocruz.br/rea/modelos-matematicos-e-computacionais-aplicados-a-pesquisa-em-saude">
+    <meta property="og:title" content="Campus Virtual Fiocruz | Curso Modelos Matemáticos e Computacionais aplicados à Pesquisa em Saúde">
+    <meta property="og:description" content="Curso Modelos Matemáticos e Computacionais aplicados à Pesquisa em Saúde">
+    <meta property="og:image" content="https://mooc.campusvirtual.fiocruz.br/rea/modelos-matematicos-e-computacionais-aplicados-a-pesquisa-em-saude/media/images/share/thumbcurso-1080x1080.png">
+    <meta property="og:image:width" content="1080">
+    <meta property="og:image:height" content="1080">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Campus Virtual Fiocruz | Curso Modelos Matemáticos e Computacionais aplicados à Pesquisa em Saúde">
+    <meta name="twitter:url" content="https://mooc.campusvirtual.fiocruz.br/rea/modelos-matematicos-e-computacionais-aplicados-a-pesquisa-em-saude">
+    <meta name="twitter:description" content="Campus Virtual Fiocruz | Curso Modelos Matemáticos e Computacionais aplicados à Pesquisa em Saúde">
+    <meta name="twitter:image:src" content="https://mooc.campusvirtual.fiocruz.br/rea/modelos-matematicos-e-computacionais-aplicados-a-pesquisa-em-saude/media/images/share/thumbcurso-1080x1080.png">
+
+    <!-- Favicons and Touch Icons -->
+    <link rel="apple-touch-icon" sizes="57x57" href="../../media/icons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../../media/icons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../../media/icons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../../media/icons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../../media/icons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../../media/icons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../../media/icons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../../media/icons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../../media/icons/apple-icon-180x180.png">
+
+    <link rel="icon" type="image/png" sizes="192x192" href="../../media/icons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../media/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../../media/icons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../media/icons/favicon-16x16.png">
+    <link rel="manifest" href="../media/icons/manifest.json">
+
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="../../media/icons/ms-icon-144x144.png">
+    <!-- <meta name="theme-color" content="#003066" > -->
+    <meta name="theme-color" content="#001833">
+
+    <title>Curso Modelos Matemáticos e Computacionais aplicados à Pesquisa em Saúde | Mod 1 | Aula 1</title>
+
+    <!-- Bootstrap CSS 5.1.3 -->
+    <link rel="stylesheet" href="../../source/bootstrap-5.1.3/css/bootstrap.min.css">
+
+    <!-- Project CSS -->
+    <link rel="stylesheet" href="../../assets/css/style.css">
+</head>
+
+<body>
+    <div id="links-acessibilidade">
+        <a href="#links-acessibilidade" accesskey="1" class="skip-link">Aperte TAB e escolha uma área da página</a>
+        <a href="#menu-global" accesskey="2" class="skip-link">Ir para o menu global de navegação</a>
+        <a href="#sidebar" accesskey="3" class="skip-link">Ir para o menu de navegação dos módulos</a>
+        <a href="#page-title" accesskey="4" class="skip-link">Ir para o conteúdo da página</a>
+        <a href="#nav-topics" accesskey="5" class="skip-link">Ir para o final da página</a>
+    </div>
+
+    <header id="menu-global" class="header">
+        <div class="mobile-toggle-open">
+            <a class="mobile-toggle__button" tabindex="0" role="button">
+                <span class="icon material-symbols-rounded">read_more</span>
+            </a>
+        </div>
+        <div class="brand">
+            <img class="img-fluid logo-black" src="../../media/logos/header-fiocruz-campus-virtual.png" alt="Campus Virtual Fiocruz">
+        </div>
+        <div class="title">
+            <h1>Modelos Matemáticos e Computacionais aplicados à Pesquisa em Saúde</h1>
+        </div>
+        <ul class="nav nav-pills">
+            <li class="nav-item"><a href="../../index.html" class="nav-link">Início</a></li>
+            <li class="nav-item"><a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#modal-creditos">Créditos</a></li>
+        </ul>
+    </header>
+    <div class="main">
+        <div id="sidebar" class="sidebar" role="navigation">
+            <div class="sidebar__inner" style="position: relative">
+                <div class="sidebar__group d-lg-none">
+                    <div class="sidebar__group-item">
+                        <div class="sidebar__header">
+                            <span>Curso</span>
+                            <a class="mobile-toggle-close" tabindex="0" role="button"><span class="icon material-symbols-rounded">read_more</span></a>
+                        </div>
+                    </div>
+                    <div class="sidebar__group-item">
+                        <div class="sidebar__title">
+                            <h1>Modelos Matemáticos e Computacionais aplicados à Pesquisa em Saúde</h1>
+                        </div>
+                    </div>
+                    <div class="sidebar__group-item">
+                        <ul class="nav">
+                            <li class="nav-item">
+                                <a href="../../index.html" class="nav-link" tabindex="0"><span class="icon material-symbols-rounded" aria-hidden="true">home</span>Início</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link" tabindex="0" data-bs-toggle="modal" data-bs-target="#modal-creditos"><span class="icon material-symbols-rounded" aria-hidden="true"> format_list_bulleted</span>Créditos</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="sidebar__group">
+                    <div class="sidebar__group-item">
+                        <div class="dropend">
+                            <button id="dropdown-modulos" type="button" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside" data-bs-offset="0,30">
+                                <span class="icon material-symbols-rounded" aria-hidden="true">grid_view</span>
+                                <span class="label">Módulos</span>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdown-modulos">
+                                <li class="d-lg-none dropdown-menu__header">
+                                    <a class="dropdown-menu__back-button" tabindex="0" role="button"><span class="icon material-symbols-rounded">chevron_left</span> Voltar</a>
+                                    <a class="mobile-toggle-close" tabindex="0" role="button"><span class="icon material-symbols-rounded">read_more</span></a>
+                                </li>
+                                <li class="dropdown-menu__item">
+                                    <a class="dropdown-menu__item-link" tabindex="0" role="link" href="../../modulo1/apresentacao.html"><strong>Módulo 1</strong><br>Introdução à Grandes Bases de Dados</a>
+                                </li>
+                                <li class="dropdown-menu__item">
+                                    <a class="dropdown-menu__item-link" tabindex="0" role="link" href="../../modulo2/apresentacao.html"><strong>Módulo 2</strong><br>Modelos Matemáticos</a>
+                                </li>
+                                <li class="dropdown-menu__item">
+                                    <a class="dropdown-menu__item-link" tabindex="0" role="link" href="../../modulo3/apresentacao.html"><strong>Módulo 3</strong><br>Modelos Computacionais</a>
+                                </li>
+                                <li class="dropdown-menu__item">
+                                    <a class="dropdown-menu__item-link" tabindex="0" role="link" href="../../modulo4/apresentacao.html"><strong>Módulo 4</strong><br>Consolidação dos Conceitos – Modelos Matemáticos e Computacionais</a>
+                                </li>
+                                <!-- <li class="dropdown-menu__item">
+                                    <span class="dropdown-menu__item-link"><strong>Módulo 3</strong><br >Modelos estatísticos <strong class="em-breve">(em breve)</strong></span>
+                                    <a class="dropdown-menu__item-link" tabindex="0" role="link" href="../modulo3/apresentacao.html"><strong>Módulo 3</strong><br >Modelos Computacionais</a>
+                                </li> -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="divider">
+                    <hr>
+                </div>
+                <div class="sidebar__group">
+                    <div class="sidebar__group-item">
+                        <span class="text module">Módulo <br class="d-none d-lg-block"><span>2</span></span>
+                    </div>
+                    <div class="sidebar__group-item">
+                        <div class="dropend">
+                            <button type="button" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside" data-bs-offset="0,30">
+                                <span class="icon material-symbols-rounded" aria-hidden="true">apps</span>
+                                <span class="label">Conteúdo</span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li class="d-lg-none dropdown-menu__header">
+                                    <a class="dropdown-menu__back-button" tabindex="0" role="button"><span class="icon material-symbols-rounded">chevron_left</span> Voltar</a>
+                                    <a class="mobile-toggle-close" tabindex="0" role="button"><span class="icon material-symbols-rounded">read_more</span></a>
+                                </li>
+                                <li class="dropdown-menu__title">
+                                    <span class="label">Módulo 2</span>
+                                    <span class="title">Modelos Matemáticos </span>
+                                </li>
+                                <li class="dropdown-menu__item">
+                                    <a class="dropdown-menu__item-link" tabindex="0" role="link" href="apresentacao.html"><strong>Apresentação do módulo</strong></a>
+                                </li>
+                                <li class="dropdown-menu__item">
+                                    <a class="dropdown-menu__item-link" tabindex="0" role="link" href="aula1/topico1.html"><strong>Aula 1: </strong> Introdução: Modelos Matemáticos</a>
+                                </li>
+                                <li class="dropdown-menu__item">
+                                    <a class="dropdown-menu__item-link" tabindex="0" role="link" href="aula2/topico1.html"><strong>Aula 2: </strong>Construindo um modelo matemático em nove passos</a>
+                                </li>
+                                <li class="dropdown-menu__item">
+                                    <a class="dropdown-menu__item-link" tabindex="0" role="link" href="aula3/topico1.html"><strong>Aula 3: </strong>Construindo modelos populacionais</a>
+                                </li>
+                                 <li class="dropdown-menu__item">
+                                    <a class="dropdown-menu__item-link" tabindex="0" role="link" href="aula4/topico1.html"><strong>Aula 4: </strong>Modelo de dinâmica populacional</a>
+                                </li>
+                                 <li class="dropdown-menu__item">
+                                    <a class="dropdown-menu__item-link" tabindex="0" role="link" href="aula3/topico1.html"><strong>Aula 5: </strong>Modelos epidemiológicos clássicos</a>
+                                </li>
+                                 <li class="dropdown-menu__item">
+                                    <a class="dropdown-menu__item-link" tabindex="0" role="link" href="aula3/topico1.html"><strong>Aula 6: </strong> Modelos de dinâmica de epidemias</a>
+                                </li>
+                                <li class="dropdown-menu__item">
+                                    <a class="dropdown-menu__item-link" tabindex="0" role="link" href="atividade.html"><strong>Atividade</strong></a>
+                                </li>
+                                <li class="dropdown-menu__item">
+                                    <a class="dropdown-menu__item-link" tabindex="0" role="link" href="encerramento.html"><strong>Resumo do módulo</strong></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="divider">
+                    <hr>
+                </div>
+                <div class="sidebar__group">
+                    <div class="sidebar__group-item">
+                        <span class="text class">Aula 1</span>
+                    </div>
+                    <div class="sidebar__group-item">
+                        <div class="dropend">
+                            <button type="button" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside" data-bs-offset="00,30">
+                                <span class="icon material-symbols-rounded" aria-hidden="true"> format_list_bulleted</span>
+                                <span class="label">Tópicos</span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li class="d-lg-none dropdown-menu__header">
+                                    <a class="dropdown-menu__back-button" tabindex="0" role="button"><span class="icon material-symbols-rounded">chevron_left</span> Voltar</a>
+                                    <a class="mobile-toggle-close" tabindex="0" role="button"><span class="icon material-symbols-rounded">read_more</span></a>
+                                </li>
+                                <li class="dropdown-menu__title">
+                                    <span class="label">Aula 1</span>
+                                    <span class="title">Modelos Matemáticos</span>
+                                </li>
+                                <li class="dropdown-menu__item">
+                                    <nav class="topic-list">
+                                        <a href="topico1.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico concluído" status="visited"> <span class="material-symbols-rounded"></span>Introdução</a>
+                                    </nav>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="divider">
+                    <hr>
+                </div>
+                <div class="sidebar__group extra">
+                    <div class="sidebar__group-item">
+                        <button type="button" class="" data-bs-toggle="modal" data-bs-target="#modal-bibliografiaMod1">
+                            <span class="icon material-symbols-rounded" aria-hidden="true"> menu_book</span>
+                            <span class="label">Bibliografia</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content">
+            <div id="page-title">
+                <div class="container">
+                    <div class="row align-items-center hstify-content-center justify-content-xxl-start ms-lg-5">
+                        <div class="col-12 col-md-10 col-lg-11">
+                            <h2 class="title">
+                                <span class="label">Módulo 2 | Aula 1</span>
+                                <br>
+                                Modelos Matemáticos
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="page-content" class="">
+                <!-- Inserir o conteúdo aqui -->
+                <section>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-md-10 col-lg-8 mb-5">
+                                <div class="heading__block">
+                                    <span class="small">Tópico 1</span>
+                                    <h3 class="heading__title">Introdução</h3>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-md-10 col-lg-8 mb-5">
+                            <p>Um modelo matemático é a descrição de uma situação a partir da construção de expressões matemáticas. Em geral, constrói-se um modelo quando temos uma pergunta para um problema cuja resposta não é facilmente obtida por raciocínio simples, que exige articular muitos conhecimentos ou necessita de um encadeamento de vários elementos. Você vai ter a oportunidade de conhecer vários exemplos ao longo deste curso. </p>
+
+                            <p>A linguagem da matemática permite produzir uma descrição mais precisa da situação e, se o modelo é uma boa representação do problema, pode-se utilizar o ferramental teórico da matemática a fim de gerar respostas para as perguntas formuladas. </p>
+
+                            <p>Os modelos podem ter variedade de formas, desde modelos altamente complexos, que (como um modelo meteorológico ou um modelo para construir um satélite) precisam de uma gama de especialistas para criá-los e mantê-los, até modelos simples (como os que serão discutidos aqui), que podem ser mais facilmente compreendidos, modificados e adaptados. A escolha entre eles depende de vários fatores, como precisão ou generalidade necessária, dados disponíveis e período em que os resultados são essenciais.</p>
+
+                            <p>Por definição, todos os modelos são “errados”, no sentido de que mesmo os mais complexos fazem simplificações. Portanto, é difícil expressar definitivamente qual modelo está “certo”, embora naturalmente estejamos interessados em desenvolver modelos que capturem as características essenciais de um sistema. Em última análise, enfrentamos uma medida bastante subjetiva da utilidade de qualquer modelo. Você vai ver a seguir alguns exemplos:</p>
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-md-10 col-lg-8 mb-5">
+                            <!-- Accordion -->
+                            <div class="accordion accordion-flush aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="800" id="accordionExample">
+                                <div class="accordion-item">
+                                    <h5 class="accordion-header" id="heading1-item1">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1-item1" aria-expanded="true" aria-controls="collapse1-item1">O problema da transição demográfica e epidemiológica</button>
+                                    </h5>
+                                    <div id="collapse1-item1" class="accordion-collapse collapse" aria-labelledby="heading1-item1" data-bs-parent="">
+                                        <div class="accordion-body">
+
+                                            <p>Entende-se por transição epidemiológica as mudanças ocorridas no tempo nos padrões de morte, morbidade e invalidez que caracterizam uma população específica e que, em geral, ocorrem em conjunto com outras transformações demográficas, sociais e econômicas (Omram, 2001; Santos-Preciado et al., 2003). O processo engloba três mudanças básicas: substituição de doenças transmissíveis por doenças não transmissíveis e causas externas; deslocamento da carga de morbimortalidade dos grupos mais jovens aos grupos mais idosos; e transformação de uma situação em que predomina a mortalidade para outra na qual a morbidade é dominante. A modificação no perfil de saúde da população quando doenças crônicas e suas complicações são prevalentes resulta em mudanças no padrão de utilização dos serviços de saúde e no aumento de gastos, considerando a necessidade de incorporação tecnológica para seu tratamento. Esses aspectos ocasionam importantes desafios e a necessidade de uma agenda para as políticas de saúde que possam dar conta das várias transições em curso (Schramm, 2004).</p>
+
+                                            <p>O Brasil passa por grandes mudanças na composição de sua população, como pode ser visto na estrutura etária em 1950, 1985 e 2020 da pirâmide populacional na figura a seguir. O que causa essa mudança? O que essa mudança implica para a saúde? O que devemos esperar em 2050 ou 2080, se essa tendência continuar? Modelos servem para descrever matematicamente esse processo demográfico e fazer projeções para o futuro.</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                                <div class="accordion-item">
+                                    <h5 class="accordion-header" id="heading1-item2">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1-item2" aria-expanded="false" aria-controls="collapse1-item2">O problema da doença emergente</button>
+                                    </h5>
+                                    <div id="collapse1-item2" class="accordion-collapse collapse" aria-labelledby="heading1-item2" data-bs-parent="">
+                                        <div class="accordion-body">
+
+                                            <p>Quando uma população suscetível é exposta a um novo patógeno, em geral ocorre um surto ou epidemia. A epidemia pode crescer rápido e depois decair, ou ser lenta. A figura adiante mostra as curvas epidêmicas de gripe espanhola, em 1918 e 1919 em Nova York, Londres, Paris e Berlim. Em uma época em que as viagens não eram rápidas, chama a atenção a similaridade dessas curvas. O que explica esse padrão de sino em todas elas? </p>
+
+                                            <!-- Imagem -->
+                                            <figure class="lightbox aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
+                                                <img class="img-fluid mx-auto d-block mb-3" src="../../media/modulo2/aula1-img1.png" alt="" title="Fonte: wikimedia.org">
+                                                <figcaption class="figure-caption fonte">Fonte: wikimedia.org </figcaption>
+                                            </figure>
+
+
+                                            <p>Se olharmos as curvas de influenza atuais nas cidades brasileiras, elas também têm esse padrão de sino. Modelos matemáticos são utilizados para descrever tal padrão e buscar estimar a intensidade de transmissão dessa doença. A partir dessas estimativas, pode-se fazer projeções e também estudos de cenários de intervenção.</p>
+
+
+                                           
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                                <div class="accordion-item">
+                                    <h5 class="accordion-header" id="heading1-item3">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1-item3" aria-expanded="false" aria-controls="collapse1-item3">O problema do controle vacinal</button>
+                                    </h5>
+                                    <div id="collapse1-item3" class="accordion-collapse collapse" aria-labelledby="heading1-item3" data-bs-parent="">
+                                        <div class="accordion-body">
+                                             <p>Modelos matemáticos são muito úteis em análises de cenários. Por exemplo, na figura a seguir, temos a incidência de uma doença monitorada ao longo de vários anos, antes e após uma vacina ser implementada. Em um estudo de custo-efetividade, podemos nos perguntar quantas vidas foram salvas pela inclusão dessa vacina no calendário. Para isso, podemos gerar um modelo matemático que represente um cenário contrafactual (que não existiu) que representaria a curva de incidência esperada nessa população, caso a vacina não tivesse sido implementada.</p>
+
+                                            <!-- Imagem -->
+                                            <figure class="lightbox aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
+                                                <img class="img-fluid mx-auto d-block mb-3" src="../../media/modulo2/aula1-img2.png" alt="" title="Fonte: wikimedia.org">
+                                                <figcaption class="figure-caption fonte">Fonte: wikimedia.org </figcaption>
+                                            </figure>
+
+                                            <p>Podemos pensar em outros exemplos de perguntas: “E se tivesse sido diferente? Se certo evento ou certa ação tivesse sido tomada ou não tomada?” Pensar assim é pensar contrafactualmente.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-md-10 col-lg-8 mb-5">
+                            <p>Na história do pensamento científico, modelos têm sido muito utilizados. A figura a seguir ilustra a história dos modelos no século XX no campo da biologia de populações, que dialoga com a epidemiologia de doenças transmissíveis. </p>
+
+                            <p>A raiz do pensamento da modelagem em epidemiologia é muito influenciada pela mecânica de Newton, que estuda o movimento ao longo do tempo; pela demografia, que estuda os fatores que levam ao crescimento populacional; e pela teoria evolutiva de Darwin, que propôs mecanismos que explicam as mudanças na composição de populações e espécies, entre outros. </p>
+
+                        </div>
+                    </div>
+
+                      <div class="row justify-content-center">
+                        <div class="col-12 col-md-10 col-lg-8 mb-5">
+                                         <!-- Imagem -->
+                                            <figure class="lightbox aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
+                                                <img class="img-fluid mx-auto d-block mb-3" src="../../media/modulo2/aula1-img3.png" alt="" title="Fonte: Elaborada pelo autor (2026)">
+                                                <figcaption class="figure-caption fonte">Fonte: Elaborada pelo autor (2026) </figcaption>
+                                            </figure>
+                        </div>
+                    </div>
+
+
+
+
+
+
+                </section>
+            </div>
+
+            <!-- Navegação da aula -->
+            <section id="nav-topics">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-md-10 col-lg-8">
+                            <div class="page-nav d-flex justify-content-evenly">
+                                <a class="fio-button fio-button-primary" href="../aula2/topico1.html" rel="next">Aula 2 <span class="material-symbols-rounded" aria-hidden="true">east</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <footer>
+            <div class="container-fluid">
+                <div class="row justify-content-center align-items-center linha-de-marcas">
+                    <div class="col-12 col-md-auto">
+                        <ul class="logos">
+                            <!-- <li class="realizacao"> -->
+                            <li>
+                                <img class="img-fluid logo1" src="../../media/logos/logo-cidacs.svg" alt="Logo do Centro de Integração de Dados e Conhecimentos para Saúde" height="">
+                            </li>
+
+                            <li>
+                                <img class="img-fluid logo2" src="../../media/logos/logo-cvf.svg" alt="Logo do Campus Virtual Fiocruz" height="">
+                            </li>
+
+                            <li>
+                                <img class="img-fluid logo3" src="../../media/logos/logo-fiocruz.svg" alt="Logo da Fiocruz" height="">
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-12 col-md-auto">
+                        <ul class="logos principais align-self-end">
+                            <li>
+                                <img class="img-fluid logo4" src="../../media/logos/logo-sus-digital-cor.svg" alt="Logo do SUS Digital" height="">
+                            </li>
+
+                            <li>
+                                <img class="img-fluid logo5 d-none d-md-block" src="../../media/logos/logo-ms-gov-federal.svg" alt="Logos SUS 35 anos, Ministério da Saúde e Governo Federal" height="">
+                            </li>
+
+                            <li>
+                                <img class="img-fluid logo6 d-block d-md-none" src="../../media/logos/logo-ms-gov-federal-mobile.svg" alt="Logos SUS 35 anos, Ministério da Saúde e Governo Federal" height="">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!--  Bootstrap JS and Popper -->
+    <script src="../../source/bootstrap-5.1.3/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Sticky Sidebar -->
+    <script type="text/javascript" src="../../assets/js/ResizeSensor.js"></script>
+    <script type="text/javascript" src="../../assets/js/sticky-sidebar.js"></script>
+    <script type="text/javascript" src="../../assets/js/sidebar.js"></script>
+
+    <script type="text/javascript">
+        var sidebar = new StickySidebar('.sidebar', {
+            topSpacing: 0,
+            bottomSpacing: 0,
+            containerSelector: '.main',
+            innerWrapperSelector: '.sidebar__inner',
+            minWidth: 991,
+        });
+    </script>
+
+    <!-- Swiper -->
+    <script src="../../assets/js/swiper-bundle.min.js"></script>
+    <script src="../../assets/js/swiper-init.js"></script>
+
+    <script type="text/javascript" src="../../assets/js/scripts.js"></script>
+    <script type="text/javascript" src="../../assets/js/custom-anime.js"></script>
+    <script type="text/javascript" src="../../source/animate/aos/dist/aos.js"></script>
+
+    <!-- Timeline horizontal -->
+    <script src="../../assets/js/timeline-horizontal/util.js"></script>
+    <!-- util functions included in the CodyHouse framework -->
+    <script src="../../assets/js/timeline-horizontal/swipe-content.js"></script>
+    <!-- A Vanilla JavaScript plugin to detect touch interactions -->
+    <script src="../../assets/js/timeline-horizontal/main.js"></script>
+    <!-- Start the Timeline -->
+    <script>
+        document.getElementsByTagName('html')[0].className += ' js';
+    </script>
+
+</body>
+
+</html>

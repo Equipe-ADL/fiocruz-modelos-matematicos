@@ -240,7 +240,7 @@
                             <h2 class="title">
                                 <span class="label">Módulo 1 | Aula 3</span>
                                 <br>
-                                ETL (Extract, Load, Transfom)
+                                ETL (<em>Extract, Load, Transfom</em>)
                             </h2>
                         </div>
                     </div>
@@ -255,9 +255,156 @@
                             <div class="col-12 col-md-10 col-lg-8 mb-5">
                                 <div class="heading__block">
                                     <span class="small">Tópico 3</span>
-                                    <h3 class="heading__title">Carregamento (Load)</h3>
+                                    <h3 class="heading__title">Carregamento (<em>Load</em>)</h3>
                                 </div>
 
+                                <p>O carregamento é salvar os dados brutos em um formato e local adequados para transformação e consumo.</p>
+                            </div>
+                        </div>
+
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-md-10 col-lg-8 mb-5">
+                                <!-- Tabela -->
+                                <div class="table-responsive aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
+                                    <table class="table table-bordered">
+                                        <thead>
+                                            <tr>
+                                                <th class="text-center" colspan="4">Formatos de destino e quando usar cada um</th>
+                                            </tr>
+                                            <tr class="text-center">
+                                                <th width="25%">Formato</th>
+                                                <th width="25%">Quando usar</th>
+                                                <th width="25%">Vantagem</th>
+                                                <th width="25%">Limitação</th>
+                                            </tr>
+                                        </thead>
+
+                                        <tbody>
+                                            <tr class="text-center">
+                                                <td><strong>CSV</strong></td>
+                                                <td>Compartilhar com quem usa Excel.</td>
+                                                <td>Universal.</td>
+                                                <td>Arquivo grande, perde tipos das variáveis.</td>
+                                            </tr>
+                                            <tr class="text-center">
+                                                <td><strong>PARQUET</strong></td>
+                                                <td>Análises em R/Python, dados grandes.</td>
+                                                <td>Rápido, compacto.</td>
+                                                <td>Requer que a ferramenta tenha suporte ao formato Parquet.</td>
+                                            </tr>
+                                            <tr class="text-center">
+                                                <td><strong>EXCEL</strong></td>
+                                                <td>Relatórios para gestores.</td>
+                                                <td>Familiar.</td>
+                                                <td>Limite de 1 milhão de linhas.</td>
+                                            </tr>
+                                            <tr class="text-center">
+                                                <td><strong>BANCO DE DADOS</strong></td>
+                                                <td>Acesso por múltiplos usuários.</td>
+                                                <td>Consultas SQL.</td>
+                                                <td>Requer infraestrutura.</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-md-10 col-lg-8 mb-5">
+                                <p><strong>Boas práticas no carregamento:</strong></p>
+
+                                <!-- Lista Não-Ordenada -->
+                                <div class="list">
+                                    <ul class="list-group">
+                                        <li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">Documentar os arquivos iniciais e posteriormente as transformações realiza-das (criar um "dicionário" do que foi feito).</li>
+
+                                        <li class="list-group-item aos-init aos-animate" list-style='default' data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" data-aos-delay="100">Manter arquivo original intacto (nunca sobrescrever).</li>
+
+                                        <li class="list-group-item aos-init aos-animate" list-style='default' data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" data-aos-delay="200">Nomear arquivos com data de processamento (ex.: srag_limpo_2024_01_15.parquet).</li>
+
+                                        <li class="list-group-item aos-init aos-animate" list-style='default' data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" data-aos-delay="300">Organizar os dados em pastas por etapa (brutos/, processados/, analises/).</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-md-10 col-lg-8 mb-5">
+                                <figure class="lightbox aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
+                                    <img class="img-fluid mx-auto d-block mb-3" src="../../media/modulo1/aula3-img3.jpg" alt="" title="Fonte: Campus Virtual Fiocruz, a partir de XX">
+                                    <figcaption class="figure-caption fonte">Fonte: Campus Virtual Fiocruz, a partir de XX</figcaption>
+                                </figure>
+                            </div>
+                        </div>
+
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-md-10 col-lg-8">
+                                <!-- EXEMPLO DE APLICAÇÃO -->
+                                <div class="code-container aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="600">
+                                    <span class="h5 pb-3 d-block">Exemplo de aplicação</span>
+
+                                    <p><strong>Cenário:</strong> você é analista de dados na Vigilância Epidemiológica estadual e precisa gerar um boletim semanal de SRAG.</p>
+
+                                    <!-- Tabela -->
+                                    <div class="table-responsive aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
+                                        <table class="table table-bordered">
+                                            <thead>
+                                                <tr>
+                                                    <th class="text-center" colspan="3">Seu Fluxo ELT</th>
+                                                </tr>
+                                                <tr class="text-center">
+                                                    <th>Etapa</th>
+                                                    <th>O que fazer</th>
+                                                    <th>Ferramenta</th>
+                                                </tr>
+                                            </thead>
+
+                                            <tbody>
+                                                <tr class="text-center">
+                                                    <td><strong>E</strong></td>
+                                                    <td>Baixar arquivo semanal do OpenDataSUS.</td>
+                                                    <td>R (download.file)</td>
+                                                </tr>
+                                                <tr class="text-center">
+                                                    <td><strong>L</strong></td>
+                                                    <td>Salvar os dados no formato original.</td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr class="text-center">
+                                                    <td><strong>T</strong></td>
+                                                    <td>Filtrar casos do seu estado.</td>
+                                                    <td>sparklyr (filter)</td>
+                                                </tr>
+                                                <tr class="text-center">
+                                                    <td><strong>T</strong></td>
+                                                    <td>Remover duplicatas por ID.</td>
+                                                    <td>sparklyr (distinct)</td>
+                                                </tr>
+                                                <tr class="text-center">
+                                                    <td><strong>T</strong></td>
+                                                    <td>Calcular faixa etária.</td>
+                                                    <td>sparklyr (mutate)</td>
+                                                </tr>
+                                                <tr class="text-center">
+                                                    <td><strong>T</strong></td>
+                                                    <td>Agregar por semana epidemiológica e município.</td>
+                                                    <td>sparklyr (group_by + summarise)</td>
+                                                </tr>
+                                                <tr class="text-center">
+                                                    <td><strong>L</strong></td>
+                                                    <td>Salvar base processada em Parquet.</td>
+                                                    <td>sparklyr (spark_write_parquet)</td>
+                                                </tr>
+                                                <tr class="text-center">
+                                                    <td><strong>L</strong></td>
+                                                    <td>Exportar tabela resumo para Excel.</td>
+                                                    <td>writexl</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
