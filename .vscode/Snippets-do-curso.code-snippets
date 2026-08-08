@@ -16,15 +16,15 @@
     // 	"description": "Log output to console"
     // }
     "Row": {
-		"prefix": "row",
-		"body": [
-			"<div class=\"row justify-content-center\">",
-			"    <div class=\"col-12 col-md-10 col-lg-8 mb-5\">",
-			"    </div>",
-			"</div>"
-		],
-		"description": "Row",
-	},
+        "prefix": "row",
+        "body": [
+            "<div class=\"row justify-content-center\">",
+            "    <div class=\"col-12 col-md-10 col-lg-8 mb-5\">",
+            "    </div>",
+            "</div>"
+        ],
+        "description": "Row",
+    },
     "Inserir Abas": {
         "prefix": "Abas",
         "body": [
@@ -790,7 +790,7 @@
     "Inserir Link para Popover": {
         "prefix": "Popover",
         "body": [
-            "<a href=\"#\" data-bs-toggle=\"modal\" data-bs-target=\"#id-do-modal\">Modal com texto</a>"
+            "<a class=\"\" tabindex=\"0\" role=\"button\" data-bs-toggle=\"popover\" data-bs-trigger=\"focus\" title=\"\" data-bs-html='true' data-bs-content=\"Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus cumque consequuntur aspernatur voluptatem ab quibusdam quo, maxime enim placeat nam, necessitatibus esse culpa tempora non totam eveniet doloribus nostrum incidunt.\" data-bs-original-title=\"Título do popover\">Popover</a>"
         ],
         "description": "Inserir Link para Popover"
     },
