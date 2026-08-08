@@ -812,6 +812,10 @@ function createModal(id) {
 
 //Before and after
 const container = document.querySelector(".antes-e-depois--container");
-document.querySelector(".antes-e-depois--slider").addEventListener("input", (e) => {
-    container.style.setProperty("--position", `${e.target.value}%`);
-});
+
+if (container) {
+
+    document.querySelector(".antes-e-depois--slider").addEventListener("input", (e) => {
+        container.style.setProperty("--position", `${e.target.value}%`);
+    });
+} 
