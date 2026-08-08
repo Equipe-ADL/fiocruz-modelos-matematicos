@@ -291,11 +291,11 @@ section {
 	left: calc(50% - 65px);
 }
 
-#organization h6 {
+#organization span.h6 {
 	color: #fff;
 }
 
-#organization h6 span {
+#organization span span {
 	font-family: var(--fio-sys-typography-family-primary-regular);
 }
 

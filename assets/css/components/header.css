@@ -57,7 +57,7 @@
 	padding-left: 20px;
 }
 .header .title h1 {
-	font-family: var(--fio-sys-typography-family-primary-medium);
+	font-family: var(--fio-sys-typography-family-primary-medium) !important;
 	font-size: var(--fio-sys-typography-size--1);
 	color: var(--fio-sys-color-neutral-dark);
 	line-height: 125%;
