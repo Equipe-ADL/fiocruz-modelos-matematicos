@@ -108,7 +108,7 @@ body {
 	line-height: var(--fio-sys-typography-height-100);
 	margin-bottom: 0;
 	text-align: center;
-	text-shadow: 1px 1px 20px black;
+	text-shadow: 1px 1px 15px black;
 }
 .hero-title h1 .label {
 	color: white;
@@ -184,12 +184,12 @@ body {
 		margin-bottom: 20px;
 	}
 	.hero-title h1 span.title {
-		font-size: 60px;
-		line-height: 1.25;
+		font-size: 65px;
+		line-height: 1.0;
 	}
 
 	.hero-title h1 span.subtitle {
-		font-size: 38px;
+		font-size: 30px;
 	}
 }
 
