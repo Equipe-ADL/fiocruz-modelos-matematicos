@@ -790,7 +790,7 @@
     "Inserir Link para Popover": {
         "prefix": "Popover",
         "body": [
-            "<a class=\"\" tabindex=\"0\" role=\"button\" data-bs-toggle=\"popover\" data-bs-trigger=\"focus\" title=\"\" data-bs-html='true' data-bs-content=\"Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus cumque consequuntur aspernatur voluptatem ab quibusdam quo, maxime enim placeat nam, necessitatibus esse culpa tempora non totam eveniet doloribus nostrum incidunt.\" data-bs-original-title=\"Título do popover\">Popover</a>"
+            "<a class=\"\" tabindex=\"0\" role=\"button\" data-bs-toggle=\"popover\" data-bs-trigger=\"focus\" title=\"\" data-bs-html='true' data-bs-content=\<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus cumque consequuntur aspernatur voluptatem ab quibusdam quo, maxime enim placeat nam, necessitatibus esse culpa tempora non totam eveniet doloribus nostrum incidunt.</p>\" data-bs-original-title=\"Título do popover\">Popover</a>"
         ],
         "description": "Inserir Link para Popover"
     },

@@ -1,0 +1,26 @@
+/* Aula 3 - tópico1 */
+
+.formula-main {
+    font-size: 20px;
+    font-family: serif;
+}
+
+.formula-step {
+    font-size: 16px;
+    font-family: serif;
+}
+
+.axis-text {
+    font-size: 14px;
+    font-style: italic;
+}
+
+.axis-num {
+    font-size: 14px;
+}
+
+.line {
+    stroke: #000;
+    stroke-width: 1.5;
+    fill: none;
+}

@@ -42,14 +42,16 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+
 *:focus-visible {
 	outline-offset: 5px;
 	outline-color: blue !important;
 	outline-style: solid !important;
-	outline-width: 4px !important       ;
+	outline-width: 4px !important;
 	border-radius: inherit, var(--fio-sys-size-radius-md);
 	box-shadow: none;
 }
+
 .caption-top {
 	caption-side: top;
 }
@@ -57,12 +59,15 @@
 .primary-color {
 	color: var(--primary-color);
 }
+
 .secondary-color {
 	color: var(--secondary-color);
 }
+
 .text-white {
 	color: #ffffff !important;
 }
+
 strong {
 	font-family: var(--fio-sys-typography-family-primary-extra-bold);
 }
@@ -74,15 +79,18 @@ i {
 u {
 	font-family: inherit;
 }
+
 /* Images (<figure>) */
 figure {
 	margin: 0 auto var(--fio-sys-size-margin-lg);
 }
+
 figure img {
 	margin: 0 auto;
 	border-radius: var(--fio-sys-size-radius-md);
 	width: 100%;
 }
+
 figcaption.figure-caption {
 	font-size: 75%;
 	font-family: var(--fio-sys-typography-family-primary-medium);
@@ -101,6 +109,7 @@ figcaption.figure-caption {
 .text-muted {
 	color: var(--fio-sys-color-neutral-medium) !important;
 }
+
 /* 
 .figure-caption a,
 .figure-caption a:visited,
@@ -135,12 +144,14 @@ body {
 .main .content {
 	margin-left: 0;
 }
+
 @media (min-width: 992px) {
 	.main .content {
 		margin-left: 120px;
 		padding-top: 80px;
 	}
 }
+
 @media (min-width: 1200px) {
 	.main .content {
 		margin-left: 120px;
@@ -167,14 +178,14 @@ section {
 	margin-bottom: 0;
 } */
 
-.row > div > h4,
-.row > div > h5,
-.row > div > h6 {
+.row>div>h4,
+.row>div>h5,
+.row>div>h6 {
 	padding-top: var(--fio-sys-size-margin-xl);
 }
 
-.row > div > *:last-child,
-.row:last-child > div:last-child {
+.row>div>*:last-child,
+.row:last-child>div:last-child {
 	margin-bottom: 0;
 }
 
@@ -287,6 +298,7 @@ section .page-nav .fio-button {
 	section .page-nav {
 		flex-direction: row;
 	}
+
 	section .page-nav .fio-button {
 		min-width: 30%;
 	}
@@ -311,9 +323,11 @@ section .page-nav .fio-button {
 	opacity: 0;
 	transition: 0.25s ease-out;
 }
+
 .lightbox:hover::after {
 	opacity: 0.25;
 }
+
 .lightbox__image {
 	position: fixed;
 	padding: 30px;
@@ -328,6 +342,7 @@ section .page-nav .fio-button {
 	cursor: zoom-out;
 	object-fit: contains;
 }
+
 .lightbox__image img {
 	object-fit: contain;
 	width: 100%;
@@ -342,6 +357,7 @@ section .page-nav .fio-button {
 .share-cards__header {
 	margin: 50px 0;
 }
+
 .share-cards__body {
 	display: flex;
 	flex-direction: row;
@@ -349,6 +365,7 @@ section .page-nav .fio-button {
 	justify-content: space-between;
 	align-items: flex-start;
 }
+
 .share-cards__content {
 	display: flex;
 	flex-direction: column;
@@ -357,6 +374,7 @@ section .page-nav .fio-button {
 	align-items: center;
 	text-align: center;
 }
+
 @media (min-width: 768px) {
 	.share-cards__content {
 		display: flex;
@@ -366,6 +384,7 @@ section .page-nav .fio-button {
 		align-items: start;
 	}
 }
+
 .share-cards__image {
 	position: relative;
 	width: 120px;
@@ -375,6 +394,7 @@ section .page-nav .fio-button {
 	text-align: center;
 	border-radius: 8px;
 }
+
 .share-cards__image img {
 	height: 100%;
 	width: auto;
@@ -417,4 +437,11 @@ section .page-nav .fio-button {
 #links-acessibilidade .skip-link:focus {
 	top: 10px;
 	left: 10px;
+}
+
+/* FORMULAS MATEMÁTICAS */
+.formula-matematica {
+	color:#000;
+	font-size: var(--fio-sys-typography-size-3);
+	padding:var(--fio-sys-size-margin-lg);
 }
