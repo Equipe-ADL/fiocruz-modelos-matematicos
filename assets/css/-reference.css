@@ -2,7 +2,7 @@
 
 :root {
 	/* --- KEY COLORS - HSL format --- */
-	--fio-ref-color-primary: 316, 60%; /* Roxo */ /* hue, saturation% */
+	--fio-ref-color-primary: 316, 45%; /* Rosa */ /* hue, saturation% */
 	--fio-ref-color-secondary: 177, 60%; /* Verde */
 	--fio-ref-color-tertiary: 224, 69%; /* Azul */
 
