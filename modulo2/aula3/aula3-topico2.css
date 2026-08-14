@@ -1,5 +1,19 @@
 /* Aula 3 - tópico1 */
 
+.graphic-container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    max-width: 900px;
+    width: 100%;
+}
+
+svg {
+    width: 100%;
+    height: auto;
+}
+
 .formula-main {
     font-size: 20px;
     font-family: serif;
