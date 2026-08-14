@@ -47,13 +47,14 @@
     <!-- <meta name="theme-color" content="#003066" > -->
     <meta name="theme-color" content="#001833">
 
-    <title>Curso Modelos Matemáticos e Computacionais aplicados à Pesquisa em Saúde | Mod 2 | Aula 3</title>
+    <title>Curso Modelos Matemáticos e Computacionais aplicados à Pesquisa em Saúde | Mod 2 | Aula 5</title>
 
     <!-- Bootstrap CSS 5.1.3 -->
     <link rel="stylesheet" href="../../source/bootstrap-5.1.3/css/bootstrap.min.css">
 
     <!-- Project CSS -->
     <link rel="stylesheet" href="../../assets/css/style.css">
+    <link rel="stylesheet" href="aula3-topico2.css">
 </head>
 
 <body>
@@ -198,7 +199,7 @@
                 </div>
                 <div class="sidebar__group">
                     <div class="sidebar__group-item">
-                        <span class="text class">Aula 3</span>
+                        <span class="text class">Aula 5</span>
                     </div>
                     <div class="sidebar__group-item">
                         <div class="dropend">
@@ -212,14 +213,12 @@
                                     <a class="mobile-toggle-close" tabindex="0" role="button"><span class="icon material-symbols-rounded">read_more</span></a>
                                 </li>
                                 <li class="dropdown-menu__title">
-                                    <span class="label">Aula 3</span>
-                                    <span class="title">Construindo modelos populacionais</span>
+                                    <span class="label">Aula 5</span>
+                                    <span class="title">Modelos epidemiológicos clássicos</span>
                                 </li>
                                 <li class="dropdown-menu__item">
                                     <nav class="topic-list">
                                         <a href="topico1.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico concluído" status="visited"> <span class="material-symbols-rounded"></span>Introdução</a>
-                                        <a href="topico2.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico concluído" status="visited"> <span class="material-symbols-rounded"></span>Crescimento populacional constante</a>
-                                        <a href="topico3.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico concluído" status="visited"> <span class="material-symbols-rounded"></span>Crescimento populacional variável</a>
                                     </nav>
                                 </li>
                             </ul>
@@ -246,9 +245,9 @@
                     <div class="row align-items-center hstify-content-center justify-content-xxl-start ms-lg-5">
                         <div class="col-12 col-md-10 col-lg-11">
                             <h2 class="title">
-                                <span class="label">Módulo 2 | Aula 3</span>
+                                <span class="label">Módulo 2 | Aula 5</span>
                                 <br>
-                                Construindo modelos populacionais
+                                Modelos epidemiológicos clássicos
                             </h2>
                         </div>
                     </div>
@@ -262,113 +261,50 @@
                         <div class="row justify-content-center">
                             <div class="col-12 col-md-10 col-lg-8 mb-5">
                                 <div class="heading__block">
-                                    <span class="small">Tópico 3</span>
-                                    <h3 class="heading__title">Crescimento populacional variável</h3>
-
-                                    <p>O que acontece quando a taxa de crescimento não permanece constante ao longo do tempo? Na realidade, populações humanas raramente mantêm o mesmo ritmo de crescimento por décadas seguidas. Fatores como mudanças nas políticas de saúde, avanços na medicina, transformações econômicas e culturais podem acelerar ou desacelerar o crescimento populacional. O caso brasileiro ilustra bem essa dinâmica.</p>
-
-                                    <p>A figura a seguir foi publicada para mostrar como está o crescimento da população brasileira desde 1940 a 2020. Que processos demográficos podem explicar esse padrão? Note que, ao longo das décadas, as taxas de crescimento populacional aumentaram até alcançar um pico em 1960 e depois caíram rapidamente, e em 2022 chegaram a 0,5% de crescimento ao ano. </p>
+                                    <span class="small">Tópico 1</span>
+                                    <h3 class="heading__title">Introdução</h3>
                                 </div>
+
+                                <p>Nas aulas anteriores, construímos modelos para descrever a dinâmica de populações, como elas crescem, decrescem e se transformam ao longo do tempo. Agora, vamos dar um passo além: em vez de olhar para a população como um todo, vamos dividi-la em grupos segundo seu estado de saúde. Essa ideia de "compartimentalizar" a população é a base dos modelos epidemiológicos. Antes de construirmos nosso próprio modelo, vale conhecer como tudo começou.</p>
+
+                                <p>Atribui-se a Daniel Bernoulli, matemático e físico francês, o primeiro modelo matemático para uma pergunta epidemiológica. A pergunta da época, 1766, era a eficácia da técnica de inoculação preventiva contra varíola.</p>
                             </div>
                         </div>
 
                         <div class="row justify-content-center">
                             <div class="col-12 col-md-10 col-lg-8 mb-5">
-                                <!-- EXEMPLO DE APLICAÇÃO -->
-                                <div class="code-container aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="600">
-                                    <span class="h5 pb-3 d-block mb-5">Exemplo de aplicação</span>
-
-                                    <p>Vamos começar analisando a figura.</p>
-
-                                    <figure class="lightbox aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
-                                        <img class="img-fluid mx-auto d-block mb-3 w-75" src="../../media/modulo2/aula3-img2.jpg" alt="Infográfico do Censo 2022 do Poder360 informando que a população do Brasil chegou a 203.062.512 habitantes. Um gráfico mostra o crescimento da população em milhões de 1940 (41) a 2022 (203) e a desaceleração da taxa de crescimento anual em porcentagem, que caiu de 3,0% em 1960 para 0,5% em 2022, indicando estabilização." title="Fonte: Poder 360">
-                                        <figcaption class="figure-caption fonte">Fonte: Poder 360</figcaption>
-                                    </figure>
-
-                                    <p>A população claramente não cresce a uma taxa constante; logo, o modelo geométrico não serve para todo o período. Ainda assim, ele foi usado para calcular as taxas de crescimento anual apresentadas na figura. Por exemplo, veja o período entre 1940 e 1950:</p>
-
-                                    <p>Nesse caso, conhecemos <span class="color-primary-dark"><strong>Pn</strong></span>, <span class="color-primary-dark"><strong>P0</strong></span> e <span class="color-primary-dark"><strong>n</strong></span>, e queremos calcular a:</p>
-
-                                    <p><span class="color-primary-dark"><strong>n = 1950 − 1940 = 10 anos</strong></span></p>
-
-                                    <p><span class="color-primary-dark"><strong>P(10) = 52 milhões</strong></span></p>
-
-                                    <p><span class="color-primary-dark"><strong>P(0) = 41 milhões</strong></span></p>
-
-                                    <p>Utilizando a fórmula do modelo geométrico:</p>
-
-                                    <p><span class="color-primary-dark"><strong>52 = 41 milhões (1+a)<sup>10</sup></strong></span></p>
-
-                                    <p>Resolvendo:</p>
-
-                                    <p><span class="color-primary-dark"><strong>(1+a)<sup>10</sup> = 52/41 = 1,268</strong></span></p>
-
-                                    <p><span class="color-primary-dark"><strong>(1+a) = 1,268⁽<sup>(1/10)</sup> = 1,024</strong></span></p>
-
-                                    <p><span class="color-primary-dark"><strong>a = 1,024 = 1 = 0,024 * 100 = 2,4%</strong></span></p>
-                                </div>
+                                <figure class="lightbox aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
+                                    <img class="img-fluid mx-auto d-block mb-3" src="../../media/modulo2/aula5-img1.jpg" alt="" title="Fonte: Campus Virtual Fiocruz, a partir de Pesquisa Fapesp (2020).">
+                                    <figcaption class="figure-caption fonte">Fonte: Campus Virtual Fiocruz, a partir de <a href='https://revistapesquisa.fapesp.br/modelagem-epidemiologica-ganha-visibilidade/' target='_blank' rel='noopener noreferrer'>Pesquisa Fapesp (2020</a>).</figcaption>
+                                </figure>
                             </div>
                         </div>
 
                         <div class="row justify-content-center">
                             <div class="col-12 col-md-10 col-lg-8 mb-5">
-                                <!-- Olho de texto -->
-                                <div class="olho-de-texto my-5 aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
-                                    <p>Você já parou para pensar o que pode fazer a taxa de crescimento de uma população aumentar ou diminuir?</p>
-                                </div>
+                                <p>O modelo Bernoulli divide a população entre suscetíveis e imunizados, apenas. A seta entre os compartimentos é a força da infecção, que depende da idade e do contato com inóculos do ambiente; e as setas para baixo são as taxas de mortalidade. Nesse modelo mais primitivo, os infectados não aparecem explicitamente como ocorre no SIR. Ele concluiu, com esse modelo, que a inoculação poderia ampliar a expectativa de vida da população em 3 anos, protegendo-a da varíola.</p>
+
+                                <p>O médico Ronald Ross descobriu, em 1898, a forma de transmissão da malária, uma doença típica de países tropicais, provocada por protozoários parasitas que são transmitidos para o homem por meio da picada da fêmea do mosquito Anopheles. O modelo de Ross trata da propagação da malária em uma comunidade e tornou-se célebre por ser uma das primeiras tentativas de modelagem matemática de uma epidemia e também porque foi muito usado pela Organização Mundial de Saúde (OMS) para fazer avaliações durante as tentativas de erradicação da malária em várias partes do mundo.</p>
                             </div>
                         </div>
 
                         <div class="row justify-content-center">
                             <div class="col-12 col-md-10 col-lg-8 mb-5">
-                                <p>Bem, algumas possíveis hipóteses são:</p>
+                                <figure class="lightbox aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
+                                    <img class="img-fluid mx-auto d-block mb-3" src="https://placehold.co/1280x720/green/lightgreen" alt="Imagem aleatória de exmplo" title="Fonte: unsplash.com">
+                                    <figcaption class="figure-caption">Imagem com tamanho 1280x720</figcaption>
+                                    <figcaption class="figure-caption fonte">Fonte: unsplash.com</figcaption>
+                                </figure>
                             </div>
                         </div>
 
                         <div class="row justify-content-center">
-                            <div class="col-12 col-md-8 col-lg-6 mb-5">
-                                <!-- Swipper Effect Card -->
-                                <div class="swiper swiper--effect-card card">
-                                    <div class="swiper-wrapper">
-                                        <div class="swiper-slide">
-                                            <div class="card-thumb">
-                                                <img src="../../media/modulo2/aula3-img3.jpg" alt="Ilustração mostrando o envelhecimento humano lado a lado em seis fases da vida: bebê brincando com urso de pelúcia, criança segurando uma bola, adolescente de mochila, jovem adulto, homem adulto e idoso apoiado em uma bengala, sobre um fundo rosa com linhas de rede conectadas.">
-                                            </div>
-                                
-                                            <div class="card-body">
-                                                <p>O aumento da taxa de crescimento até os anos 1960 pode ter ocorrido porque a mortalidade diminuiu; logo, houve menor perda de pessoas na população.</p>
-                                            </div>
-                                        </div>
-                                
-                                        <div class="swiper-slide">
-                                            <div class="card-thumb">
-                                                <img src="../../media/modulo2/aula3-img4.jpg" alt="Ilustração de uma mulher sentada observando um teste de gravidez com expressão apreensiva. Ao fundo, um símbolo roxo de proibição sobreposto à silhueta branca de um feto, sugerindo o tema de contracepção ou prevenção de gravidez.">
-                                            </div>
-                                
-                                            <div class="card-body">
-                                                <p>A redução da taxa de crescimento anual a partir de 1960 pode ter ocorrido porque a natalidade vem decaindo, havendo menor ganho de população. </p>
-                                
-                                            </div>
-                                        </div>
-                                
-                                        <div class="swiper-slide">
-                                            <div class="card-thumb">
-                                                <img src="../../media/modulo2/aula3-img5.jpg" alt="Ilustração sobre contágio de vírus, com quatro pessoas em primeiro plano usando máscaras de proteção. Ao fundo, o mapa da China em tons de rosa com um círculo em destaque ampliando partículas do vírus coronavírus sobre uma região de foco.">
-                                            </div>
-                                
-                                            <div class="card-body">
-                                                <p>A forte queda em 2022 pode ser consequência da mortalidade na pandemia de covid-19.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-pagination swiper-pagination3"></div>
-                                </div>
-                            </div>
-                        </div>
+                            <div class="col-12 col-md-10 col-lg-8 mb-5">
+                                <p>O modelo inovou por modelar tanto a população humana como a de mosquitos. A principal questão levantada por Ross era a possibilidade de eliminar a malária por meio da redução da população de mosquitos. Com base em seus modelos, e outros que evoluíram a partir daí, surge toda a classe de modelos matemáticos para controle vetorial.</p>
 
-                        <div class="row justify-content-center">
-                            <div class="col-12 col-md-10 col-lg-8">
-                                <p>Um modelo que represente essas entradas e saídas da população é um modelo  chamado de “dinâmica demográfica” ou “populacional”, que veremos a seguir, na próxima aula</p>
+                                <p>Esses modelos pioneiros estabeleceram as bases para uma tradição que perdura até hoje, que é usar a matemática para entender e prever o comportamento de epidemias.</p>
+
+                                <p>O que Bernoulli e Ross têm em comum? Ambos dividiram a população em compartimentos e modelaram os fluxos entre eles. Essa estratégia foi formalizada no modelo SIR (Suscetíveis, Infectados e Recuperados), que se tornou o modelo de referência em epidemiologia. Na próxima aula vamos construir esse modelo passo a passo, entender sua lógica e aplicá-lo a um problema real de gestão em saúde.</p>
                             </div>
                         </div>
                     </div>
@@ -381,8 +317,8 @@
                     <div class="row justify-content-center">
                         <div class="col-12 col-md-10 col-lg-8">
                             <div class="page-nav d-flex justify-content-evenly">
-                                <a class="fio-button fio-button-primary" href="topico2.html" rel="prev"><span class="material-symbols-rounded" aria-hidden="true">west</span> Tópico anterior</a>
-                                <a class="fio-button fio-button-primary" href="../aula4/topico1.html" rel="next">Aula 4 <span class="material-symbols-rounded" aria-hidden="true">east</span></a>
+                                <a class="fio-button fio-button-primary" href="../aula4/topico1.html" rel="prev"><span class="material-symbols-rounded" aria-hidden="true">west</span> Aula 4</a>
+                                <a class="fio-button fio-button-primary" href="../aula6/topico1.html" rel="next">Aula 6 <span class="material-symbols-rounded" aria-hidden="true">east</span></a>
                             </div>
                         </div>
                     </div>
