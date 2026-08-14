@@ -5,7 +5,7 @@
 :root {
 	/* ---------- COLORS ---------- */
 
-	/* Primary (Roxo) - 60% layout*/
+	/* Primary (Rosa) - 60% layout*/
 	--fio-sys-color-primary-extra-light: var(--fio-ref-color-primary-95);
 	--fio-sys-color-primary-extra-light-contrast: var(--fio-ref-color-primary-10);
 	--fio-sys-color-primary-light: var(--fio-ref-color-primary-70);
@@ -29,7 +29,7 @@
 	--fio-sys-color-secondary-extra-dark: var(--fio-ref-color-secondary-30);
 	--fio-sys-color-secondary-extra-dark-contrast: var(--fio-ref-color-secondary-80);
 
-	/* Tertiary (Azul) - 10% layout */
+	/* Tertiary (Roxo) - 10% layout */
 	--fio-sys-color-tertiary-extra-light: var(--fio-ref-color-tertiary-95);
 	--fio-sys-color-tertiary-extra-light-contrast: var(--fio-ref-color-tertiary-40);
 	--fio-sys-color-tertiary-light: var(--fio-ref-color-tertiary-80);
