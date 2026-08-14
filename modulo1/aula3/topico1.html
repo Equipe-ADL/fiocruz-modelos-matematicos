@@ -172,7 +172,7 @@
                                     <a class="dropdown-menu__item-link" tabindex="0" role="link" href="../aula2/topico1.html"><strong>Aula 2: </strong>Processamento paralelo</a>
                                 </li>
                                 <li class="dropdown-menu__item">
-                                    <a class="dropdown-menu__item-link" tabindex="0" role="link" href="../aula3/topico1.html"><strong>Aula 3: </strong>ETL (Extract, Load, Transfom)</a>
+                                    <a class="dropdown-menu__item-link" tabindex="0" role="link" href="../aula3/topico1.html"><strong>Aula 3: </strong>ETL (Extract, Load, Transform)</a>
                                 </li>
                                 <li class="dropdown-menu__item">
                                     <a class="dropdown-menu__item-link" tabindex="0" role="link" href="atividade.html"><strong>Atividade</strong></a>
@@ -204,7 +204,7 @@
                                 </li>
                                 <li class="dropdown-menu__title">
                                     <span class="label">Aula 3</span>
-                                    <span class="title">ETL (Extract, Load, Transfom)</span>
+                                    <span class="title">ETL (Extract, Load, Transform)</span>
                                 </li>
                                 <li class="dropdown-menu__item">
                                     <nav class="topic-list">
@@ -240,7 +240,7 @@
                             <h2 class="title">
                                 <span class="label">Módulo 1 | Aula 3</span>
                                 <br>
-                                ETL (<em>Extract, Load, Transfom</em>)
+                                ETL (<em>Extract, Load, Transform</em>)
                             </h2>
                         </div>
                     </div>
@@ -258,15 +258,15 @@
                                     <h3 class="heading__title">Introdução</h3>
                                 </div>
 
-                                <p>Como já vimos, <strong>ELT</strong> é um processo fundamental para a integração de dados. Ele envolve a extração de dados de diversas fontes, tanto estruturadas (como bancos de dados relacionais) quanto não estruturadas (como arquivos de texto e dados de redes sociais). Em seguida, esses dados são <strong>carregados em um sistema de armazenamento</strong>, como um <a class="" tabindex="0" role="button" data-bs-toggle="popover" data-bs-trigger="focus" title="" data-bs-html='true' data-bs-content="<p>Um <strong><em>data lake</em> (lago de dados)</strong> é um repositório que armazena grandes volumes de dados em diferentes formatos (estruturados e não estruturados), preservando os dados brutos como estão, sem precisar primeiro estruturá-los e executar diferentes tipos de análise, permitindo transformações posteriores em escala, desde painéis e visualizações até processamento de Big Data, análise em tempo real e machine learning para orientar melhores decisões.</p> <p class='small'>Fonte: <a href='https://aws.amazon.com/pt/what-is/data-lake/ ' target='_blank' rel='noopener noreferrer'>AWS</a></p>" data-bs-original-title="Data lake"> <em>data lake</em></a>, para então passarem pelas transformações necessárias — como limpeza, formatação e agregação —, garantindo que fiquem prontos para análise. Dessa forma, os dados tornam-se acessíveis e realmente úteis para apoiar a tomada de decisão e análises mais aprofundadas. A figura a seguir ilustra o processo de ELT.</p>
+                                <p>Como já vimos, <strong>ETL</strong> é um processo fundamental para a integração de dados. Ele envolve a extração de dados de diversas fontes, tanto estruturadas (como bancos de dados relacionais) quanto não estruturadas (como arquivos de texto e dados de redes sociais). Em seguida, esses dados são <strong>carregados em um sistema de armazenamento</strong>, como um <a class="" tabindex="0" role="button" data-bs-toggle="popover" data-bs-trigger="focus" title="" data-bs-html='true' data-bs-content="<p>Um <strong><em>data lake</em> (lago de dados)</strong> é um repositório que armazena grandes volumes de dados em diferentes formatos (estruturados e não estruturados), preservando os dados brutos como estão, sem precisar primeiro estruturá-los e executar diferentes tipos de análise, permitindo transformações posteriores em escala, desde painéis e visualizações até processamento de Big Data, análise em tempo real e machine learning para orientar melhores decisões.</p> <p class='small'>Fonte: <a href='https://aws.amazon.com/pt/what-is/data-lake/ ' target='_blank' rel='noopener noreferrer'>AWS</a></p>" data-bs-original-title="Data lake"> <em>data lake</em></a>, para então passarem pelas transformações necessárias — como limpeza, formatação e agregação —, garantindo que fiquem prontos para análise. Dessa forma, os dados tornam-se acessíveis e realmente úteis para apoiar a tomada de decisão e análises mais aprofundadas. A figura a seguir ilustra o processo de ETL.</p>
                             </div>
                         </div>
 
                         <div class="row justify-content-center">
                             <div class="col-12 col-md-10 col-lg-8 mb-5">
                                 <figure class="lightbox aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
-                                    <img class="img-fluid mx-auto d-block mb-3" src="../../media/modulo1/aula3-img1.jpg" alt="Imagem aleatória de exmplo" title="Fonte: Campus Virtual Fiocruz, a partir de a partir de imagem gerada por IA">
-                                    <figcaption class="figure-caption fonte">Fonte: Campus Virtual Fiocruz, a partir de imagem gerada por IA</figcaption>
+                                    <img class="img-fluid mx-auto d-block mb-3" src="../../media/modulo1/aula3-img1.jpg" alt="Imagem aleatória de exmplo" title="Fonte: Campus Virtual Fiocruz, a partir do autor (2026).">
+                                    <figcaption class="figure-caption fonte">Fonte: Campus Virtual Fiocruz, a partir do autor (2026).</figcaption>
                                 </figure>
                             </div>
                         </div>
@@ -285,11 +285,11 @@
 
                                     <!-- Texto -->
                                     <div class="order-2 order-lg-1">
-                                        <p><strong>Então, por que o profissional do SUS precisa entender ELT?</strong></p>
+                                        <p><strong>Então, por que o profissional do SUS precisa entender ETL?</strong></p>
 
                                         <p>No dia a dia do SUS você trabalha com dados que vêm de diferentes sistemas: SINAN, SIM, SINASC, SIH, SIA, e-SUS AB, entre outros. Cada sistema tem seu próprio forma-to, suas próprias variáveis, e frequentemente os dados precisam ser combinados para gerar análises epidemiológicas ou relatórios de gestão. </p>
 
-                                        <p>O processo de ELT é exatamente o que você faz (muitas vezes manualmente no Excel) quando precisa:</p>
+                                        <p>O processo de ETL é exatamente o que você faz (muitas vezes manualmente no Excel) quando precisa:</p>
                                     </div>
                                 </div>
                             </div>
@@ -308,7 +308,7 @@
 
                                         <li class="list-group-item pb-3" list-style="default">Juntar bases para análise.</li>
 
-                                        <li class="list-group-item pb-3" list-style="default">Salvar em formato adequado pa-ra relatórios.</li>
+                                        <li class="list-group-item pb-3" list-style="default">Salvar em formato adequado para relatórios.</li>
                                     </ul>
                                 </div>
                             </div>
@@ -353,9 +353,7 @@
                             <li>
                                 <img class="img-fluid logo3" src="../../media/logos/footer-fiocruz.png" alt="Logo da Fiocruz" height="">
                             </li>
-                            <li>
-                                <img class="img-fluid logo4" src="../../media/logos/footer-sus-digital.png" alt="Logo do SUS Digital" height="">
-                            </li>
+                            
                             <li>
                                 <img class="img-fluid logo5" src="../../media/logos/footer-sus.png" alt="Logos SUS" height="">
                             </li>

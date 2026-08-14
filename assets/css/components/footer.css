@@ -147,7 +147,7 @@ footer .image-bottom img {
 }
 @media (min-width: 1320px) {
 	footer .logos {
-		grid-template: repeat(1, 120px) / repeat(6, 1fr);
+		grid-template: repeat(1, 120px) / repeat(5, 1fr);
 	}
 	/* :root {
 		--logo-space: 50px;
