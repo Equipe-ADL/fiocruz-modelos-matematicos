@@ -47,7 +47,7 @@
     <!-- <meta name="theme-color" content="#003066" > -->
     <meta name="theme-color" content="#001833">
 
-    <title>Curso Modelos Matemáticos e Computacionais aplicados à Pesquisa em Saúde | Mod 2 | Encerramento</title>
+    <title>Curso Modelos Matemáticos e Computacionais aplicados à Pesquisa em Saúde | Mod 3 | Encerramento</title>
 
     <!-- Bootstrap CSS 5.1.3 -->
     <link rel="stylesheet" href="../source/bootstrap-5.1.3/css/bootstrap.min.css">
@@ -145,7 +145,7 @@
                 </div>
                 <div class="sidebar__group">
                     <div class="sidebar__group-item">
-                        <span class="text module">Módulo <br class="d-none d-lg-block"><span>1</span></span>
+                        <span class="text module">Módulo <br class="d-none d-lg-block"><span>3</span></span>
                     </div>
                     <div class="sidebar__group-item">
                         <div class="dropend">
@@ -159,20 +159,23 @@
                                     <a class="mobile-toggle-close" tabindex="0" role="button"><span class="icon material-symbols-rounded">read_more</span></a>
                                 </li>
                                 <li class="dropdown-menu__title">
-                                    <span class="label">Módulo 1</span>
-                                    <span class="title">Introdução à Grandes Bases de Dados</span>
+                                    <span class="label">Módulo 3</span>
+                                    <span class="title">Modelos computacionais</span>
                                 </li>
                                 <li class="dropdown-menu__item">
                                     <a class="dropdown-menu__item-link" tabindex="0" role="link" href="apresentacao.html"><strong>Apresentação do módulo</strong></a>
                                 </li>
                                 <li class="dropdown-menu__item">
-                                    <a class="dropdown-menu__item-link" tabindex="0" role="link" href="aula1/topico1.html"><strong>Aula 1: </strong>Grandes Bases de Dados</a>
+                                    <a class="dropdown-menu__item-link" tabindex="0" role="link" href="aula1/topico1.html"><strong>Aula 1: </strong>Modelos computacionais e Aprendizado de Máquina</a>
                                 </li>
                                 <li class="dropdown-menu__item">
-                                    <a class="dropdown-menu__item-link" tabindex="0" role="link" href="aula2/topico1.html"><strong>Aula 2: </strong>Processamento paralelo</a>
+                                    <a class="dropdown-menu__item-link" tabindex="0" role="link" href="aula2/topico1.html"><strong>Aula 2: </strong>Aprendizado Supervisionad</a>
                                 </li>
                                 <li class="dropdown-menu__item">
-                                    <a class="dropdown-menu__item-link" tabindex="0" role="link" href="aula3/topico1.html"><strong>Aula 3: </strong>ETL (Extract, Load, Transform)</a>
+                                    <a class="dropdown-menu__item-link" tabindex="0" role="link" href="aula3/topico1.html"><strong>Aula 3: </strong>Regressão </a>
+                                </li>
+                                <li class="dropdown-menu__item">
+                                    <a class="dropdown-menu__item-link" tabindex="0" role="link" href="aula4/topico1.html"><strong>Aula 4: </strong>Aprendizado Não supervisionado</a>
                                 </li>
                                 <li class="dropdown-menu__item">
                                     <a class="dropdown-menu__item-link" tabindex="0" role="link" href="atividade.html"><strong>Atividade</strong></a>
@@ -201,9 +204,9 @@
                     <div class="row align-items-center hstify-content-center justify-content-xxl-start ms-lg-5">
                         <div class="col-12 col-md-10 col-lg-11">
                             <h2 class="title">
-                                <span class="label">Módulo 2</span>
+                                <span class="label">Módulo 3</span>
                                 <br>
-                                Modelos Matemáticos
+                                Modelos computacionais 
                             </h2>
                         </div>
                     </div>
@@ -220,11 +223,13 @@
                                     <h3 class="heading__title">Resumo do módulo</h3>
                                 </div>
 
-                                <p>Neste módulo exploramos os fundamentos da modelagem matemática aplicada à saúde. Partimos da definição de modelo matemático e de um roteiro em nove passos para sua construção. Em seguida, aplicamos essa metodologia a modelos populacionais, primeiro com crescimento constante (modelo geométrico), depois com crescimento variável, incorporando taxas de natalidade e mortalidade.</p>
+                                <p>Neste módulo exploramos os fundamentos dos modelos computacionais aplicados à pesquisa em saúde, com foco em técnicas de Aprendizado de Máquina. O módulo se organiza em três grandes eixos: aprendizado supervisionado, regressão e aprendizado não supervisionado.</p>
 
-                                <p>Avançamos, então, para os modelos epidemiológicos. Conhecemos os trabalhos pioneiros de Bernoulli e Ross, que estabeleceram a tradição de usar matemática para entender epidemias. Por fim, construímos o modelo SIR e o aplicamos a um caso prático, demonstrando como ele pode ser usado para projetar curvas epidêmicas e avaliar estratégias de controle.</p>
+                                <p>No aprendizado supervisionado são abordados o processo completo de treinamento de modelos de classificação, da divisão dos dados (treino/teste) à predição com novos dados e os principais algoritmos (k-NN, Naive Bayes, Árvore de Decisão e SVM), com ênfase na avaliação de desempenho via matriz de confusão, acurácia, precisão, recall e F1-score.</p>
 
-                                <p>A mensagem central é que modelos são simplificações úteis da realidade. Eles não preveem o futuro com certeza, mas permitem explorar cenários, testar hipóteses e fundamentar decisões. Com as ferramentas aprendidas aqui, você está preparado para compreender e até construir seus próprios modelos em contextos de Saúde Pública.</p>
+                                <p>Na sequência, o módulo trata dos modelos de regressão para predição de valores contínuos, discutindo métricas específicas como R², MAE e MSE, e destacando a diferença em relação às métricas de classificação.</p>
+
+                                <p>Por fim, o aprendizado não supervisionado é explorado por meio de algoritmos de agrupamento (k-means, hierárquico e DBSCAN), com discussão sobre critérios de validação interna (índice de silhueta) e externa (índice Rand). Ao longo de todo o módulo, os conceitos são ilustrados com exemplos aplicados ao contexto da saúde, e o material prático em R está disponível como complemento opcional.</p>
                             </div>
                         </div>
                     </div>
@@ -240,7 +245,7 @@
                         <div class="col-12 col-md-10 col-lg-8">
                             <div class="page-nav d-flex justify-content-evenly">
                                 <a class="fio-button fio-button-primary" href="atividade.html" rel="prev"><span class="material-symbols-rounded">west</span> Atividade</a>
-                                <a class="fio-button fio-button-primary" href="../modulo3/apresentacao.html" rel="next">Módulo 3 <span class="material-symbols-rounded" aria-hidden="true">east</span></a>
+                                <a class="fio-button fio-button-primary" href="../modulo4/apresentacao.html" rel="next">Módulo 4 <span class="material-symbols-rounded" aria-hidden="true">east</span></a>
                             </div>
                         </div>
                     </div>
