@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="robots" content="noindex">
+    <meta name="author" content="Fiocruz, Campus Virtual">
+    <meta name="description" content="Curso Modelos Matemáticos e Computacionais aplicados à Pesquisa em Saúde">
+
+    <!-- Facebook Open Graph -->
+    <meta property="og:url" content="https://mooc.campusvirtual.fiocruz.br/rea/modelos-matematicos-e-computacionais-aplicados-a-pesquisa-em-saude">
+    <meta property="og:title" content="Campus Virtual Fiocruz | Curso Modelos Matemáticos e Computacionais aplicados à Pesquisa em Saúde">
+    <meta property="og:description" content="Curso Modelos Matemáticos e Computacionais aplicados à Pesquisa em Saúde">
+    <meta property="og:image" content="https://mooc.campusvirtual.fiocruz.br/rea/modelos-matematicos-e-computacionais-aplicados-a-pesquisa-em-saude/media/images/share/thumbcurso-1080x1080.png">
+    <meta property="og:image:width" content="1080">
+    <meta property="og:image:height" content="1080">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Campus Virtual Fiocruz | Curso Modelos Matemáticos e Computacionais aplicados à Pesquisa em Saúde">
+    <meta name="twitter:url" content="https://mooc.campusvirtual.fiocruz.br/rea/modelos-matematicos-e-computacionais-aplicados-a-pesquisa-em-saude">
+    <meta name="twitter:description" content="Campus Virtual Fiocruz | Curso Modelos Matemáticos e Computacionais aplicados à Pesquisa em Saúde">
+    <meta name="twitter:image:src" content="https://mooc.campusvirtual.fiocruz.br/rea/modelos-matematicos-e-computacionais-aplicados-a-pesquisa-em-saude/media/images/share/thumbcurso-1080x1080.png">
+
+    <!-- Favicons and Touch Icons -->
+    <link rel="apple-touch-icon" sizes="57x57" href="../../media/icons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../../media/icons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../../media/icons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../../media/icons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../../media/icons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../../media/icons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../../media/icons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../../media/icons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../../media/icons/apple-icon-180x180.png">
+
+    <link rel="icon" type="image/png" sizes="192x192" href="../../media/icons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../media/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../../media/icons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../media/icons/favicon-16x16.png">
+    <link rel="manifest" href="../media/icons/manifest.json">
+
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="../../media/icons/ms-icon-144x144.png">
+    <!-- <meta name="theme-color" content="#003066" > -->
+    <meta name="theme-color" content="#001833">
+
+    <title>Curso Modelos Matemáticos e Computacionais aplicados à Pesquisa em Saúde | Mod 3 | Aula 1</title>
+
+    <!-- Bootstrap CSS 5.1.3 -->
+    <link rel="stylesheet" href="../../source/bootstrap-5.1.3/css/bootstrap.min.css">
+
+    <!-- Project CSS -->
+    <link rel="stylesheet" href="../../assets/css/style.css">
+</head>
+
+<body>
+    <div id="links-acessibilidade">
+        <a href="#links-acessibilidade" accesskey="1" class="skip-link">Aperte TAB e escolha uma área da página</a>
+        <a href="#menu-global" accesskey="2" class="skip-link">Ir para o menu global de navegação</a>
+        <a href="#sidebar" accesskey="3" class="skip-link">Ir para o menu de navegação dos módulos</a>
+        <a href="#page-title" accesskey="4" class="skip-link">Ir para o conteúdo da página</a>
+        <a href="#nav-topics" accesskey="5" class="skip-link">Ir para o final da página</a>
+    </div>
+
+    <header id="menu-global" class="header">
+        <div class="mobile-toggle-open">
+            <a class="mobile-toggle__button" tabindex="0" role="button">
+                <span class="icon material-symbols-rounded">read_more</span>
+            </a>
+        </div>
+        <div class="brand">
+            <img class="img-fluid logo-black" src="../../media/logos/header-fiocruz-campus-virtual.png" alt="Campus Virtual Fiocruz">
+        </div>
+        <div class="title">
+            <h1>Modelos Matemáticos e Computacionais aplicados à Pesquisa em Saúde</h1>
+        </div>
+        <ul class="nav nav-pills">
+            <li class="nav-item"><a href="../../index.html" class="nav-link">Início</a></li>
+            <li class="nav-item"><a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#modal-creditos">Créditos</a></li>
+        </ul>
+    </header>
+    <div class="main">
+        <div id="sidebar" class="sidebar" role="navigation">
+            <div class="sidebar__inner" style="position: relative">
+                <div class="sidebar__group d-lg-none">
+                    <div class="sidebar__group-item">
+                        <div class="sidebar__header">
+                            <span>Curso</span>
+                            <a class="mobile-toggle-close" tabindex="0" role="button"><span class="icon material-symbols-rounded">read_more</span></a>
+                        </div>
+                    </div>
+                    <div class="sidebar__group-item">
+                        <div class="sidebar__title">
+                            <h1>Modelos Matemáticos e Computacionais aplicados à Pesquisa em Saúde</h1>
+                        </div>
+                    </div>
+                    <div class="sidebar__group-item">
+                        <ul class="nav">
+                            <li class="nav-item">
+                                <a href="../../index.html" class="nav-link" tabindex="0"><span class="icon material-symbols-rounded" aria-hidden="true">home</span>Início</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link" tabindex="0" data-bs-toggle="modal" data-bs-target="#modal-creditos"><span class="icon material-symbols-rounded" aria-hidden="true"> format_list_bulleted</span>Créditos</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="sidebar__group">
+                    <div class="sidebar__group-item">
+                        <div class="dropend">
+                            <button id="dropdown-modulos" type="button" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside" data-bs-offset="0,30">
+                                <span class="icon material-symbols-rounded" aria-hidden="true">grid_view</span>
+                                <span class="label">Módulos</span>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdown-modulos">
+                                <li class="d-lg-none dropdown-menu__header">
+                                    <a class="dropdown-menu__back-button" tabindex="0" role="button"><span class="icon material-symbols-rounded">chevron_left</span> Voltar</a>
+                                    <a class="mobile-toggle-close" tabindex="0" role="button"><span class="icon material-symbols-rounded">read_more</span></a>
+                                </li>
+                                <li class="dropdown-menu__item">
+                                    <a class="dropdown-menu__item-link" tabindex="0" role="link" href="../../modulo1/apresentacao.html"><strong>Módulo 1</strong><br>Introdução à Grandes Bases de Dados</a>
+                                </li>
+                                <li class="dropdown-menu__item">
+                                    <a class="dropdown-menu__item-link" tabindex="0" role="link" href="../../modulo2/apresentacao.html"><strong>Módulo 2</strong><br>Modelos Matemáticos</a>
+                                </li>
+                                <li class="dropdown-menu__item">
+                                    <a class="dropdown-menu__item-link" tabindex="0" role="link" href="../../modulo3/apresentacao.html"><strong>Módulo 3</strong><br>Modelos Computacionais</a>
+                                </li>
+                                <li class="dropdown-menu__item">
+                                    <a class="dropdown-menu__item-link" tabindex="0" role="link" href="../../modulo4/apresentacao.html"><strong>Módulo 4</strong><br>Consolidação dos Conceitos – Modelos Matemáticos e Computacionais</a>
+                                </li>
+                                <!-- <li class="dropdown-menu__item">
+                                    <span class="dropdown-menu__item-link"><strong>Módulo 3</strong><br >Modelos estatísticos <strong class="em-breve">(em breve)</strong></span>
+                                    <a class="dropdown-menu__item-link" tabindex="0" role="link" href="../modulo3/apresentacao.html"><strong>Módulo 3</strong><br >Modelos Computacionais</a>
+                                </li> -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="divider">
+                    <hr>
+                </div>
+                <div class="sidebar__group">
+                    <div class="sidebar__group-item">
+                        <span class="text module">Módulo <br class="d-none d-lg-block"><span>3</span></span>
+                    </div>
+                    <div class="sidebar__group-item">
+                        <div class="dropend">
+                            <button type="button" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside" data-bs-offset="0,30">
+                                <span class="icon material-symbols-rounded" aria-hidden="true">apps</span>
+                                <span class="label">Conteúdo</span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li class="d-lg-none dropdown-menu__header">
+                                    <a class="dropdown-menu__back-button" tabindex="0" role="button"><span class="icon material-symbols-rounded">chevron_left</span> Voltar</a>
+                                    <a class="mobile-toggle-close" tabindex="0" role="button"><span class="icon material-symbols-rounded">read_more</span></a>
+                                </li>
+                                <li class="dropdown-menu__title">
+                                    <span class="label">Módulo 3</span>
+                                    <span class="title">Modelos computacionais</span>
+                                </li>
+                                <li class="dropdown-menu__item">
+                                    <a class="dropdown-menu__item-link" tabindex="0" role="link" href="apresentacao.html"><strong>Apresentação do módulo</strong></a>
+                                </li>
+                                <li class="dropdown-menu__item">
+                                    <a class="dropdown-menu__item-link" tabindex="0" role="link" href="aula1/topico1.html"><strong>Aula 1: </strong>Modelos computacionais e Aprendizado de Máquina</a>
+                                </li>
+                                <li class="dropdown-menu__item">
+                                    <a class="dropdown-menu__item-link" tabindex="0" role="link" href="aula2/topico1.html"><strong>Aula 2: </strong>Aprendizado Supervisionad</a>
+                                </li>
+                                <li class="dropdown-menu__item">
+                                    <a class="dropdown-menu__item-link" tabindex="0" role="link" href="aula3/topico1.html"><strong>Aula 3: </strong>Regressão </a>
+                                </li>
+                                <li class="dropdown-menu__item">
+                                    <a class="dropdown-menu__item-link" tabindex="0" role="link" href="aula4/topico1.html"><strong>Aula 4: </strong>Aprendizado Não supervisionado</a>
+                                </li>
+                                <li class="dropdown-menu__item">
+                                    <a class="dropdown-menu__item-link" tabindex="0" role="link" href="atividade.html"><strong>Atividade</strong></a>
+                                </li>
+                                <li class="dropdown-menu__item">
+                                    <a class="dropdown-menu__item-link" tabindex="0" role="link" href="encerramento.html"><strong>Resumo do módulo</strong></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="divider">
+                    <hr>
+                </div>
+                <div class="sidebar__group">
+                    <div class="sidebar__group-item">
+                        <span class="text class">Aula 1</span>
+                    </div>
+                    <div class="sidebar__group-item">
+                        <div class="dropend">
+                            <button type="button" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside" data-bs-offset="00,30">
+                                <span class="icon material-symbols-rounded" aria-hidden="true"> format_list_bulleted</span>
+                                <span class="label">Tópicos</span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li class="d-lg-none dropdown-menu__header">
+                                    <a class="dropdown-menu__back-button" tabindex="0" role="button"><span class="icon material-symbols-rounded">chevron_left</span> Voltar</a>
+                                    <a class="mobile-toggle-close" tabindex="0" role="button"><span class="icon material-symbols-rounded">read_more</span></a>
+                                </li>
+                                <li class="dropdown-menu__title">
+                                    <span class="label">Aula 1</span>
+                                    <span class="title">Introdução: Modelos Matemáticos</span>
+                                </li>
+                                <li class="dropdown-menu__item">
+                                    <nav class="topic-list">
+                                        <a href="topico1.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico concluído" status="visited"> <span class="material-symbols-rounded"></span>Introdução</a>
+                                    </nav>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="divider">
+                    <hr>
+                </div>
+                <div class="sidebar__group extra">
+                    <div class="sidebar__group-item">
+                        <button type="button" class="" data-bs-toggle="modal" data-bs-target="#modal-bibliografiaMod1">
+                            <span class="icon material-symbols-rounded" aria-hidden="true"> menu_book</span>
+                            <span class="label">Bibliografia</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content">
+            <div id="page-title">
+                <div class="container">
+                    <div class="row align-items-center hstify-content-center justify-content-xxl-start ms-lg-5">
+                        <div class="col-12 col-md-10 col-lg-11">
+                            <h2 class="title">
+                                <span class="label">Módulo 3 | Aula 1</span>
+                                <br>
+                                Modelos computacionais e Aprendizado de Máquina
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="page-content" class="">
+                <!-- Inserir o conteúdo aqui -->
+                <section>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-md-10 col-lg-8 mb-5">
+                                <div class="heading__block">
+                                    <span class="small">Tópico 1</span>
+                                    <h3 class="heading__title">Introdução</h3>
+                                </div>
+
+                                <p>A modelagem computacional possibilita a criação de representações de sistemas e processos complexos, que podem ser implementadas e analisadas com o auxílio de recursos computacionais. Essas representações permitem compreender, gerenciar e prever o comportamento desses sistemas em diferentes contextos, abrangendo desde a formulação de políticas públicas até o desenvolvimento de sistemas autônomos. Nesse cenário, a inteligência artificial se destaca como um ramo da ciência da computação voltado à construção de modelos e algoritmos capazes de processar informações, identificar padrões e resolver problemas de forma adaptativa. </p>
+
+                                <p>Esses modelos computacionais tornam-se especialmente relevantes quando lidamos com grandes volumes de dados, cujas relações complexas não são facilmente identificáveis por métodos tradicionais. Nesse contexto, técnicas baseadas em dados, como o Aprendizado de Máquina, passam a desempenhar papel central na construção de modelos capazes de aprender padrões automaticamente.</p>
+
+                                <!-- Texto à esquerda com Imagem -->
+                                <div class="row justify-content-center d-lg-block">
+                                    <!-- Imagem -->
+                                    <div class="col-md-8 col-lg-6 float-lg-end ms-lg-4 px-0 order-1 order-lg-2">
+                                        <figure class="lightbox mb-3">
+                                            <img class="img-fluid mx-auto d-block mb-3" src="https://placehold.co/1280x720" alt="Imagem aleatória de exmplo" title="Fonte: unsplash.com">
+                                            <figcaption class="figure-caption">Imagem com tamanho 1280x720</figcaption>
+                                            <figcaption class="figure-caption fonte">Fonte: unsplash.com</figcaption>
+                                        </figure>
+                                    </div>
+                                
+                                    <!-- Texto -->
+                                    <div class="order-2 order-lg-1">
+                                        <p>O <strong>aprendizado de máquina</strong> é um subcampo da inteligência artificial que permite que computadores aprendam a partir de dados, reconhecendo padrões e melhorando seu desempenho conforme recebem mais informações. Já o <strong>aprendizado profundo</strong> é um subcampo do aprendizado de máquina que utiliza redes neurais, inspiradas no funcionamento do cérebro, compostas por várias camadas que ajudam o computador a entender informações de forma mais detalhada e complexa, possibilitando lidar com problemas difíceis e grandes volumes de dados.</p>
+                                    </div>
+                                </div>
+
+                               
+                            </div>
+                        </div>
+
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-md-10 col-lg-8 mb-5">
+
+                                 <p>Atualmente, uma grande quantidade de dados é gerada diariamente devido ao avanço tecnológico. Por esse motivo, algoritmos de aprendizado de máquina são cada vez mais utilizados para criar modelos a partir de dados e, com isso, extrair informações relevantes. Para gerar um modelo de aprendizado de máquina, um algoritmo utiliza um conjunto de regras em uma base de dados de treino a fim de encontrar uma equação que descreva a relação de tais dados. Por fim, o modelo é capaz de receber novos dados de entrada para prever uma saída. </p>
+
+                                <!-- Imagem -->
+                                <figure class="lightbox aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
+                                    <img class="img-fluid mx-auto d-block mb-3" src="../../media/modulo2/aula1-img3.png" alt="" title="Fonte: Elaborada pelo autor (2026)">
+                                    <figcaption class="figure-caption fonte">Fonte: Elaborada pelo autor (2026) </figcaption>
+                                </figure>
+
+                            </div>
+                        </div>
+
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-md-10 col-lg-8 mb-5">
+                                <p>Para verificar se o modelo consegue representar bem os dados, são utilizadas métricas de validação para avaliá-lo. Ao construir um modelo de aprendizado de máquina, não basta que ele funcione bem apenas para os dados utilizados no treinamento. Um aspecto central é sua capacidade de generalizar, isto é, de produzir boas previsões quando exposto a novos dados. Um modelo deve apresentar boa capacidade de generalização e, portanto, não deve sofrer de <strong>Underfitting</strong> nem de <strong>Overfitting</strong>. </p>
+                            </div>
+                        </div>
+
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-md-10 col-lg-8 mb-5">
+
+                                CARDS
+                                
+                            </div>
+                        </div>
+
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-md-10 col-lg-8 mb-5">
+                                <!-- Accordion -->
+                                <div class="accordion accordion-flush aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="800" id="accordionExample">
+                                    <div class="accordion-item">
+                                        <h5 class="accordion-header" id="heading1-item1">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1-item1" aria-expanded="true" aria-controls="collapse1-item1">Modelos preditivos</button>
+                                        </h5>
+                                        <div id="collapse1-item1" class="accordion-collapse collapse" aria-labelledby="heading1-item1" data-bs-parent="">
+                                            <div class="accordion-body">
+                                               
+                                                <p>Identificam padrões e relações em dados rotulados e usam essas informações para prever a ocorrência de eventos futuros ou estimar valores de um novo conjunto de amostras. Os algoritmos de aprendizado supervisionado são considerados preditivos, pois utilizam dados com saídas conhecidas para treinar um modelo. No processo de aprendizado supervisionado, temos as seguintes tarefas:</p>
+
+                                                    <!-- Lista Não-Ordenada -->
+                                                    <div class="list">
+                                                        <ul class="list-group">
+                                                            <li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200"><strong>Classificação:</strong> utilizada quando a variável de saída é discreta. Exemplo: prever a espécie da flor íris. </li>
+                                                            <li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200"><strong>Regressão:</strong> utilizada quando a variável de saída é contínua. Exemplo: prever o preço de uma casa com base em suas características.</li>
+                                                    
+                                                        </ul>
+                                                    </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                
+                                    <div class="accordion-item">
+                                        <h5 class="accordion-header" id="heading1-item2">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1-item2" aria-expanded="false" aria-controls="collapse1-item2">Modelos descritivos</button>
+                                        </h5>
+                                        <div id="collapse1-item2" class="accordion-collapse collapse" aria-labelledby="heading1-item2" data-bs-parent="">
+                                            <div class="accordion-body">
+                                                <p>Identificam padrões e relações nos dados sem depender de um elemento externo para orientar o aprendizado. São usados para entender melhor os dados disponíveis, ou seja, são comumente aplicados em análises exploratórias para descobrir novas informações a partir dos dados. Os algoritmos de aprendizado não supervisionado são considerados descritivos, pois utilizam dados não rotulados para treinar um modelo. Uma tarefa clássica do aprendizado não supervisionado é o:</p>
+
+                                                 <!-- Lista Não-Ordenada -->
+                                                    <div class="list">
+                                                        <ul class="list-group">
+                                                            <li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200"><strong>Agrupamento de dados:</strong> utilizado para agrupar dados em subconjuntos que compartilhem características semelhantes. Exemplo: segmentar clientes em diferentes grupos com base em seu comportamento de compra.</li>
+                                                        </ul>
+                                                    </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                   
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+            </div>
+
+            <!-- Navegação da aula -->
+            <section id="nav-topics">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-md-10 col-lg-8">
+                            <div class="page-nav d-flex justify-content-evenly">
+                                <a class="fio-button fio-button-primary" href="../../modulo2/apresentacao.html" rel="prev"><span class="material-symbols-rounded" aria-hidden="true">west</span> Apresentação do módulo</a>
+                                <a class="fio-button fio-button-primary" href="../aula2/topico1.html" rel="next">Aula 2 <span class="material-symbols-rounded" aria-hidden="true">east</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <footer>
+            <div class="container-fluid">
+                <div class="row justify-content-center align-items-center linha-de-marcas">
+                    <div class="col-11">
+                        <ul class="logos">
+                            <!-- <li class="realizacao"> -->
+                            <li>
+                                <img class="img-fluid logo1" src="../../media/logos/footer-cidacs.png" alt="Logo do Centro de Integração de Dados e Conhecimentos para Saúde" height="">
+                            </li>
+                            <li>
+                                <img class="img-fluid logo2" src="../../media/logos/footer-campus-virtual.png" alt="Logo do Campus Virtual Fiocruz" height="">
+                            </li>
+                            <li>
+                                <img class="img-fluid logo3" src="../../media/logos/footer-fiocruz.png" alt="Logo da Fiocruz" height="">
+                            </li>
+                            
+                            <li>
+                                <img class="img-fluid logo5" src="../../media/logos/footer-sus.png" alt="Logos SUS" height="">
+                            </li>
+                            <li>
+                                <img class="img-fluid logo6" src="../../media/logos/footer-ms.png" alt="Ministério da Saúde" height="">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row image-bottom">
+                    <div class="col-12">
+                        <img src="media/home/footer-bg.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!--  Bootstrap JS and Popper -->
+    <script src="../../source/bootstrap-5.1.3/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Sticky Sidebar -->
+    <script type="text/javascript" src="../../assets/js/ResizeSensor.js"></script>
+    <script type="text/javascript" src="../../assets/js/sticky-sidebar.js"></script>
+    <script type="text/javascript" src="../../assets/js/sidebar.js"></script>
+
+    <script type="text/javascript">
+        var sidebar = new StickySidebar('.sidebar', {
+            topSpacing: 0,
+            bottomSpacing: 0,
+            containerSelector: '.main',
+            innerWrapperSelector: '.sidebar__inner',
+            minWidth: 991,
+        });
+    </script>
+
+    <!-- Swiper -->
+    <script src="../../assets/js/swiper-bundle.min.js"></script>
+    <script src="../../assets/js/swiper-init.js"></script>
+
+    <script type="text/javascript" src="../../assets/js/scripts.js"></script>
+    <script type="text/javascript" src="../../assets/js/custom-anime.js"></script>
+    <script type="text/javascript" src="../../source/animate/aos/dist/aos.js"></script>
+
+    <!-- Timeline horizontal -->
+    <script src="../../assets/js/timeline-horizontal/util.js"></script>
+    <!-- util functions included in the CodyHouse framework -->
+    <script src="../../assets/js/timeline-horizontal/swipe-content.js"></script>
+    <!-- A Vanilla JavaScript plugin to detect touch interactions -->
+    <script src="../../assets/js/timeline-horizontal/main.js"></script>
+    <!-- Start the Timeline -->
+    <script>
+        document.getElementsByTagName('html')[0].className += ' js';
+    </script>
+
+</body>
+
+</html>
