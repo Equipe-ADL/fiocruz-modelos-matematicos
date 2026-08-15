@@ -181,7 +181,7 @@
                                     <a class="dropdown-menu__item-link" tabindex="0" role="link" href="../aula5/topico1.html"><strong>Aula 5: </strong>Modelos epidemiológicos clássicos</a>
                                 </li>
                                 <li class="dropdown-menu__item">
-                                    <a class="dropdown-menu__item-link" tabindex="0" role="link" href="../aula5/topico1.html"><strong>Aula 6: </strong>Modelos de dinâmica de epidemias</a>
+                                    <a class="dropdown-menu__item-link" tabindex="0" role="link" href="../aula6/topico1.html"><strong>Aula 6: </strong>Modelos de dinâmica de epidemias</a>
                                 </li>
                                 <li class="dropdown-menu__item">
                                     <a class="dropdown-menu__item-link" tabindex="0" role="link" href="atividade.html"><strong>Atividade</strong></a>
@@ -266,8 +266,188 @@
                                     <span class="small">Tópico 3</span>
                                     <h3 class="heading__title">O modelo de dinâmica epidemiológica</h3>
 
-                                
+                                    <p>Seguindo os passos da modelagem, precisamos identificar os ingredientes necessários para o modelo de uma curva epidêmica. Primeiro, a quantidade de interesse é o número de pessoas infectadas, <span class="color-primary-dark d-inline"><strong>I(t)</strong></span>. </p>
+
+                                    <p>O raciocínio é semelhante ao que fizemos para os modelos populacionais, só que aqui estamos estratificando a população e focando na população de infectados:</p>
                                 </div>
+                            </div>
+                        </div>
+
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-md-10 col-lg-8 mb-5">
+                                <div class="card ">
+                                    <div class="card-body py-5">
+                                        <p><span class="h6 color-primary-dark text-center d-block"><strong>população = suscetíveis + infectados + recuperados </strong></span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-md-10 col-lg-8 mb-5">
+                                <p>Em que:</p>
+
+                                <p><span class="color-primary-dark text-center"><strong>Suscetíveis</strong></span> = pessoas que não se infectaram ainda e estão em risco.</p>
+
+                                <p><span class="color-primary-dark text-center"><strong>Infectados</strong></span> = pessoas atualmente infectadas.</p>
+
+                                <p><span class="color-primary-dark text-center"><strong>Recuperados</strong></span> = pessoas que já tiveram a infecção e se recuperaram, podendo ser agora imunes ou não.</p>
+
+                                <p>Vamos, então, definir alguns pressupostos sobre os processos que regem a dinâmica dessa doença na população:</p>
+                            </div>
+                        </div>
+
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-md-10 col-lg-8 mb-5">
+                                <!-- Lista Não-Ordenada -->
+                                <div class="list">
+                                    <ul class="list-group">
+                                        <li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">[demografia] A população tem uma taxa de natalidade constante.</li>
+
+                                        <li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">[demografia] A população tem uma taxa de mortalidade constante.</li>
+
+                                        <li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">[transmissão vertical] Todos os nascidos são suscetíveis.</li>
+
+                                        <li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">[população em risco] Apenas pessoas suscetíveis podem se infectar.</li>
+
+                                        <li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">[tipo de transmissão direta] A infecção de novos casos ocorre pelo contato próximo entre infectados e suscetíveis.</li>
+
+                                        <li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">[duração da infecção] Pessoas infectadas se recuperam completamente da infecção depois de um tempo conhecido.</li>
+
+                                        <li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">[letalidade] A doença não leva a óbito.</li>
+
+                                        <li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">[imunidade] Pessoas recuperadas se tornam imunes e não se infectam mais.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-md-10 col-lg-8 mb-5">
+                                <p>Essa doença poderia ser sarampo, por exemplo, em um contexto favorável em que a letalidade seja reduzida. Quais outras doenças se encaixam nessas características?</p>
+
+                                <p>As premissas acima são a base para a construção do modelo. Seguindo o passo a passo, agora é uma boa hora para fazer um diagrama.</p>
+                            </div>
+                        </div>
+
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-md-10 col-lg-8 mb-5">
+                                <figure class="lightbox aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
+                                    <img class="img-fluid mx-auto d-block mb-3" src="../../media/modulo2/aula6-img2.jpg" alt="Diagrama de fluxo do modelo epidemiológico SIR. Três caixas retangulares coloridas estão alinhadas horizontalmente: a primeira, verde-escura, rotulada 'Suscetíveis S(t)'; a segunda, vermelha-escura, rotulada 'Infectados I(t)'; e a terceira, azul-escura, rotulada 'Removidos R(t)'. Setas pretas sólidas com círculos pretos no meio indicam o fluxo: de Suscetíveis para Infectados, e de Infectados para Removidos. Uma seta laranja ondulada aponta para a caixa de Suscetíveis, indicando entrada. Uma linha tracejada vermelha com ponta de seta sai de cima, entre Infectados e Suscetíveis, e aponta para o ponto na seta entre Suscetíveis e Infectados, ilustrando o impacto da infecção. Setas cor-de-rosa curtas apontam para baixo a partir do fundo de cada uma das três caixas, indicando saída. O fundo é branco, com um padrão abstrato de quadrados roxos e rosa na parte inferior." title="Fonte: Campus Virtual Fiocruz, a partir do autor (2026).">
+                                    <figcaption class="figure-caption fonte">Fonte: Campus Virtual Fiocruz, a partir do autor (2026).</figcaption>
+                                </figure>
+                            </div>
+                        </div>
+
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-md-10 col-lg-8 mb-5">
+                                <p>Esse diagrama ressalta nas caixas os compartimentos em que as pessoas estão alocadas, S, I e R. As setas <strong>pretas</strong>, por sua vez, indicam os fluxos entre os compartimentos, expressos como taxas (indivíduos por unidade de tempo). Isto é, quantos indivíduos por unidade de tempo (dia, mês ou ano), transitam de um compartimento para o outro. Esses fluxos têm nome:</p>
+
+                                <p>O fluxo de S para I é chamado de força de infecção.</p>
+
+                                <p>O fluxo de I para R é chamado de taxa de recuperação.</p>
+
+                                <p>A <span class="color-seta-laranja d-inline"><strong>seta laranja</strong></span> indica a entrada de novos indivíduos na população, por nascimento. Eles entram como suscetíveis, de acordo com as nossas premissas.</p>
+
+                                <p>As <span class="color-seta-rosa d-inline"><strong>setas cor-de-rosa</strong></span> indicam as saídas por óbito ou emigração.</p>
+
+                                <p>A <span class="color-seta-vermelha d-inline"><strong>seta vermelha</strong></span> indica que os infectados afetam a força de infecção. Isto é, quanto mais infectados, mais infecção ocorre.</p>
+
+                                <p>Ao longo do tempo, as pessoas irão entrar ou sair desses compartimentos conforme se infectem ou se recuperem. O balanço de entradas e saídas em cada compartimento pode ser agora especificado:</p>
+
+                                <p><span class="color-primary-dark text-center"><strong>S (t + 1) – S(t)</strong></span> = nascimentos – óbitos – novos infectados.</p>
+
+                                <p><span class="color-primary-dark text-center"><strong>I (t + 1) – I(t)</strong></span> = novos infectados - recuperados – óbitos.</p>
+
+                                <p><span class="color-primary-dark text-center"><strong>R (t + 1) – R(t)</strong></span> = recuperados – óbitos.</p>
+
+                                <p>Note que cada termo corresponde a uma seta no diagrama. Com esse esqueleto geral do modelo, precisamos, então, especificar cada um dos termos:</p>
+                            </div>
+                        </div>
+
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-md-10 col-lg-8 mb-5">
+                                <!-- Accordion -->
+                                <div class="accordion accordion-flush" id="accordion1-aula6">
+                                    <div class="accordion-item">
+                                        <span class="accordion-header" id="heading1-item1">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1-item1" aria-expanded="true" aria-controls="collapse1-item1">Nascimentos e óbitos</button>
+                                        </span>
+                                        <div id="collapse1-item1" class="accordion-collapse collapse" aria-labelledby="heading1-item1" data-bs-parent="">
+                                            <div class="accordion-body">
+                                                <p>Para a parte demográfica do modelo, vamos usar o que aprendemos na aula sobre o modelo populacional. A taxa de natalidade da população é <span class="color-primary-dark text-center"><strong>b</strong></span>, que é multiplicada pelo tamanho da população N e constitui uma entrada no compartimento S, assumindo que todos são suscetíveis ao nascer. A taxa de mortalidade é <span class="color-primary-dark text-center"><strong>m</strong></span>, sendo a mesma em cada compartimento, isto é, em todos os compartimentos pessoas têm a mesma chance de ir a óbito (nesse modelo).</p>
+
+                                                <p><span class="color-primary-dark text-center"><strong>S (t + 1) – S(t) = b N – novos infectados – m * S</strong></span></p>
+
+                                                <p><span class="color-primary-dark text-center"><strong>I (t + 1) – I(t) = novos infectados - recuperados – m * I</strong></span></p>
+
+                                                <p><span class="color-primary-dark text-center"><strong>R (t + 1) – R(t) = recuperados – m * R</strong></span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="accordion-item">
+                                        <span class="accordion-header" id="heading1-item2">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1-item2" aria-expanded="false" aria-controls="collapse1-item2">Novos infectados</button>
+                                        </span>
+                                        <div id="collapse1-item2" class="accordion-collapse collapse" aria-labelledby="heading1-item2" data-bs-parent="">
+                                            <div class="accordion-body">
+                                                <p>Vamos assumir que as pessoas <span class="color-primary-dark text-center"><strong>S</strong></span> se encontram com “c” pessoas por dia, em média (c = taxa de contato). A probabilidade de um desses contatos ser infectado é <span class="color-primary-dark text-center"><strong>I/N</strong></span>, proporção de infectados na população. Então, cada pessoa suscetível faz em média <span class="color-primary-dark text-center"><strong>cI/N</strong></span> contatos com infectados por dia. Vamos agora supor que a probabilidade de transmissão por contato é p. Então, cada pessoa suscetível tem probabilidade <span class="color-primary-dark text-center"><strong>pcI/N</strong></span> de se infectar, por dia. Esse termo é chamado de “força de infecção”, muitas vezes representado pela letra grega <em>lambda</em>.</p>
+
+                                                <p><span class="color-primary-dark text-center"><strong>S (t + 1) – S(t) = b N – p c I/N S – m * S</strong></span></p>
+
+                                                <p><span class="color-primary-dark text-center"><strong>I (t + 1) – I(t) = p c I/N S - recuperados – m * I</strong></span></p>
+
+                                                <p><span class="color-primary-dark text-center"><strong>R (t + 1) – R(t) = recuperados – m * R</strong></span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="accordion-item">
+                                        <span class="accordion-header" id="heading1-item3">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1-item3" aria-expanded="false" aria-controls="collapse1-item3">Recuperação</button>
+                                        </span>
+                                        <div id="collapse1-item3" class="accordion-collapse collapse" aria-labelledby="heading1-item3" data-bs-parent="">
+                                            <div class="accordion-body">
+                                                <p>Por fim, se as pessoas ficam um tempo fixo infectadas, d, então a taxa de recuperação por dia é 1/d.</p>
+
+                                                <p><span class="color-primary-dark text-center"><strong>S (t + 1) – S(t) = b N - p c I/N S - m * S</strong></span></p>
+
+                                                <p><span class="color-primary-dark text-center"><strong>I (t + 1) – I(t) = p c I/N S - (1/d) R - m * I</strong></span></p>
+
+                                                <p><span class="color-primary-dark text-center"><strong>R (t + 1) – R(t) = (1/d)*I - m * R</strong></span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-md-10 col-lg-8 mb-5">
+                                <p>Podemos ver que, quando a geração de novos casos (casos incidentes) supera a taxa de recuperação (e óbitos), a curva cresce; quando a incidência é menor do que a recuperação + óbitos, a curva desce. </p>
+
+                                <p>Pronto, esse é o modelo conhecido como <span class="color-primary-dark text-center"><strong>SIR</strong></span>, aqui escrito na forma de tempo discreto. A forma mais usual de escrever esse modelo é com equações diferenciais:</p>
+                            </div>
+                        </div>
+
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-md-10 col-lg-8 mb-5">
+                                <div class="card ">
+                                    <div class="card-body p-5">
+                                        <p><span class="h6 color-primary-dark text-center"><strong>dS/dt = b (S + I + R) – m * S – p c I/N S</p>
+
+                                        <p><span class="h6 color-primary-dark text-center"><strong>dI/dt = p c I/N S  - (1/d) R – m * I</p>
+
+                                        <p><span class="h6 color-primary-dark text-center"><strong>dR/dt = (1/d)*R – m * R</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-md-10 col-lg-8">
+                                <p>Esse modelo é a base de toda uma família de modelos em epidemiologia.  Construímos o modelo SIR, mas ele ainda é abstrato. Como usá-lo na prática? Como um gestor de saúde pode se beneficiar dessa ferramenta? Vamos ver isso agora a partir de um caso fictício.</p>
                             </div>
                         </div>
                     </div>
@@ -304,7 +484,7 @@
                             <li>
                                 <img class="img-fluid logo3" src="../../media/logos/footer-fiocruz.png" alt="Logo da Fiocruz" height="">
                             </li>
-                            
+
                             <li>
                                 <img class="img-fluid logo5" src="../../media/logos/footer-sus.png" alt="Logos SUS" height="">
                             </li>

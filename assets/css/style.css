@@ -445,3 +445,8 @@ section .page-nav .fio-button {
 	font-size: var(--fio-sys-typography-size-3);
 	padding:var(--fio-sys-size-margin-lg);
 }
+
+/* SETAS - MOD2 | AULA 6 */
+.color-seta-laranja {color:#f48356;}
+.color-seta-rosa {color:#a42983;}
+.color-seta-vermelha {color:#d1394b;}
