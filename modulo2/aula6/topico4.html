@@ -266,7 +266,227 @@
                                     <span class="small">Tópico 4</span>
                                     <h3 class="heading__title">Aplicação prática: o caso de Canto Feliz</h3>
 
+                                    <p>Vamos aplicar o modelo SIR em um típico problema em epidemiologia, por meio de um exemplo fictício:</p>
+
+                                    <p>Vamos supor que, no dia 1º de fevereiro de 2034, um caso de Tosse Convulsa (TC) em uma menina de 10 anos foi notificado no município Canto Feliz. O gestor da Secretaria de Saúde, Magno, imediatamente exige um relatório da equipe sobre essa doença, o qual é transcrito a seguir:</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-md-10 col-lg-8 mb-5">
+                                <!-- Box Cor -->
+                                <div class="box-cor aos-init aos-animate mb-5" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="600">
+                                    <div class="box-cor__base">
+                                        <div class="base-header">
+                                            <span class="h4">Tosse Convulsa (TC)</span>
+                                        </div>
+                                        <div class="base-body">
+                                            <p>Tosse convulsa é uma doença contagiosa e perigosa para crianças e adultos causada pela bactéria Gram-negativa <em>Bordetella quasipertussis</em>, prevenível por vacinação.</p>
+
+                                            <!-- Lista Não-Ordenada -->
+                                            <div class="list">
+                                                <ul class="list-group">
+                                                    <li class="list-group-item" list-style="default"><strong>Transmissão:</strong> a <em>B. quasipertussis</em> é transmitida pela inalação de gotas expulsas pela tosse de um doente. O período de transmissibilidade é dado pelo período de tosse produtiva.</li>
+
+                                                    <li class="list-group-item" list-style="default"><strong>Sintomas:</strong> após o contato com um indivíduo infectado, o indivíduo imediatamente entra na fase de expulsão de gotas (ou fase infecciosa), com espirros e tosse produtiva, que tem duração média de 4 dias. Durante essa fase, um contato com pessoa suscetível tem 20% de probabilidade de gerar transmissão. Após essa fase estabelece-se um tipo de tosse diferente, seca, convulsiva, contínua e dolorosa que dura em média 1 mês e pode ser seguida de vômitos. É essa fase de tosse horrível que deu origem ao nome da doença. Essa fase não contribui para a transmissão.</li>
+
+                                                    <li class="list-group-item" list-style="default"><strong>Imunidade:</strong> uma vez recuperada, a pessoa desenvolve imunidade duradoura.</li>
+
+                                                    <li class="list-group-item" list-style="default"><strong>Tratamento:</strong> o tratamento com antibióticos é extremamente eficaz, reduzindo o período da fase de expulsão de gotas para três dias e eliminando por completo a segunda fase de tosse seca.</li>
+
+                                                    <li class="list-group-item" list-style="default"><strong>Prevenção:</strong> a prevenção com vacina é uma medida eficaz, eliminando a probabilidade de infecção dado o contato com um indivíduo doente. Ou seja, se vacinado, é impossível adquirir a infecção. Entretanto, o efeito da vacina é perdido muito rapidamente com o tempo, sendo de 1 ano a duração média do período de imunidade por vacinação.</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-md-10 col-lg-8 mb-5">
+                                <p>Após ler com cuidado, Magno decide que nada precisa ser feito por enquanto, afinal a transmissibilidade é baixa e há outros problemas prementes na cidade. Contudo, três semanas depois, sua equipe produz um novo boletim: são 116 casos de TC. Alarmado, Magno solicita um gráfico da curva de incidência de casos: </p>
+                            </div>
+                        </div>
+
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-md-10 col-lg-8 mb-5">
+                                <figure class="lightbox aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
+                                    <img class="img-fluid mx-auto d-block mb-3 w-75" src="../../media/modulo2/aula6-img3.jpg" alt="Gráfico de dispersão mostrando o aumento de casos de tosse convulsa ao longo de 20 dias. O eixo horizontal representa os dias (de 0 a 20) e o eixo vertical representa o número de casos (de 0 a 15). Os dados são representados por pequenos círculos vazios que mostram uma tendência de crescimento exponencial, partindo de 0 casos no início até atingir 16 casos no 21º dia. A legenda no canto superior esquerdo indica 'casos de tosse convulsa'." title="Fonte: Elaborado pelo autor (2026).">
+                                    <figcaption class="figure-caption fonte">Fonte: Elaborado pelo autor (2026).</figcaption>
+                                </figure>
+                            </div>
+                        </div>
+
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-md-10 col-lg-8 mb-5">
+                                <p>Nesse momento, uma profissional da equipe de Magno, chamada Mirna, traz os resultados de um modelo matemático para ajudar a decidir sobre as estratégias a se aplicar. Para isso, ela tinha usado as informações do relatório, dados da curva de casos, e informações de um estudo anterior de comportamento em Canto Feliz que estimou uma taxa de contato média de 2 contatos por dia na cidade. O gráfico apresentado por Mirna mostra o modelo SIR ajustado aos dados: </p>
+                            </div>
+                        </div>
+
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-md-10 col-lg-8 mb-5">
+                                <figure class="lightbox aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
+                                    <img class="img-fluid mx-auto d-block mb-3 w-75" src="../../media/modulo2/aula6-img4.jpg" alt="Gráfico de dispersão com curva de ajuste mostrando o aumento do número de casos ao longo do tempo. O eixo horizontal representa os dias (de 0 a 20) e o eixo vertical representa I de t, indicando o número de casos (de 2 a 14). Os pontos de dados reais são representados por pequenos círculos pretos vazios e uma linha contínua verde mostra a curva de tendência ascendente que se ajusta aos dados. A legenda no canto superior esquerdo identifica os pontos como 'casos'.">
+                                    <figcaption class="figure-caption fonte">Fonte: Elaborado pelo autor (2026).</figcaption>
+                                </figure>
+                            </div>
+                        </div>
+
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-md-10 col-lg-8 mb-5">
+                                <p>Relembrando o modelo SIR: </p>
+                            </div>
+                        </div>
+
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-md-10 col-lg-8 mb-5">
+                                <figure class="lightbox aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
+                                    <img class="img-fluid mx-auto d-block mb-3" src="../../media/modulo2/aula6-img5.jpg" alt="Diagrama de fluxo do modelo epidemiológico SIR. Três caixas retangulares estão alinhadas horizontalmente: 'Suscetíveis S(t)' em verde-azulado, 'Infectados I(t)' em vermelho e 'Removidos R(t)' em azul. Setas pretas com um ponto no meio indicam a transição entre as caixas, da esquerda para a direita. Uma linha tracejada vermelha sai da parte superior de 'Infectados' e aponta para o ponto de transição entre 'Suscetíveis' e 'Infectados', representando o efeito da taxa de contágio." title="Fonte: Campus Virtual Fiocruz, a partir do autor (2026).">
+                                    <figcaption class="figure-caption fonte">Fonte: Campus Virtual Fiocruz, a partir do autor (2026).</figcaption>
+                                </figure>
+                            </div>
+                        </div>
+
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-md-10 col-lg-8 mb-5">
+                                <p>Esse modelo tem a seguinte expressão matemática, em formato de equações de diferença:</p>
+
+                                <p><span class="color-primary-dark text-center"><strong>S (t + 1) = S(t) + b (S + I + R) – p c I/N S – m * S</strong></span></p>
+
+                                <p><span class="color-primary-dark text-center"><strong>I (t + 1) = I(t) + p c I/N S - (1/d) I – m * I</strong></span></p>
+
+                                <p><span class="color-primary-dark text-center"><strong>R (t + 1) = R(t) + (1/d)*I – m * R</strong></span></p>
+
+                                <p>Mirna utilizou os parâmetros a seguir, que, com base no enunciado, são:</p>
+                            </div>
+                        </div>
+
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-md-10 col-lg-8 mb-5">
+                                <!-- Lista Não-Ordenada -->
+                                <div class="list">
+                                    <ul class="list-group">
+                                        <li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">Probabilidade de transmissão (p) = 0,2 </li>
+
+                                        <li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" data-aos-delay="100">Taxa de contato (c) = 2 por dia</li>
+
+                                        <li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" data-aos-delay="200">Duração da infecção (d) = 4 dias</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-md-10 col-lg-8 mb-5">
+                                <p>Para simplificar, vamos assumir que natalidade e mortalidade são valores muito baixos durante a epidemia, isto é, b = m = 0.</p>
+
+                                <p>Logo, o modelo SIR parametrizado para a doença é:</p>
+
+                                <p><span class="color-primary-dark text-center"><strong>S (t + 1) = S(t) – 0,2 x 2 x I/N S </strong></span></p>
+
+                                <p><span class="color-primary-dark text-center"><strong>I (t + 1) = I(t) + 0,2 x 2 x I/N S – 0,25 I</strong></span></p>
+
+                                <p><span class="color-primary-dark text-center"><strong>R (t + 1) = R(t) + 0,25 I </strong></span></p>
+
+                                <p>Agora, o próximo passo de Mirna foi atribuir valores para as condições iniciais, ou seja, como estava a população no dia inicial da epidemia, quando havia 1 caso e todos os demais eram suscetíveis.</p>
+
+                                <p>S(0) = 16124</p>
+
+                                <p>I(0) = 1</p>
+
+                                <p>R(0) = 0</p>
+                            </div>
+                        </div>
+
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-md-10 col-lg-8 mb-5">
+                                <!-- FAÇA VOCÊ MESMO -->
+                                <div class="faca-voce-mesmo aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
+                                    <div class="olho-de-texto my-5">
+                                        <div class="heading__block">
+                                            <h5 class="heading__title">Faça você mesmo!</h5>
+                                        </div>
+                                        <p>Para estimar o crescimento da curva de casos com esse modelo, temos que iterá-lo, isto é, usar os dados do dia 0 para calcular como estará a população no dia 1, e assim por diante. <a href='' target='_blank' rel='noopener noreferrer'>O script mostra como calcular usando o R, e reproduzir a figura apresentada por Mirna</a>. </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-md-10 col-lg-8 mb-5">
+                                <p>O modelo calibrado por Mirna pode ser utilizado para vários fins:</p>
+                            </div>
+                        </div>
+
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-md-10 col-lg-8 mb-5">
+                                <!-- Lista Não-Ordenada -->
+                                <div class="list">
+                                    <ul class="list-group">
+                                        <li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">Assumindo que os parâmetros não mudem com o tempo, pode-se resolver o modelo por um período maior para identificar quando a epidemia alcançará o pico e eventualmente irá terminar, caso nenhuma intervenção seja feita. A figura mostra, em roxo, a curva epidêmica, com pico na semana 60.<br><br>
+                                            <figure class="lightbox aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
+                                                <img class="img-fluid mx-auto d-block mb-3 w-75" src="../../media/modulo2/aula6-img6.jpg" alt="" title="Fonte: Elaborada pelo autor (2026).">
+                                                <figcaption class="figure-caption fonte">Fonte: Elaborada pelo autor (2026).</figcaption>
+                                            </figure>
+                                        </li>
+
+                                        <li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">O modelo permite identificar quantas pessoas deverão se infectar, se nada for feito. Esse quantitativo corresponde à curva preta ®, de pessoas que se infectaram e se recuperaram. Foram 10.496, ou seja, 65% da população.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-md-10 col-lg-8 mb-5">
+                                <p>Por meio de simulações pode-se avaliar o impacto de algumas estratégias de controle, como redução da probabilidade de contágio por meio do uso de máscaras. Percebe-se que uma pequena redução nessa probabilidade tem grande efeito no achatamento da curva epidêmica.</p>
+                            </div>
+                        </div>
+
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-md-10 col-lg-8 mb-5">
+                                <figure class="lightbox aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
+                                    <img class="img-fluid mx-auto d-block mb-3 w-75" src="../../media/modulo2/aula6-img7.jpg" alt="" title="Fonte: Elaborada pelo autor (2026).">
+                                    <figcaption class="figure-caption fonte">Fonte: Elaborada pelo autor (2026).</figcaption>
+                                </figure>
+                            </div>
+                        </div>
+
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-md-10 col-lg-8 mb-5">
+                                <p>Da mesma forma, o modelo pode ser modificado para incluir vacinas, quarentenas e outras intervenções.</p>
+
+                                <p>O caso de Canto Feliz ilustra como modelos matemáticos podem apoiar a tomada de decisão em Saúde Pública. Com dados relativamente simples, como taxa de contato, probabilidade de transmissão e duração da infecção, foi possível projetar o curso da epidemia e avaliar o impacto de intervenções. Essa é a essência da modelagem epidemiológica: transformar incerteza em informação útil para a ação.</p>
+                            </div>
+                        </div>
+
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-md-10 col-lg-8 mb-5">
+                                <!-- Saiba Mais - Dropdown -->
+                                <div class="saiba-mais pb-5">
+                                    <div class="row aos-init aos-animate" data-aos="fade-left" data-aos-easing="ease-out" data-aos-duration="600">
+                                        <div class="col-12 d-flex justify-content-center">
+                                            <button class="saiba-mais fio-button button-md fio-button-secondary collapsed" type="collapsed" data-bs-toggle="collapse" data-bs-target="#saiba-mais1" aria-expanded="false" aria-controls="saiba-mais1"><span class="icone material-symbols-rounded" aria-hidden="true"></span> Você sabia?</button>
+                                        </div>
                                 
+                                        <div class="col-12">
+                                            <div class="mt-3 collapse" id="saiba-mais1">
+                                                <p>Para aprofundar os conteúdos vistos nesta aula, sugerimos os materiais complementares:</p>
+
+                                                <!-- Lista Não-Ordenada -->
+                                                <div class="list">
+                                                    <ul class="list-group">
+                                                        <li class="list-group-item aos-init aos-animate" list-style="video" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200"><a href='https://youtu.be/rNFoMqI36g8?feature=shared' target='_blank' rel='noopener noreferrer'>Modelo SIR</a></li>
+
+                                                        <li class="list-group-item aos-init aos-animate" list-style="page" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200"><a href='https://stacks.cdc.gov/view/cdc/22756' target='_blank' rel='noopener noreferrer'>Modelo de Ross</a></li>
+
+                                                        <li class="list-group-item aos-init aos-animate" list-style="file" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200"><a href='https://repositorio.fgv.br/server/api/core/bitstreams/88db4764-7e11-4ff3-bb7c-d53aacac7fac/content' target='_blank' rel='noopener noreferrer'>História da modelagem</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -304,7 +524,7 @@
                             <li>
                                 <img class="img-fluid logo3" src="../../media/logos/footer-fiocruz.png" alt="Logo da Fiocruz" height="">
                             </li>
-                            
+
                             <li>
                                 <img class="img-fluid logo5" src="../../media/logos/footer-sus.png" alt="Logos SUS" height="">
                             </li>
