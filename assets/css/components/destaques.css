@@ -49,8 +49,9 @@
 	/* background-image: none; */
     background-repeat: no-repeat;
     background-position: 20% 0;
-    background-size: 250%;
+    background-size: 100%;
 	padding: var(--fio-sys-size-padding-xl);
+	padding-top: calc(var(--fio-sys-size-padding-xl) *2);
 	border-radius: var(--fio-sys-size-radius-sm);
 	border: none;
 }
