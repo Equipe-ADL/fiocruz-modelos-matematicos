@@ -261,22 +261,240 @@
                                     <h3 class="heading__title">Treinamento de modelos de agrupamento</h3>
                                 </div>
 
-                                <p></p>
+                                <p>No aprendizado não supervisionado, o treinamento do modelo ocorre diretamente sobre os dados disponíveis, não sendo necessária a divisão em conjuntos de treino e teste. O objetivo é identificar estruturas internas e padrões de similaridade entre os objetos. Uma das abordagens mais comuns para atingir esse objetivo é o agrupamento de dados, que busca organizar os objetos em grupos de acordo com sua similaridade.</p>
 
+                                <p>Existem diversos algoritmos para o agrupamento de dados, entre eles o <strong>k-means, o agrupamento hierárquico</strong> e o <em>Density-Based Spatial Clustering and Application with Noise</em> <atrong>(DBSCAN)</atrong>, cada um baseado em princípios distintos para a formação dos grupos.</p>
+
+                                <p><strong>k-means</strong>: é um algoritmo particional que divide os dados em um número k de grupos, também conhecido como clusters, buscando minimizar a variabilidade interna de cada grupo e maximizar a diferença entre eles. </p>
+
+                                <p>Após a definição do valor de k, o algoritmo seleciona centroides iniciais e, de forma iterativa, atribui cada objeto ao cluster mais próximo e recalcula os centroides até que os grupos se estabilizem.</p>
+
+                                <p>Na prática, o número de <em>clusters</em> k nem sempre é conhecido previamente. Por esse motivo, são utilizados métodos que auxiliam na escolha de um valor adequado de k, avaliando como a qualidade do agrupamento varia à medida que o número de grupos aumenta.</p>
+
+                                <p>Um dos métodos mais utilizados é o método do cotovelo, que analisa a variabilidade interna dos <em>clusters</em> para diferentes valores de k. A escolha ideal ocorre no ponto em que a redução dessa variabilidade passa a ser pouco significativa, formando visualmente um “cotovelo” no gráfico.</p>
                                
                             </div>
                         </div>
 
                         <div class="row justify-content-center">
                             <div class="col-12 col-md-10 col-lg-8 mb-5">
+
+                                <!-- EXEMPLO DE APLICAÇÃO -->
+                                <div class="code-container aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="600">
+                                    <span class="h5 pb-3 d-block">Exemplo de aplicação</span><br>
+
+                                    <span class="h6 pb-3 d-block">Perfis de pacientes com condições crônicas</span>
+
+                                    <p>Considere uma base de dados com pacientes portadores de doenças crônicas, contendo duas variáveis: número de consultas na atenção básica nos últimos 12 meses (eixo X) e número de internações no mesmo período (eixo Y). O objetivo é identificar perfis de utilização dos serviços para direcionar ações de cuidado.</p>
+
+                                    <p>Para determinar o número ideal de <em>clusters</em>, aplicamos o método do cotovelo. No gráfico, observamos que a redução da inércia diminui significativamente até k=3, formando um "cotovelo" nesse ponto.</p>
+
+                                    <p>Após executar o k-means com k=3, os pacientes são agrupados em três perfis: pacientes bem acompanhados (alta frequência de consultas e poucas internações), pacientes em risco (baixa frequência de consultas e muitas internações) e pacientes estáveis (baixa frequência de consultas e poucas internações). Essa segmentação permite priorizar a busca ativa de pacientes em risco e fortalecer o vínculo com a equipe de saúde.</p>
+
+
+                                        <!-- Imagem -->
+                                        <figure class="lightbox aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
+                                            <img class="img-fluid mx-auto d-block mb-3" src="../../media/modulo3/aula4-img1.png" alt="" title="">
+                                        </figure>
+                                </div>
                              
-                                
                             </div>
                         </div>
 
                          <div class="row justify-content-center">
                              <div class="col-12 col-md-10 col-lg-8 mb-5">
-                               
+                                <p><strong>Agrupamento hierárquico:</strong> o agrupamento hierárquico gera uma sequência de partições aninhadas, a partir de uma matriz de proximidade representando as relações de similaridade entre os objetos por meio de uma estrutura em forma de árvore, chamada dendrograma. Existem dois principais métodos de agrupamento hierárquico: aglomerativo e divisivo. </p>
+                             </div>
+                         </div>
+
+                         <div class="row justify-content-center">
+                             <div class="col-12 col-md-10 col-lg-8 mb-5">
+                                <!-- Accordion -->
+                                <div class="accordion accordion-flush aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="800" id="accordionExample">
+                                    <div class="accordion-item">
+                                        <h5 class="accordion-header" id="heading1-item1">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1-item1" aria-expanded="true" aria-controls="collapse1-item1">Aglomerativo</button>
+                                        </h5>
+                                        <div id="collapse1-item1" class="accordion-collapse collapse" aria-labelledby="heading1-item1" data-bs-parent="">
+                                            <div class="accordion-body">
+                                               
+                                                <p>Começa tratando cada objeto como um cluster individual e, em seguida, combina os <em>clusters</em> mais próximos iterativamente até que todos os pontos estejam no mesmo cluster ou até atingir um número desejado de <em>clusters</em>. O agrupamento dos objetos podem ser por: </p>
+
+                                                <!-- Lista Não-Ordenada -->
+                                                <div class="list">
+                                                    <ul class="list-group">
+                                                        <li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200"><strong>Single linkage:</strong> os <em>clusters</em> são aglomerados considerando-se a menor distância entre qualquer par de objetos.</li>
+                                                        <li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200"><strong>Complete linkage:</strong> os <em>clusters</em> são aglomerados considerando-se a maior distância entre qualquer par de objetos.</li>
+                                                        <li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200"><strong>Average linkage:</strong> os <em>clusters</em> são aglomerados com base na distância média entre todos os pares de objetos</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                
+                                    <div class="accordion-item">
+                                        <h5 class="accordion-header" id="heading1-item2">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1-item2" aria-expanded="false" aria-controls="collapse1-item2">Divisivo</button>
+                                        </h5>
+                                        <div id="collapse1-item2" class="accordion-collapse collapse" aria-labelledby="heading1-item2" data-bs-parent="">
+                                            <div class="accordion-body">
+                                                <p>Começa com todos os objetos em um único <em>cluster</em> e divide-o iterativamente em subgrupos até que cada objeto pertença a um único <em>cluster</em>. </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                             </div>
+                         </div>
+
+                         <div class="row justify-content-center">
+                             <div class="col-12 col-md-10 col-lg-8 mb-5">
+                                <p>O resultado do agrupamento hierárquico pode ser representado por um dendrograma, que ilustra graficamente a sequência de fusões ou divisões entre os objetos.</p>
+
+                                <p>O número final de <em>clusters</em> pode ser definido por meio de um corte no dendrograma. Esse corte é realizado observando-se os níveis de distância em que ocorre uma separação mais acentuada entre os grupos, indicando maior distinção entre os <em>clusters</em>.</p>
+                             </div>
+                         </div>
+
+                         <div class="row justify-content-center">
+                             <div class="col-12 col-md-10 col-lg-8 mb-5">
+
+                                 <!-- EXEMPLO DE APLICAÇÃO -->
+                                <div class="code-container aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="600">
+                                    <span class="h5 pb-3 d-block">Exemplo de aplicação</span><br>
+
+                                    <span class="h6 pb-3 d-block">Perfis de pacientes com condições crônicas</span>
+
+                                    <p>Utilizando os mesmos dados de pacientes, aplicamos o agrupamento hierárquico aglomerativo com o método <em>average linkage</em>. O dendrograma resultante mostra a sequência de fusões entre os pacientes com base na similaridade de seus padrões de utilização.</p>
+
+                                    <p>Ao realizar um corte horizontal no dendrograma em um nível de distância com maior separação entre as ramificações, identificamos três grupos principais: pacientes bem acompanhados, em risco e estáveis.</p>
+
+                                    <p>A análise do dendrograma permite identificar subgrupos clinicamente relevantes. Entre os pacientes em risco, por exemplo, é possível distinguir aqueles com internações frequentes por descompensação aguda daqueles com internações prolongadas por complicações crônicas. Essa granularidade auxilia a equipe de saúde a elaborar planos de cuidado individualizados.</p>
+
+
+                                        <!-- Imagem -->
+                                        <figure class="lightbox aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
+                                            <img class="img-fluid mx-auto d-block mb-3" src="../../media/modulo3/aula4-img2.png" alt="" title="">
+                                        </figure>
+                                </div>
+
+                             </div>
+                         </div>
+
+                         <div class="row justify-content-center">
+                             <div class="col-12 col-md-10 col-lg-8 mb-5">
+                                <p><strong>DBSCAN:</strong> é um algoritmo que forma grupos ao identificar áreas de alta densidade dos objetos, sendo eficaz para detectar clusters de formas arbitrárias e lidar com <a class="" tabindex="0" role="button" data-bs-toggle="popover" data-bs-trigger="focus" title="" data-bs-html='true' data-bs-content="<p>Ruído corresponde a observações que não são classificadas nem como pontos centrais nem como pontos de borda, por não possuírem densidade suficiente em sua vizinhança. Esses pontos são tratados como ruído.</p>" data-bs-original-title="Ruído">ruído</a> nos dados. O DBSCAN não precisa que o número de <em>clusters</em> seja especificado previamente, pois ele funciona identificando áreas densas de pontos e separando-as das áreas esparsas (consideradas ruídos).</p>
+                             </div>
+                         </div>
+
+                         <div class="row justify-content-center">
+                             <div class="col-12 col-md-10 col-lg-8 mb-5">
+
+                                <p>O DBSCAN trabalha com pontos centrais, pontos de borda e ruído. Um objeto deve ter um número mínimo de vizinhos dentro de um raio definido para ser considerado um ponto central. Um ponto de borda, por sua vez, está dentro do raio de um ponto central, mas não possui vizinhos suficientes para ser classificado como tal. O ruído é composto por objetos que não pertencem a nenhum  <em>clusters</em>. Cada ponto central forma a base de um cluster, agregando os pontos de borda associados.</p>
+                                
+                                <p>O desempenho do DBSCAN depende da escolha adequada de seus parâmetros. O parâmetro eps define o raio de vizinhança utilizado para identificar regiões densas, enquanto minPts determina o número mínimo de objetos necessários para formar um ponto central.</p>
+                                
+                                <p>A escolha desses parâmetros influencia diretamente a formação dos  <em>clusters</em> e a identificação de ruídos.</p>
+
+                             </div>
+                         </div>
+
+                         <div class="row justify-content-center">
+                             <div class="col-12 col-md-10 col-lg-8 mb-5">
+
+                                 <!-- EXEMPLO DE APLICAÇÃO -->
+                                <div class="code-container aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="600">
+                                    <span class="h5 pb-3 d-block">Exemplo de aplicação</span><br>
+
+                                    <span class="h6 pb-3 d-block">Identificação de pacientes com padrões atípicos</span>
+
+                                    <p>Aplicando o DBSCAN aos dados de pacientes com os parâmetros eps=0.5 e minPts=4, o algoritmo identifica automaticamente regiões densas correspondentes aos perfis de utilização, sem necessidade de definir previamente o número de <em>clusters</em>.</p>
+
+                                    <p>O resultado revela três <em>clusters</em> principais (pacientes bem acompanhados, em risco e estáveis) e alguns pacientes classificados como ruído — casos atípicos que não se enquadram em nenhum perfil. Esses pacientes podem representar situações excepcionais, como internações por causas externas, diagnósticos recentes ou uso inadequado dos serviços de urgência. A identificação desses casos permite uma avaliação individualizada pela equipe de saúde.</p>
+
+                                    <p>A figura a seguir ilustra os pontos centrais (pacientes típicos de cada perfil), pontos de borda (pacientes na fronteira entre perfis) e ruídos (pacientes com padrões atípicos que merecem atenção especial).</p>
+
+
+                                        <!-- Imagem -->
+                                        <figure class="lightbox aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
+                                            <img class="img-fluid mx-auto d-block mb-3" src="../../media/modulo3/aula4-img3.png" alt="" title="">
+                                        </figure>
+
+
+                                       <!-- Tabela -->
+                                        <div class="table-responsive aos-init aos-animate"
+                                            data-aos="fade-up"
+                                            data-aos-easing="ease-out"
+                                            data-aos-duration="600">
+
+                                            <table class="table table-bordered">
+
+
+                                                <thead>
+                                                    <tr>
+                                                        <th class="text-center" colspan="4">Tabela Comparativa dos Algoritmos de Agrupamento</th>
+                                                    </tr>
+                                                    <tr class="text-center">
+                                                        <th>Critério</th>
+                                                        <th>K-means</th>
+                                                        <th>Hierárquico</th>
+                                                        <th>DBSCAN</th>
+                                                    </tr>
+                                                </thead>
+
+                                                <tbody>
+                                                    <tr class="text-center">
+                                                        <td><strong>Necessita definir nº de <em>clusters</em>?</strong></td>
+                                                        <td>Sim</td>
+                                                        <td>Não<br>(corte no dendrograma)</td>
+                                                        <td>Não</td>
+                                                    </tr>
+
+                                                    <tr class="text-center">
+                                                        <td><strong>Formato dos <em>clusters</em></strong></td>
+                                                        <td>Esféricos</td>
+                                                        <td>Qualquer formato</td>
+                                                        <td>Qualquer formato</td>
+                                                    </tr>
+
+                                                    <tr class="text-center">
+                                                        <td><strong>Sensibilidade a outliers</strong></td>
+                                                        <td>Alta</td>
+                                                        <td>Média</td>
+                                                        <td>Baixa<br>(detecta como ruído)</td>
+                                                    </tr>
+
+                                                    <tr class="text-center">
+                                                        <td><strong>Complexidade computacional</strong></td>
+                                                        <td>Baixa</td>
+                                                        <td>Alta</td>
+                                                        <td>Média</td>
+                                                    </tr>
+
+                                                    <tr class="text-center">
+                                                        <td><strong>Parâmetros principais</strong></td>
+                                                        <td>(nº de <em>clusters</em>)</td>
+                                                        <td>Método de ligação</td>
+                                                        <td>eps, minPts</td>
+                                                    </tr>
+
+                                                    <tr class="text-center">
+                                                        <td><strong>Detecta casos atípicos?</strong></td>
+                                                        <td>Não</td>
+                                                        <td>Não</td>
+                                                        <td>Sim</td>
+                                                    </tr>
+
+                                                    <tr class="text-center">
+                                                        <td><strong>Aplicação em saúde</strong></td>
+                                                        <td>Segmentação de<br>perfis de pacientes</td>
+                                                        <td>Análise de subgrupos<br>e hierarquias</td>
+                                                        <td>Detecção de pacientes<br>com padrões atípicos</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+
                              </div>
                          </div>
 

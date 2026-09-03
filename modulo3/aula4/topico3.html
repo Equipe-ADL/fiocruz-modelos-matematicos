@@ -261,7 +261,11 @@
                                     <h3 class="heading__title">Métricas de validação para agrupamento</h3>
                                 </div>
 
-                                <p></p>
+                                <p>Uma métrica de validação para agrupamento deve ser capaz de avaliar a qualidade da estrutura dos <em>clusters</em> gerados pelo modelo. Os dois principais tipos de critérios para validação são: internos e externos.  A validação interna avalia a qualidade dos <em>clusters</em>  com base apenas nas características dos próprios dados, medindo a coesão dentro dos <em>clusters</em>  e a separação entre eles, utilizando métricas como o índice de silhueta. A validação externa compara os <em>clusters</em>  gerados com rótulos conhecidos, se disponíveis, utilizando métricas como o <strong>índice Rand</strong> para verificar a correspondência com a classificação esperada.</p>
+
+                                <p>O índice de silhueta mede o quão semelhante um objeto é em relação ao seu próprio cluster quando comparado aos demais. Seus valores variam de -1 a 1.</p>
+                                
+                                <p>Valores próximos de 1 indicam que o objeto está bem associado ao seu grupo, enquanto valores próximos de 0 indicam sobreposição entre <em>clusters</em> . Valores negativos sugerem que o objeto pode ter sido alocado ao cluster inadequado.</p>
 
                                
                             </div>
@@ -269,8 +273,29 @@
 
                         <div class="row justify-content-center">
                             <div class="col-12 col-md-10 col-lg-8 mb-5">
-                                <!-- Accordion -->
-                                
+                              
+                                <!-- EXEMPLO DE APLICAÇÃO -->
+                                <div class="code-container aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="600">
+                                    <span class="h5 pb-3 d-block">Exemplo de aplicação</span><br>
+
+                                    <span class="h6 pb-3 d-block">Avaliando a qualidade do agrupamento de pacientes</span>
+
+                                    <p>Após aplicar o k-means com k=3 aos dados de pacientes, calculamos o índice de silhueta para avaliar a qualidade do agrupamento. O valor médio obtido foi 0,71, indicando boa separação entre os perfis.</p>
+
+                                    <p>Analisando o gráfico de silhueta por cluster, observamos que o grupo de pacientes bem acompanhados apresenta o maior índice médio (0,84), indicando alta coesão — esses pacientes compartilham padrões de utilização muito semelhantes. O cluster de pacientes estáveis possui alguns casos com valores próximos de zero, sugerindo sobreposição com os demais grupos. Isso ocorre porque pacientes estáveis podem estar em transição para outros perfis.</p>
+
+                                    <p>Pacientes com índice de silhueta negativo podem ter sido classificados no grupo inadequado. Esses casos merecem reavaliação clínica, uma vez que podem representar mudanças recentes no padrão de utilização ou necessidades de saúde não identificadas.</p>
+
+
+                                        <!-- Imagem -->
+                                        <figure class="lightbox aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
+                                            <img class="img-fluid mx-auto d-block mb-3" src="../../media/modulo3/aula4-img4.png" alt="" title="Fonte: Elaborado pelo autor (2026)">
+                                            <figcaption class="figure-caption fonte">Fonte: Elaborado pelo autor (2026).</figcaption>
+                                        </figure>
+
+                                       
+                                </div>
+
                             </div>
                         </div>
 
