@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="robots" content="noindex">
+    <meta name="author" content="Fiocruz, Campus Virtual">
+    <meta name="description" content="Curso Modelos Matemáticos e Computacionais aplicados à Pesquisa em Saúde">
+
+    <!-- Facebook Open Graph -->
+    <meta property="og:url" content="https://mooc.campusvirtual.fiocruz.br/rea/modelos-matematicos-e-computacionais-aplicados-a-pesquisa-em-saude">
+    <meta property="og:title" content="Campus Virtual Fiocruz | Curso Modelos Matemáticos e Computacionais aplicados à Pesquisa em Saúde">
+    <meta property="og:description" content="Curso Modelos Matemáticos e Computacionais aplicados à Pesquisa em Saúde">
+    <meta property="og:image" content="https://mooc.campusvirtual.fiocruz.br/rea/modelos-matematicos-e-computacionais-aplicados-a-pesquisa-em-saude/media/images/share/thumbcurso-1080x1080.png">
+    <meta property="og:image:width" content="1080">
+    <meta property="og:image:height" content="1080">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Campus Virtual Fiocruz | Curso Modelos Matemáticos e Computacionais aplicados à Pesquisa em Saúde">
+    <meta name="twitter:url" content="https://mooc.campusvirtual.fiocruz.br/rea/modelos-matematicos-e-computacionais-aplicados-a-pesquisa-em-saude">
+    <meta name="twitter:description" content="Campus Virtual Fiocruz | Curso Modelos Matemáticos e Computacionais aplicados à Pesquisa em Saúde">
+    <meta name="twitter:image:src" content="https://mooc.campusvirtual.fiocruz.br/rea/modelos-matematicos-e-computacionais-aplicados-a-pesquisa-em-saude/media/images/share/thumbcurso-1080x1080.png">
+
+    <!-- Favicons and Touch Icons -->
+    <link rel="apple-touch-icon" sizes="57x57" href="../../media/icons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../../media/icons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../../media/icons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../../media/icons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../../media/icons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../../media/icons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../../media/icons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../../media/icons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../../media/icons/apple-icon-180x180.png">
+
+    <link rel="icon" type="image/png" sizes="192x192" href="../../media/icons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../media/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../../media/icons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../media/icons/favicon-16x16.png">
+    <link rel="manifest" href="../media/icons/manifest.json">
+
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="../../media/icons/ms-icon-144x144.png">
+    <!-- <meta name="theme-color" content="#003066" > -->
+    <meta name="theme-color" content="#001833">
+
+    <title>Curso Modelos Matemáticos e Computacionais aplicados à Pesquisa em Saúde | Mod 3 | Aula 2</title>
+
+    <!-- Bootstrap CSS 5.1.3 -->
+    <link rel="stylesheet" href="../../source/bootstrap-5.1.3/css/bootstrap.min.css">
+
+    <!-- Project CSS -->
+    <link rel="stylesheet" href="../../assets/css/style.css">
+</head>
+
+<body>
+    <div id="links-acessibilidade">
+        <a href="#links-acessibilidade" accesskey="1" class="skip-link">Aperte TAB e escolha uma área da página</a>
+        <a href="#menu-global" accesskey="2" class="skip-link">Ir para o menu global de navegação</a>
+        <a href="#sidebar" accesskey="3" class="skip-link">Ir para o menu de navegação dos módulos</a>
+        <a href="#page-title" accesskey="4" class="skip-link">Ir para o conteúdo da página</a>
+        <a href="#nav-topics" accesskey="5" class="skip-link">Ir para o final da página</a>
+    </div>
+
+    <header id="menu-global" class="header">
+        <div class="mobile-toggle-open">
+            <a class="mobile-toggle__button" tabindex="0" role="button">
+                <span class="icon material-symbols-rounded">read_more</span>
+            </a>
+        </div>
+        <div class="brand">
+            <img class="img-fluid logo-black" src="../../media/logos/header-fiocruz-campus-virtual.png" alt="Campus Virtual Fiocruz">
+        </div>
+        <div class="title">
+            <h1>Modelos Matemáticos e Computacionais aplicados à Pesquisa em Saúde</h1>
+        </div>
+        <ul class="nav nav-pills">
+            <li class="nav-item"><a href="../../index.html" class="nav-link">Início</a></li>
+            <li class="nav-item"><a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#modal-creditos">Créditos</a></li>
+        </ul>
+    </header>
+    <div class="main">
+        <div id="sidebar" class="sidebar" role="navigation">
+            <div class="sidebar__inner" style="position: relative">
+                <div class="sidebar__group d-lg-none">
+                    <div class="sidebar__group-item">
+                        <div class="sidebar__header">
+                            <span>Curso</span>
+                            <a class="mobile-toggle-close" tabindex="0" role="button"><span class="icon material-symbols-rounded">read_more</span></a>
+                        </div>
+                    </div>
+                    <div class="sidebar__group-item">
+                        <div class="sidebar__title">
+                            <h1>Modelos Matemáticos e Computacionais aplicados à Pesquisa em Saúde</h1>
+                        </div>
+                    </div>
+                    <div class="sidebar__group-item">
+                        <ul class="nav">
+                            <li class="nav-item">
+                                <a href="../../index.html" class="nav-link" tabindex="0"><span class="icon material-symbols-rounded" aria-hidden="true">home</span>Início</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link" tabindex="0" data-bs-toggle="modal" data-bs-target="#modal-creditos"><span class="icon material-symbols-rounded" aria-hidden="true"> format_list_bulleted</span>Créditos</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="sidebar__group">
+                    <div class="sidebar__group-item">
+                        <div class="dropend">
+                            <button id="dropdown-modulos" type="button" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside" data-bs-offset="0,30">
+                                <span class="icon material-symbols-rounded" aria-hidden="true">grid_view</span>
+                                <span class="label">Módulos</span>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdown-modulos">
+                                <li class="d-lg-none dropdown-menu__header">
+                                    <a class="dropdown-menu__back-button" tabindex="0" role="button"><span class="icon material-symbols-rounded">chevron_left</span> Voltar</a>
+                                    <a class="mobile-toggle-close" tabindex="0" role="button"><span class="icon material-symbols-rounded">read_more</span></a>
+                                </li>
+                                <li class="dropdown-menu__item">
+                                    <a class="dropdown-menu__item-link" tabindex="0" role="link" href="../../modulo1/apresentacao.html"><strong>Módulo 1</strong><br>Introdução à Grandes Bases de Dados</a>
+                                </li>
+                                <li class="dropdown-menu__item">
+                                    <a class="dropdown-menu__item-link" tabindex="0" role="link" href="../../modulo2/apresentacao.html"><strong>Módulo 2</strong><br>Modelos Matemáticos</a>
+                                </li>
+                                <li class="dropdown-menu__item">
+                                    <a class="dropdown-menu__item-link" tabindex="0" role="link" href="../../modulo3/apresentacao.html"><strong>Módulo 3</strong><br>Modelos Computacionais</a>
+                                </li>
+                                <li class="dropdown-menu__item">
+                                    <a class="dropdown-menu__item-link" tabindex="0" role="link" href="../../modulo4/apresentacao.html"><strong>Módulo 4</strong><br>Consolidação dos Conceitos – Modelos Matemáticos e Computacionais</a>
+                                </li>
+                                <!-- <li class="dropdown-menu__item">
+                                    <span class="dropdown-menu__item-link"><strong>Módulo 3</strong><br >Modelos estatísticos <strong class="em-breve">(em breve)</strong></span>
+                                    <a class="dropdown-menu__item-link" tabindex="0" role="link" href="../modulo3/apresentacao.html"><strong>Módulo 3</strong><br >Modelos Computacionais</a>
+                                </li> -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="divider">
+                    <hr>
+                </div>
+                <div class="sidebar__group">
+                    <div class="sidebar__group-item">
+                        <span class="text module">Módulo <br class="d-none d-lg-block"><span>3</span></span>
+                    </div>
+                    <div class="sidebar__group-item">
+                        <div class="dropend">
+                            <button type="button" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside" data-bs-offset="0,30">
+                                <span class="icon material-symbols-rounded" aria-hidden="true">apps</span>
+                                <span class="label">Conteúdo</span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li class="d-lg-none dropdown-menu__header">
+                                    <a class="dropdown-menu__back-button" tabindex="0" role="button"><span class="icon material-symbols-rounded">chevron_left</span> Voltar</a>
+                                    <a class="mobile-toggle-close" tabindex="0" role="button"><span class="icon material-symbols-rounded">read_more</span></a>
+                                </li>
+                                <li class="dropdown-menu__title">
+                                    <span class="label">Módulo 3</span>
+                                    <span class="title">Modelos computacionais</span>
+                                </li>
+                                <li class="dropdown-menu__item">
+                                    <a class="dropdown-menu__item-link" tabindex="0" role="link" href="../apresentacao.html"><strong>Apresentação do módulo</strong></a>
+                                </li>
+                                <li class="dropdown-menu__item">
+                                    <a class="dropdown-menu__item-link" tabindex="0" role="link" href="aula1/topico1.html"><strong>Aula 1: </strong>Modelos Computacionais e Aprendizado de Máquina</a>
+                                </li>
+                                <li class="dropdown-menu__item">
+                                    <a class="dropdown-menu__item-link" tabindex="0" role="link" href="aula2/topico1.html"><strong>Aula 2: </strong>Aprendizado Supervisionado</a>
+                                </li>
+                                <li class="dropdown-menu__item">
+                                    <a class="dropdown-menu__item-link" tabindex="0" role="link" href="aula3/topico1.html"><strong>Aula 3: </strong>Regressão </a>
+                                </li>
+                                <li class="dropdown-menu__item">
+                                    <a class="dropdown-menu__item-link" tabindex="0" role="link" href="aula4/topico1.html"><strong>Aula 4: </strong>Aprendizado Não Supervisionado</a>
+                                </li>
+                                <li class="dropdown-menu__item">
+                                    <a class="dropdown-menu__item-link" tabindex="0" role="link" href="../atividade.html"><strong>Atividade</strong></a>
+                                </li>
+                                <li class="dropdown-menu__item">
+                                    <a class="dropdown-menu__item-link" tabindex="0" role="link" href="../encerramento.html"><strong>Resumo do módulo</strong></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="divider">
+                    <hr>
+                </div>
+                <div class="sidebar__group">
+                    <div class="sidebar__group-item">
+                        <span class="text class">Aula 2</span>
+                    </div>
+                    <div class="sidebar__group-item">
+                        <div class="dropend">
+                            <button type="button" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside" data-bs-offset="00,30">
+                                <span class="icon material-symbols-rounded" aria-hidden="true"> format_list_bulleted</span>
+                                <span class="label">Tópicos</span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li class="d-lg-none dropdown-menu__header">
+                                    <a class="dropdown-menu__back-button" tabindex="0" role="button"><span class="icon material-symbols-rounded">chevron_left</span> Voltar</a>
+                                    <a class="mobile-toggle-close" tabindex="0" role="button"><span class="icon material-symbols-rounded">read_more</span></a>
+                                </li>
+                                <li class="dropdown-menu__title">
+                                    <span class="label">Aula 2</span>
+                                    <span class="title">Aprendizado Supervisionado</span>
+                                </li>
+                                <li class="dropdown-menu__item">
+                                    <nav class="topic-list">
+                                        <a href="topico1.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico concluído" status="visited"> <span class="material-symbols-rounded"></span>Introdução</a>
+                                        <a href="topico1.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico concluído" status="visited"> <span class="material-symbols-rounded"></span>Divisão dos Dados</a>
+                                        <a href="topico1.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico concluído" status="visited"> <span class="material-symbols-rounded"></span>Treinamento de modelos de classificação</a>
+                                        <a href="topico1.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico concluído" status="visited"> <span class="material-symbols-rounded"></span>Avaliação dos modelos de classificação</a>
+                                        <a href="topico1.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico não concluído"> <span class="material-symbols-rounded"></span>Predição com novos dados</a>
+                                    </nav>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="divider">
+                    <hr>
+                </div>
+                <div class="sidebar__group extra">
+                    <div class="sidebar__group-item">
+                        <button type="button" class="" data-bs-toggle="modal" data-bs-target="#modal-bibliografiaMod1">
+                            <span class="icon material-symbols-rounded" aria-hidden="true"> menu_book</span>
+                            <span class="label">Bibliografia</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content">
+            <div id="page-title">
+                <div class="container">
+                    <div class="row align-items-center hstify-content-center justify-content-xxl-start ms-lg-5">
+                        <div class="col-12 col-md-10 col-lg-11">
+                            <h2 class="title">
+                                <span class="label">Módulo 3 | Aula 2</span>
+                                <br>
+                                Aprendizado Supervisionado
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="page-content" class="">
+                <!-- Inserir o conteúdo aqui -->
+                <section>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-md-10 col-lg-8 mb-5">
+                                <div class="heading__block">
+                                    <span class="small">Tópico 4</span>
+                                    <h3 class="heading__title">Avaliação dos modelos de classificação</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-md-10 col-lg-8 mb-5">
+                                <p>Após o treinamento é preciso avaliar o modelo, ou seja, determinar se ele está realizando previsões generalizáveis. Existem várias métricas e técnicas de validação para modelos de classificação. De modo geral, nessa etapa são utilizados o <a class="" tabindex="0" role="button" data-bs-toggle="popover" data-bs-trigger="focus" title="" data-bs-html='true' data-bs-content="<p>Rótulo é a identificação que indica a qual classe um dado pertence. Se estamos, por exemplo, classificando e-mails como “spam” ou “não spam”, esses nomes são os rótulos.</p>" data-bs-original-title="Rótulo">rótulo</a> original da base de teste e o rótulo predito.</p>
+                                <p>Quando estamos lidando com um problema de duas classes, ou seja, o rótulo apresenta apenas dois valores possíveis, verdadeiro e falso, podemos utilizar a matriz de confusão, que considera os valores preditos da base de teste como verdadeiros positivos (<span class="color-primary-dark"><strong>true positive -TP</strong></span>), verdadeiros negativos (<span class="color-primary-dark"><strong>true negative-TN</strong></span>), falsos positivos (<span class="color-primary-dark"><strong>false positive-FP</strong></span>) e falsos negativos (<span class="color-primary-dark"><strong>false negative-FN</strong></span>). Para isso, é considerado o rótulo real da base de teste; os verdadeiros positivos e os verdadeiros negativos são aqueles objetos que o modelo conseguiu predizer corretamente. No entanto, os falsos positivos e os falsos negativos são os que não foram alocados corretamente em suas classes.</p>
+                            </div>
+                        </div>
+
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-md-10 col-lg-8 mb-5">
+                                <!-- Tabela -->
+                                <div class="table-responsive aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
+                                    <table class="table table-bordered">
+                                        <tr>
+                                            <td colspan="2"></td>
+                                            <th colspan="2" class="text-center">Valores Preditos</th>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2"></td>
+                                            <td>classe SIM</td>
+                                            <td>classe NAO</td>
+                                        </tr>
+                                        <tr>
+                                            <th rowspan="2" class="align-content-center">Valores<br>reais</th>
+                                            <td>classe SIM</td>
+                                            <td class="background-primary-light">TP</td>
+                                            <td class="background-secondary-light">FN</td>
+                                        </tr>
+                                        <tr>
+                                            <td>classe NAO</td>
+                                            <td class="background-secondary-light">FP</td>
+                                            <td class="background-primary-light">TN</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-md-10 col-lg-8 mb-5">
+                                <p>Além da matriz de confusão, vamos apresentar outras ferramentas de avaliação: acurácia, precisão, revocação (Recall) e F1-score.</p>
+                            </div>
+                        </div>
+
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-md-10 col-lg-8 mb-5">
+                                <div class="accordion accordion-flush" id="accordionExample2">
+                                    <div class="accordion-item">
+                                        <span class="accordion-header" id="heading1-item1">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1-item1" aria-expanded="true" aria-controls="collapse1-item1">Acurácia</button>
+                                        </span>
+                                        <div id="collapse1-item1" class="accordion-collapse collapse" aria-labelledby="heading1-item1" data-bs-parent="">
+                                            <div class="accordion-body">
+                                                <p></p>
+                                                <p>Essa métrica considera o número de acertos dividido pelo total da base. É considerada a mais simples e recomenda-se utilizar em bases de dados com aproximadamente a mesma quantidade de objetos para cada classe, ou seja, base de dados balanceada.</p>
+                                                <div class="formula-matematica">
+                                                    <math display="block">
+                                                        <mrow>
+                                                            <mi>Acurácia</mi>
+                                                            <mo>=</mo>
+                                                            <mfrac>
+                                                                <mrow>
+                                                                    <mi>T</mi>
+                                                                    <mi>P</mi>
+                                                                    <mo>+</mo>
+                                                                    <mi>T</mi>
+                                                                    <mi>N</mi>
+                                                                </mrow>
+                                                                <mrow>
+                                                                    <mi>T</mi>
+                                                                    <mi>P</mi>
+                                                                    <mo>+</mo>
+                                                                    <mi>T</mi>
+                                                                    <mi>N</mi>
+                                                                    <mo>+</mo>
+                                                                    <mi>F</mi>
+                                                                    <mi>P</mi>
+                                                                    <mo>+</mo>
+                                                                    <mi>F</mi>
+                                                                    <mi>N</mi>
+                                                                </mrow>
+                                                            </mfrac>
+                                                        </mrow>
+                                                    </math>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="accordion-item">
+                                        <span class="accordion-header" id="heading1-item2">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1-item2" aria-expanded="false" aria-controls="collapse1-item2">Precisão</button>
+                                        </span>
+                                        <div id="collapse1-item2" class="accordion-collapse collapse" aria-labelledby="heading1-item2" data-bs-parent="">
+                                            <div class="accordion-body">
+                                                <p>É dada pelo número de objetos corretamente classificados como pertencentes à classe (positivos verdadeiros) dividido pelo total de objetos classificados como pertencentes à classe, sejam eles de fato pertencentes à classe ou não (verdadeiros positivos + falsos-positivos). Ao realizar detecção de spam, é melhor evitar que e-mails legítimos sejam marcados incorretamente como spam; com isso, a precisão é uma métrica indicada para validação do modelo.</p>
+                                                <div class="formula-matematica">
+                                                    <math display="block">
+                                                        <mrow>
+                                                            <mi>Precisão</mi>
+                                                            <mo>=</mo>
+                                                            <mfrac>
+                                                                <mrow>
+                                                                    <mi>T</mi>
+                                                                    <mi>P</mi>
+                                                                </mrow>
+                                                                <mrow>
+                                                                    <mi>T</mi>
+                                                                    <mi>P</mi>
+                                                                    <mo>+</mo>
+                                                                    <mi>F</mi>
+                                                                    <mi>P</mi>
+                                                                </mrow>
+                                                            </mfrac>
+                                                        </mrow>
+                                                    </math>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="accordion-item">
+                                        <span class="accordion-header" id="heading1-item3">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1-item3" aria-expanded="false" aria-controls="collapse1-item3">Recall</button>
+                                        </span>
+                                        <div id="collapse1-item3" class="accordion-collapse collapse" aria-labelledby="heading1-item3" data-bs-parent="">
+                                            <div class="accordion-body">
+                                                <p>Também conhecida como revocação ou sensibilidade, é o número de objetos corretamente classificados como pertencentes à classe dividido pelo total de exemplos que realmente pertencem à classe (verdadeiros positivos + falsos-negativos). Exemplo de uso: diagnóstico médico, quando é fundamental detectar todas as ocorrências de uma doença, mesmo que alguns falsos-positivos apareçam.</p>
+                                                <div class="formula-matematica">
+                                                    <math display="block">
+                                                        <mrow>
+                                                            <mi>Recall</mi>
+                                                            <mo>=</mo>
+                                                            <mfrac>
+                                                                <mrow>
+                                                                    <mi>T</mi>
+                                                                    <mi>P</mi>
+                                                                </mrow>
+                                                                <mrow>
+                                                                    <mi>T</mi>
+                                                                    <mi>P</mi>
+                                                                    <mo>+</mo>
+                                                                    <mi>F</mi>
+                                                                    <mi>N</mi>
+                                                                </mrow>
+                                                            </mfrac>
+                                                        </mrow>
+                                                    </math>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="accordion-item">
+                                        <span class="accordion-header" id="heading1-item4">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1-item4" aria-expanded="false" aria-controls="collapse1-item4">F1-score</button>
+                                        </span>
+                                        <div id="collapse1-item4" class="accordion-collapse collapse" aria-labelledby="heading1-item4" data-bs-parent="">
+                                            <div class="accordion-body">
+                                                <p>É uma média harmônica entre precisão e recall, indicada para conjuntos de dados com classes desproporcionais. Em problemas de classificação de fraude financeira, tanto a precisão (evitar falsos positivos) quanto o recall (capturar todas as fraudes) são importantes.</p>
+                                                <div class="formula-matematica">
+                                                    <math display="block">
+                                                        <mrow>
+                                                            <mi>F</mi>
+                                                            <mn>1</mn>
+                                                            <mo>=</mo>
+                                                            <mfrac>
+                                                                <mrow>
+                                                                    <mn>2</mn>
+                                                                    <mo>*</mo>
+                                                                    <mi>Recall</mi>
+                                                                    <mo>*</mo>
+                                                                    <mi>Precisão</mi>
+                                                                </mrow>
+                                                                <mrow>
+                                                                    <mi>Recall</mi>
+                                                                    <mo>+</mo>
+                                                                    <mi>Precisão</mi>
+                                                                </mrow>
+                                                            </mfrac>
+                                                        </mrow>
+                                                    </math>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-md-10 col-lg-8 mb-5">
+                                <p>Com essas métricas também é possível validar conjunto de dados que apresentam no rótulo mais de duas classes. Para isso, calcula-se a proporção de previsões corretas ou calcula-se a métrica para cada classe individualmente e tira-se a média desses resultados, bem como ponderam-se os resultados com base no tamanho de cada classe, tratando todos os exemplos como um único conjunto.</p>
+                                <p>Considere o mesmo conjunto de pacientes classificados como “com risco” ou “sem risco” para determinada condição de saúde. Após o treinamento de diferentes modelos de classificação (como k-NN, Naive Bayes, árvore de decisão e SVM), cada modelo é aplicado a um conjunto de teste composto por pacientes cujas classes reais são conhecidas.</p>
+                                <p>Para cada paciente do conjunto de teste, o modelo gera uma predição (“com risco” ou “sem risco”), que pode então ser comparada ao rótulo real. A partir dessa comparação, é possível construir a matriz de confusão, identificando os verdadeiros positivos (pacientes corretamente classificados como “com risco”), verdadeiros negativos (pacientes corretamente classificados como “sem risco”), falsos-positivos (pacientes classificados como “com risco”, mas que não apresentam a condição) e falsos-negativos (pacientes classificados como “sem risco”, mas que apresentam a condição).</p>
+                            </div>
+                        </div>
+
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-md-10 col-lg-8 mb-5">
+                                <p class="h6 text-center mb-3">Matriz de Confusão - Exemplo de Diagnóstico</p>
+                                <figure class="lightbox aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
+                                    <img class="img-fluid mx-auto d-block mb-3" src="../../media/modulo3/aula2-img4.jpg" alt="" title="Fonte: Gerada por IA">
+                                    <figcaption class="figure-caption">VP = Verdadeiro Positivo (acerto); VN = Verdadeiro Negativo (acerto); FP = Falso Positivo (erro); FN = Falso Negativo (erro); Total: 200 pacientes</figcaption>
+                                    <figcaption class="figure-caption fonte">Fonte: Gerada por IA</figcaption>
+                                </figure>
+                            </div>
+                        </div>
+
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-md-10 col-lg-8 mb-5">
+                                <p>Com base nesses valores, as diferentes métricas de validação podem ser calculadas.</p>
+                                <!-- Lista Não-Ordenada -->
+                                <div class="list">
+                                    <ul class="list-group">
+                                        <li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">A acurácia indica a proporção total de pacientes corretamente classificados.</li>
+                                        <li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">A precisão mede a confiabilidade das predições positivas, ou seja, entre os pacientes classificados como “com risco”, quantos realmente pertencem a essa classe.</li>
+                                        <li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">O recall avalia a capacidade do modelo de identificar corretamente todos os pacientes “com risco”.</li>
+                                        <li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">F1-score combina precisão e recall, sendo especialmente útil quando há desequilíbrio entre as classes.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-md-10 col-lg-8 mb-5">
+                                <p class="text-center"><strong>Métricas de Avaliação para Classificação</strong></p>
+                                <!-- Tabela -->
+                                <div class="table-responsive aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
+                                    <table class="table table-bordered">
+                                        <thead>
+                                            <tr>
+                                                <th class="text-center">Métrica</th>
+                                                <th class="text-center">Fórmula</th>
+                                                <th class="text-center">Cálculo</th>
+                                                <th class="text-center">Valor</th>
+                                                <th class="text-center">Significado</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="col-metric">Acurácia</td>
+                                                <td class="col-formula">(VP+VN)/Total</td>
+                                                <td>(85+90)/200</td>
+                                                <td class="color-primary-medium">87,5%</td>
+                                                <td class="col-meaning">Proporção de<br>acertos totais</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="col-metric">Precisão</td>
+                                                <td class="col-formula">VP/(VP+FP)</td>
+                                                <td>85/95</td>
+                                                <td class="color-primary-medium">89,5%</td>
+                                                <td class="col-meaning">Confiabilidade das<br>predições positivas</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="col-metric">Recall</td>
+                                                <td class="col-formula">VP/(VP+FN)</td>
+                                                <td>85/100</td>
+                                                <td class="color-primary-medium">85,0%</td>
+                                                <td class="col-meaning">Capacidade de encontrar<br>todos os positivos</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="col-metric">F1-Score</td>
+                                                <td class="col-formula">2×(P×R)/(P+R)</td>
+                                                <td>2×(0,895×0,850)/(1,745)</td>
+                                                <td class="color-primary-medium">87,2%</td>
+                                                <td class="col-meaning">Equilíbrio entre<br>precisão e recall</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <p class="small text-center">Baseado em: VP=85, VN=90, FP=10, FN=15 (200 pacientes)</p>
+                            </div>
+                        </div>
+
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-md-10 col-lg-8 mb-5">
+                                <p>Ao comparar os resultados obtidos por diferentes modelos, é possível observar que um mesmo conjunto de dados pode gerar desempenhos distintos dependendo do algoritmo utilizado. Alguns modelos podem apresentar alta acurácia, mas baixo recall, indicando dificuldade em identificar todos os pacientes em risco. Outros podem priorizar o recall, ao custo de um maior número de falsos positivos.</p>
+                            </div>
+                        </div>
+
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-md-10 col-lg-8 mb-5">
+                                <p class="h6 text-center mb-3">Comparação de Desempenho entre Modelos de Classificação</p>
+                                <figure class="lightbox aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
+                                    <img class="img-fluid mx-auto d-block mb-3" src="../../media/modulo3/aula2-img5.jpg" alt="" title="Fonte: Gerada por IA">
+                                    <!-- <figcaption class="figure-caption">Imagem com tamanho 1280x720</figcaption> -->
+                                    <figcaption class="figure-caption fonte">Fonte: Gerada por IA</figcaption>
+                                </figure>
+                            </div>
+                        </div>
+
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-md-10 col-lg-8 mb-5">
+                                <!-- Saiba Mais - Dropdown -->
+                                <div class="saiba-mais pb-5">
+                                    <div class="row aos-init aos-animate" data-aos="fade-left" data-aos-easing="ease-out" data-aos-duration="600">
+                                        <div class="col-12 d-flex justify-content-center">
+                                            <button class="saiba-mais fio-button button-md fio-button-secondary collapsed" type="collapsed" data-bs-toggle="collapse" data-bs-target="#saiba-mais1" aria-expanded="false" aria-controls="saiba-mais1"><span class="icone material-symbols-rounded" aria-hidden="true"></span> Você sabia?</button>
+                                        </div>
+
+                                        <div class="col-12">
+                                            <div class="mt-3 collapse" id="saiba-mais1">
+                                                <p>Valores muito elevados para todas as métricas, especialmente quando próximos de 1, devem ser interpretados com cautela, porque podem indicar que o modelo se ajustou excessivamente aos dados de treinamento (overfitting). Em problemas reais de saúde, é fundamental buscar equilíbrio entre as métricas, considerando o impacto prático de falsos-positivos e falsos-negativos no contexto da tomada de decisão.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-md-10 col-lg-8 mb-5">
+                                <p>Dessa forma, a avaliação dos modelos não se resume a identificar o melhor desempenho numérico, mas envolve compreender como cada métrica reflete o comportamento do modelo diante do problema analisado.</p>
+                            </div>
+                        </div>
+
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-md-10 col-lg-8 mb-5">
+                                <!-- Box de Dica -->
+                                <div class="box" data-box="Dica">
+                                    <div class="card card--out">
+                                        <div class="card-header">
+                                            <span class="icone material-symbols-rounded" aria-hidden="true"></span>
+                                            <span class="label">Dica</span>
+                                        </div>
+                                        <div class="card-body">
+                                            <p>Se quiser aprofundar, acesse o script da aula 3 (item XX) e aplique as métricas de avaliação apresentadas nesta seção. O script permite testar os cálculos usando a base de dados Íris.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Navegação da aula -->
+            <section id="nav-topics">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-md-10 col-lg-8">
+                            <div class="page-nav d-flex justify-content-evenly">
+                                <a class="fio-button fio-button-primary" href="../aula2/topico3.html" rel="prev"><span class="material-symbols-rounded" aria-hidden="true">west</span> Tópico anterior</a>
+                                <a class="fio-button fio-button-primary" href="../aula2/topico5.html" rel="next">Próximo tópico <span class="material-symbols-rounded" aria-hidden="true">east</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <footer>
+            <div class="container-fluid">
+                <div class="row justify-content-center align-items-center linha-de-marcas">
+                    <div class="col-11">
+                        <ul class="logos">
+                            <!-- <li class="realizacao"> -->
+                            <li>
+                                <img class="img-fluid logo1" src="../../media/logos/footer-cidacs.png" alt="Logo do Centro de Integração de Dados e Conhecimentos para Saúde" height="">
+                            </li>
+                            <li>
+                                <img class="img-fluid logo2" src="../../media/logos/footer-campus-virtual.png" alt="Logo do Campus Virtual Fiocruz" height="">
+                            </li>
+                            <li>
+                                <img class="img-fluid logo3" src="../../media/logos/footer-fiocruz.png" alt="Logo da Fiocruz" height="">
+                            </li>
+
+                            <li>
+                                <img class="img-fluid logo5" src="../../media/logos/footer-sus.png" alt="Logos SUS" height="">
+                            </li>
+                            <li>
+                                <img class="img-fluid logo6" src="../../media/logos/footer-ms.png" alt="Ministério da Saúde" height="">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row image-bottom">
+                    <div class="col-12">
+                        <img src="media/home/footer-bg.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!--  Bootstrap JS and Popper -->
+    <script src="../../source/bootstrap-5.1.3/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Sticky Sidebar -->
+    <script type="text/javascript" src="../../assets/js/ResizeSensor.js"></script>
+    <script type="text/javascript" src="../../assets/js/sticky-sidebar.js"></script>
+    <script type="text/javascript" src="../../assets/js/sidebar.js"></script>
+
+    <script type="text/javascript">
+        var sidebar = new StickySidebar('.sidebar', {
+            topSpacing: 0,
+            bottomSpacing: 0,
+            containerSelector: '.main',
+            innerWrapperSelector: '.sidebar__inner',
+            minWidth: 991,
+        });
+    </script>
+
+    <!-- Swiper -->
+    <script src="../../assets/js/swiper-bundle.min.js"></script>
+    <script src="../../assets/js/swiper-init.js"></script>
+
+    <script type="text/javascript" src="../../assets/js/scripts.js"></script>
+    <script type="text/javascript" src="../../assets/js/custom-anime.js"></script>
+    <script type="text/javascript" src="../../source/animate/aos/dist/aos.js"></script>
+
+    <!-- Timeline horizontal -->
+    <script src="../../assets/js/timeline-horizontal/util.js"></script>
+    <!-- util functions included in the CodyHouse framework -->
+    <script src="../../assets/js/timeline-horizontal/swipe-content.js"></script>
+    <!-- A Vanilla JavaScript plugin to detect touch interactions -->
+    <script src="../../assets/js/timeline-horizontal/main.js"></script>
+    <!-- Start the Timeline -->
+    <script>
+        document.getElementsByTagName('html')[0].className += ' js';
+    </script>
+
+</body>
+
+</html>

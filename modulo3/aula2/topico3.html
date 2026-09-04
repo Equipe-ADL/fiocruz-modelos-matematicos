@@ -47,7 +47,7 @@
     <!-- <meta name="theme-color" content="#003066" > -->
     <meta name="theme-color" content="#001833">
 
-    <title>Curso Modelos Matemáticos e Computacionais aplicados à Pesquisa em Saúde | Mod 3 | Aula 1</title>
+    <title>Curso Modelos Matemáticos e Computacionais aplicados à Pesquisa em Saúde | Mod 3 | Aula 2</title>
 
     <!-- Bootstrap CSS 5.1.3 -->
     <link rel="stylesheet" href="../../source/bootstrap-5.1.3/css/bootstrap.min.css">
@@ -193,7 +193,7 @@
                 </div>
                 <div class="sidebar__group">
                     <div class="sidebar__group-item">
-                        <span class="text class">Aula 1</span>
+                        <span class="text class">Aula 2</span>
                     </div>
                     <div class="sidebar__group-item">
                         <div class="dropend">
@@ -207,12 +207,16 @@
                                     <a class="mobile-toggle-close" tabindex="0" role="button"><span class="icon material-symbols-rounded">read_more</span></a>
                                 </li>
                                 <li class="dropdown-menu__title">
-                                    <span class="label">Aula 1</span>
-                                    <span class="title">Introdução: Modelos Matemáticos</span>
+                                    <span class="label">Aula 2</span>
+                                    <span class="title">Aprendizado Supervisionado</span>
                                 </li>
                                 <li class="dropdown-menu__item">
                                     <nav class="topic-list">
                                         <a href="topico1.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico concluído" status="visited"> <span class="material-symbols-rounded"></span>Introdução</a>
+                                        <a href="topico1.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico concluído" status="visited"> <span class="material-symbols-rounded"></span>Divisão dos Dados</a>
+                                        <a href="topico1.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico concluído" status="visited"> <span class="material-symbols-rounded"></span>Treinamento de modelos de classificação</a>
+                                        <a href="topico1.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico não concluído"> <span class="material-symbols-rounded"></span>Avaliação dos modelos de classificação</a>
+                                        <a href="topico1.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico não concluído"> <span class="material-symbols-rounded"></span>Predição com novos dados</a>
                                     </nav>
                                 </li>
                             </ul>
@@ -239,9 +243,9 @@
                     <div class="row align-items-center hstify-content-center justify-content-xxl-start ms-lg-5">
                         <div class="col-12 col-md-10 col-lg-11">
                             <h2 class="title">
-                                <span class="label">Módulo 3 | Aula 1</span>
+                                <span class="label">Módulo 3 | Aula 2</span>
                                 <br>
-                                Modelos computacionais e Aprendizado de Máquina
+                                Aprendizado Supervisionado
                             </h2>
                         </div>
                     </div>
@@ -255,137 +259,165 @@
                         <div class="row justify-content-center">
                             <div class="col-12 col-md-10 col-lg-8 mb-5">
                                 <div class="heading__block">
-                                    <span class="small">Tópico 1</span>
-                                    <h3 class="heading__title">Introdução</h3>
+                                    <span class="small">Tópico 3</span>
+                                    <h3 class="heading__title">Treinamento de modelos de classificação</h3>
                                 </div>
-
-                                <p>A modelagem computacional possibilita a criação de representações de sistemas e processos complexos, que podem ser implementadas e analisadas com o auxílio de recursos computacionais. Essas representações permitem compreender, gerenciar e prever o comportamento desses sistemas em diferentes contextos, abrangendo desde a formulação de políticas públicas até o desenvolvimento de sistemas autônomos. Nesse cenário, a inteligência artificial se destaca como um ramo da ciência da computação voltado à construção de modelos e algoritmos capazes de processar informações, identificar padrões e resolver problemas de forma adaptativa. </p>
-
-                                <p>Esses modelos computacionais tornam-se especialmente relevantes quando lidamos com grandes volumes de dados, cujas relações complexas não são facilmente identificáveis por métodos tradicionais. Nesse contexto, técnicas baseadas em dados, como o Aprendizado de Máquina, passam a desempenhar papel central na construção de modelos capazes de aprender padrões automaticamente.</p>
-
-                                <!-- Texto à esquerda com Imagem -->
-                                <div class="row justify-content-center d-lg-block">
-                                    <!-- Imagem -->
-                                    <div class="col-md-8 col-lg-6 float-lg-end ms-lg-4 px-0 order-1 order-lg-2">
-                                        <figure class="lightbox mb-3">
-                                            <img class="img-fluid mx-auto d-block mb-3" src="../../media/modulo3/aula1-img1.png" alt="" title="Elaborada pelo autor (2026)">
-                                            <figcaption class="figure-caption fonte">Fonte: Elaborada pelo autor (2026) </figcaption>
-                                        </figure>
-                                    </div>
-
-                                    <!-- Texto -->
-                                    <div class="order-2 order-lg-1">
-                                        <p>O <strong>aprendizado de máquina</strong> é um subcampo da inteligência artificial que permite que computadores aprendam a partir de dados, reconhecendo padrões e melhorando seu desempenho conforme recebem mais informações. Já o <strong>aprendizado profundo</strong> é um subcampo do aprendizado de máquina que utiliza redes neurais, inspiradas no funcionamento do cérebro, compostas por várias camadas que ajudam o computador a entender informações de forma mais detalhada e complexa, possibilitando lidar com problemas difíceis e grandes volumes de dados.</p>
-                                    </div>
-                                </div>
-
-
+                            </div>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-md-10 col-lg-8 mb-5">
+                                <p>Nessa etapa, o algoritmo de classificação é utilizado para treinar o modelo a partir do conjunto de treinamento. Existem diversos algoritmos para a tarefa de aprendizado supervisionado e entre eles estão: o <span class="color-primary-dark"><strong>algoritmo k-NN</strong></span>, o classificador <span class="color-primary-dark"><strong>Naive Bayes</strong></span>, a <span class="color-primary-dark"><strong>árvore de decisão</strong></span> e o algoritmo <em>Support Vector Machine</em> (<span class="color-primary-dark"><strong>SVM</strong></span>). Cada um desses algoritmos utiliza uma estratégia distinta para aprender padrões nos dados e tomar decisões de classificação, o que pode resultar em diferenças de desempenho, interpretabilidade e capacidade de generalização.</p>
                             </div>
                         </div>
 
                         <div class="row justify-content-center">
                             <div class="col-12 col-md-10 col-lg-8 mb-5">
+                                <!-- FAÇA VOCÊ MESMO -->
+                                <div class="faca-voce-mesmo aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
+                                    <div class="olho-de-texto my-5">
+                                        <div class="heading__block">
+                                            <h5 class="heading__title">Faça você mesmo!</h5>
+                                        </div>
+                                        <p><a href="http://" target="_blank" rel="noopener noreferrer">No script em R da aula 2</a>, você poderá testar esses algoritmos na prática de forma opcional.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
-                                <p>Atualmente, uma grande quantidade de dados é gerada diariamente devido ao avanço tecnológico. Por esse motivo, algoritmos de aprendizado de máquina são cada vez mais utilizados para criar modelos a partir de dados e, com isso, extrair informações relevantes. Para gerar um modelo de aprendizado de máquina, um algoritmo utiliza um conjunto de regras em uma base de dados de treino a fim de encontrar uma equação que descreva a relação de tais dados. Por fim, o modelo é capaz de receber novos dados de entrada para prever uma saída. </p>
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-md-10 col-lg-8 mb-5">
+                                <p><strong>Algoritmo k-NN (K-Nearest Neighbors)</strong>: é o algoritmo dos vizinhos mais próximos, que classifica os objetos com base na proximidade. Nesse contexto, cada objeto pode ser representado como um ponto definido por suas características. No k-NN, a proximidade entre objetos é medida pela distância entre esses pontos. Para isso, a métrica de <a class="" tabindex="0" role="button" data-bs-toggle="popover" data-bs-trigger="focus" title="" data-bs-html='true' data-bs-content="<p>A distância euclidiana mede o quão próximos dois objetos estão, considerando-se todas as suas características simultaneamente.</p>" data-bs-original-title="Distância Euclidiana">distância euclidiana</a> é comumente utilizada para calcular a proximidade entre os objetos. O parâmetro <span class="color-primary-dark"><strong>k</strong></span> define o número de vizinhos mais próximos que o algoritmo levará em consideração. Por exemplo, se <span class="color-primary-dark"><strong>k = 3</strong></span>, o algoritmo considerará os três vizinhos mais próximos para fazer a classificação. A fim de evitar empates, é recomendado evitar <span class="color-primary-dark"><strong>k = 2</strong></span> ou valores pares. </p>
+                                <p>Por exemplo, pacientes podem ser classificados como “com risco” ou “sem risco” para determinada condição com base em características como idade, pressão arterial e resultados de exames. No algoritmo k-NN, um novo paciente é comparado aos pacientes mais semelhantes do conjunto de treinamento. A classificação é atribuída com base na classe mais frequente entre os pacientes mais próximos.</p>
+                            </div>
+                        </div>
 
-                                <!-- Imagem -->
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-md-10 col-lg-8 mb-5">
                                 <figure class="lightbox aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
-                                    <img class="img-fluid mx-auto d-block mb-3" src="../../media/modulo3/aula1-img2.png" alt="" title="Fonte: Elaborada pelo autor (2026)">
-                                    <figcaption class="figure-caption fonte">Fonte: Elaborada pelo autor (2026) </figcaption>
+                                    <img class="img-fluid mx-auto d-block mb-3" src="../../media/modulo3/aula2-img1.jpg" alt="" title="Fonte: Gerada por IA">
+                                    <figcaption class="figure-caption">No algoritmo k-NN, a classificação de um paciente em "com risco" ou "sem risco" é determinada pelos pacientes mais próximos, considerando caracteristicas, similares, como idade ou resultados de exames. O paciente desconhecido é classificado com base na prevaléncia da classe entre seus vizinhos.</figcaption>
+                                    <figcaption class="figure-caption fonte">Fonte: Gerada por IA</figcaption>
                                 </figure>
-
                             </div>
                         </div>
 
                         <div class="row justify-content-center">
                             <div class="col-12 col-md-10 col-lg-8 mb-5">
-                                <p>Para verificar se o modelo consegue representar bem os dados, são utilizadas métricas de validação para avaliá-lo. Ao construir um modelo de aprendizado de máquina, não basta que ele funcione bem apenas para os dados utilizados no treinamento. Um aspecto central é sua capacidade de generalizar, isto é, de produzir boas previsões quando exposto a novos dados. Um modelo deve apresentar boa capacidade de generalização e, portanto, não deve sofrer de <strong>Underfitting</strong> nem de <strong>Overfitting</strong>. </p>
+                                <p><strong>Classificador Naive Bayes</strong>: é baseado em um método probabilístico, o teorema de Bayes, que considera as variáveis independentes umas das outras. Essa suposição de independência significa que o modelo considera que cada característica contribui de forma separada para a classificação, o que simplifica os cálculos e torna o algoritmo computacionalmente eficiente. O algoritmo calcula as probabilidades condicionais para cada classe (ou seja, cada possível categoria do rótulo a ser previsto) com base nas variáveis dos dados do conjunto de treinamento. Em outras palavras, o modelo utiliza a frequência com que determinadas características aparecem em cada classe para estimar a qual classe uma nova amostra tem maior probabilidade de pertencer.</p>
+                                <p>Por exemplo, imagine o mesmo conjunto de dados de pacientes classificados como “com risco” ou “sem risco” para uma determinada condição. Com base no histórico dos dados, o Naive Bayes aprende a frequência de características como idade, presença de sintomas ou resultados laboratoriais em cada classe (risco ou sem risco). Para um novo paciente, o modelo estima a probabilidade de pertencimento a cada classe e realiza a classificação com base na maior <a href="https://medium.com/@nicolasfaleiros/classificador-naive-bayes-e-o-teorema-de-bayes-84a76c177893" target="_blank" rel="noopener noreferrer">probabilidade</a>.</p>
                             </div>
                         </div>
-
                         <div class="row justify-content-center">
                             <div class="col-12 col-md-10 col-lg-8 mb-5">
+                                <!-- Saiba Mais - Dropdown -->
+                                <div class="saiba-mais pb-5">
+                                    <div class="row aos-init aos-animate" data-aos="fade-left" data-aos-easing="ease-out" data-aos-duration="600">
+                                        <div class="col-12 d-flex justify-content-center">
+                                            <button class="saiba-mais fio-button button-md fio-button-secondary collapsed" type="collapsed" data-bs-toggle="collapse" data-bs-target="#saiba-mais1" aria-expanded="false" aria-controls="saiba-mais1"><span class="icone material-symbols-rounded" aria-hidden="true"></span> Você sabia?</button>
+                                        </div>
 
-                                <div class="row justify-content-center">
-                                    <div class="col-12 col-md-10 col-lg-6 mb-5">
-                                        <div class="card ">
+                                        <div class="col-12">
+                                            <div class="mt-3 collapse" id="saiba-mais1">
+                                                <p>O Teorema de Bayes é uma regra da probabilidade que nos ensina a atualizar o quanto acreditamos em uma hipótese à medida que obtemos novas informações. Considere um conjunto de morangos classificados como “doces” ou “não doces”. A partir dos dados de treinamento, o modelo aprende com que frequência características como cor, tamanho e textura aparecem em cada classe. Quando um novo morango é avaliado, o Naive Bayes estima a probabilidade de ele ser doce ou não doce com base nessas características e o classifica na classe com maior probabilidade. Interessante, não é mesmo?</p>
+                                                <p>Separamos alguns materiais sobre esse tema para você se aprofundar:</p>
 
-                                            <div class="card-header">
-                                                <span class="">UNDERFITTING</span>
-                                            </div>
-
-                                            <div class="card-body">
-                                                <p>Acontece quando o algoritmo não consegue identificar padrões significativos nos dados de treinamento (dados utilizados para treinar o modelo).</p>
-
-                                                <p><strong>Problema:</strong> ao inserir novos dados no modelo, as previsões não terão significado útil, levando a um desempenho insatisfatório.</p>
+                                                <!-- Lista Não-Ordenada -->
+                                                <div class="list">
+                                                    <ul class="list-group">
+                                                        <li class="list-group-item aos-init aos-animate" list-style='video' data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" data-aos-delay="400">
+                                                            <a href='https://www.youtube.com/watch?v=XcKck0ZCJV8&t=2s' target='_blank' rel="noreferrer noopener">Assista o vídeo sobre o tema</a>
+                                                        </li>
+                                                        <li class="list-group-item aos-init aos-animate" list-style='page' data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" data-aos-delay="300">
+                                                            Leia o artigo em <a href='https://educacaopublica.cecierj.edu.br/artigos/24/46/teorema-de-bayes-uma-visao-interdisciplinar-na-escola-basica?utm_source=chatgpt.com' target='_blank'>educacaopublica.cecierj.edu.br</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-
-                                    <div class="col-12 col-md-10 col-lg-6 mb-5">
-                                        <div class="card ">
-
-                                            <div class="card-header">
-                                                <span class="">OVERFITTING</span>
-                                            </div>
-
-                                            <div class="card-body">
-                                                <p>Acontece quando um modelo é excessivamente ajustado aos dados de treinamento.</p>
-
-                                                <p><strong>Problema:</strong> ao inserir novos dados, o modelo buscará padrões que estão presentes somente nos dados de treinamento e, ao não encontrá-los, seu desempenho será comprometido.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-
                                 </div>
-
                             </div>
                         </div>
 
                         <div class="row justify-content-center">
                             <div class="col-12 col-md-10 col-lg-8 mb-5">
-                                <!-- Accordion -->
-                                <div class="accordion accordion-flush aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="800" id="accordionExample">
-                                    <div class="accordion-item">
-                                        <h5 class="accordion-header" id="heading1-item1">
-                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1-item1" aria-expanded="true" aria-controls="collapse1-item1">Modelos preditivos</button>
-                                        </h5>
-                                        <div id="collapse1-item1" class="accordion-collapse collapse" aria-labelledby="heading1-item1" data-bs-parent="">
-                                            <div class="accordion-body">
+                                <p><strong>Árvores de decisão</strong>: é um método baseado em busca que utiliza a estratégia de dividir um problema complexo em problemas mais simples. Em cada etapa da divisão, o algoritmo seleciona a variável que melhor separa os dados, criando regras sequenciais que conduzem à classificação final. As decisões são representadas em formato de árvore, contendo um nó raiz, nós internos, ramos e folhas. Assim, a classificação de uma nova amostra ocorre ao percorrer a árvore desde o nó raiz até uma folha, seguindo as regras definidas em cada nó. Cada nó representa uma variável, cujos ramos são rotulados com valores ou intervalos que apresentam o fluxo da decisão. As folhas, ou nós terminais, não se dividem, pois são representadas pela classe do conjunto de dados. Usando como base o mesmo exemplo mencionado acima, uma árvore de decisão pode ser utilizada para classificar pacientes como “com risco” ou “sem risco” para determinada condição. O modelo pode iniciar a decisão avaliando a idade do paciente, em seguida a presença de sintomas e, por fim, resultados de exames. Cada resposta conduz a um novo ramo da árvore até que se chegue a uma classificação final.</p>
+                            </div>
+                        </div>
 
-                                                <p>Identificam padrões e relações em dados rotulados e usam essas informações para prever a ocorrência de eventos futuros ou estimar valores de um novo conjunto de amostras. Os algoritmos de aprendizado supervisionado são considerados preditivos, pois utilizam dados com saídas conhecidas para treinar um modelo. No processo de aprendizado supervisionado, temos as seguintes tarefas:</p>
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-md-10 col-lg-8 mb-5">
+                                <figure class="lightbox aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
+                                    <img class="img-fluid mx-auto d-block mb-3" src="../../media/modulo3/aula2-img2.jpg" alt="" title="Fonte: Gerada por IA">
+                                    <!-- <figcaption class="figure-caption">Imagem com tamanho 1280x720</figcaption> -->
+                                    <figcaption class="figure-caption fonte">Fonte: Gerada por IA</figcaption>
+                                </figure>
+                            </div>
+                        </div>
 
-                                                <!-- Lista Não-Ordenada -->
-                                                <div class="list">
-                                                    <ul class="list-group">
-                                                        <li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200"><strong>Classificação:</strong> utilizada quando a variável de saída é discreta. Exemplo: prever a espécie da flor íris. </li>
-                                                        <li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200"><strong>Regressão:</strong> utilizada quando a variável de saída é contínua. Exemplo: prever o preço de uma casa com base em suas características.</li>
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-md-10 col-lg-8 mb-5">
+                                <p><strong>Algoritmo SVM (Support Vector Machine)</strong>: esse algoritmo busca um <a class="" tabindex="0" role="button" data-bs-toggle="popover" data-bs-trigger="focus" title="" data-bs-html='true' data-bs-content="<p>Um hiperplano é uma linha (ou, em dimensões maiores, uma superfície) imaginária que o modelo cria para separar grupos diferentes de dados. É a fronteira de decisão que o modelo usa para dizer a qual lado cada dado pertence.</p>" data-bs-original-title="Hiperplano">hiperplano</a> que melhor separa as classes em um espaço de variáveis. Para isso, existe uma margem máxima, que é a distância entre o hiperplano e os pontos de dados mais próximos de ambas as classes. Esses pontos de dados são os vetores de suporte, eles são críticos para definir a posição do hiperplano e influenciam diretamente a classificação final.</p>
+                                <p>O algoritmo SVM busca separar pacientes “com risco” e “sem risco” traçando uma fronteira que melhor distingue esses dois grupos com base em suas características. Os pacientes mais próximos dessa fronteira são chamados de vetores de suporte e são fundamentais para definir a separação entre as classes, influenciando a classificação de novos pacientes.</p>
+                            </div>
+                        </div>
 
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-md-10 col-lg-8 mb-5">
+                                <figure class="lightbox aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
+                                    <img class="img-fluid mx-auto d-block mb-3" src="../../media/modulo3/aula2-img3.jpg" alt="" title="Fonte: Gerada por IA">
+                                    <figcaption class="figure-caption">No algoritmo SVM, a classificaçáo entre "com risco" e "sem risco" é feita traçando um hiperplano que melhor separa os grupos. Os pacientes máis próximos dessa fronteira sáo chamados de vetores de suporte, pois definem a margem máxima de separaçáo entre as classes, influenciando a classificaçáo final do paciente.</figcaption>
+                                    <figcaption class="figure-caption fonte">Fonte: Gerada por IA</figcaption>
+                                </figure>
+                            </div>
+                        </div>
 
-                                    <div class="accordion-item">
-                                        <h5 class="accordion-header" id="heading1-item2">
-                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1-item2" aria-expanded="false" aria-controls="collapse1-item2">Modelos descritivos</button>
-                                        </h5>
-                                        <div id="collapse1-item2" class="accordion-collapse collapse" aria-labelledby="heading1-item2" data-bs-parent="">
-                                            <div class="accordion-body">
-                                                <p>Identificam padrões e relações nos dados sem depender de um elemento externo para orientar o aprendizado. São usados para entender melhor os dados disponíveis, ou seja, são comumente aplicados em análises exploratórias para descobrir novas informações a partir dos dados. Os algoritmos de aprendizado não supervisionado são considerados descritivos, pois utilizam dados não rotulados para treinar um modelo. Uma tarefa clássica do aprendizado não supervisionado é o:</p>
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-md-10 col-lg-8 mb-5">
+                                <p>A forma como o hiperplano é construído depende da complexidade da separação entre as classes, dando origem a diferentes tipos de SVM. Existem dois principais tipos de SVM: <a class="" tabindex="0" role="button" data-bs-toggle="popover" data-bs-trigger="focus" title="" data-bs-html='true' data-bs-content="<p>Calcula um hiperplano ótimo no espaço N-dimensional e funciona bem quando os dados são linearmente separáveis, ou seja, podem ser separados por uma linha reta.</p>" data-bs-original-title="SVM Linear">SVM Linear</a> e <a class="" tabindex="0" role="button" data-bs-toggle="popover" data-bs-trigger="focus" title="" data-bs-html='true' data-bs-content="<p>Quando os dados não podem ser separados por uma linha reta, ou seja, os dados são mais complexos. Desse modo, são empregadas funções kernel que mapeiam os dados para um espaço de dimensão maior com a possibilidade de separação.</p>" data-bs-original-title="SVM não Linear">SVM não Linear</a>.</p>
+                            </div>
+                        </div>
 
-                                                <!-- Lista Não-Ordenada -->
-                                                <div class="list">
-                                                    <ul class="list-group">
-                                                        <li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200"><strong>Agrupamento de dados:</strong> utilizado para agrupar dados em subconjuntos que compartilhem características semelhantes. Exemplo: segmentar clientes em diferentes grupos com base em seu comportamento de compra.</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-md-10 col-lg-8 mb-5">
+                                <!-- Tabela -->
+                                <div class="table-responsive aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
+                                    <table class="table table-bordered">
+                                        <thead>
+                                            <tr class="text-center">
+                                                <th>Algoritmo</th>
+                                                <th>Como funciona</th>
+                                                <th>Principal vantagem</th>
+                                                <th>Principal desvantagem</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="col-algoritmo"><strong>k-NN</strong></td>
+                                                <td>Classifica pela proximidade dos k vizinhos</td>
+                                                <td class="color-success-medium">Simples e intuitivo</td>
+                                                <td class="color-error-medium">Lento em grandes bases</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="col-algoritmo"><strong>Naive Bayes</strong></td>
+                                                <td>Usa probabilidades baseadas no Teorema de Bayes</td>
+                                                <td class="color-success-medium">Rápido e eficiente</td>
+                                                <td class="color-error-medium">Assume independência entre variáveis</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="col-algoritmo"><strong>Árvore de Decisão</strong></td>
+                                                <td>Cria regras sequenciais em formato de árvore</td>
+                                                <td class="color-success-medium">Fácil interpretação</td>
+                                                <td class="color-error-medium">Propensa a overfitting</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="col-algoritmo"><strong>SVM</strong></td>
+                                                <td>Busca hiperplano que separa as classes</td>
+                                                <td class="color-success-medium">Eficaz em alta dimensão</td>
+                                                <td class="color-error-medium">Difícil interpretação</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
                                 </div>
                             </div>
                         </div>
@@ -400,8 +432,8 @@
                     <div class="row justify-content-center">
                         <div class="col-12 col-md-10 col-lg-8">
                             <div class="page-nav d-flex justify-content-evenly">
-                                <a class="fio-button fio-button-primary" href="../../modulo2/apresentacao.html" rel="prev"><span class="material-symbols-rounded" aria-hidden="true">west</span> Apresentação do módulo</a>
-                                <a class="fio-button fio-button-primary" href="../aula2/topico1.html" rel="next">Aula 2 <span class="material-symbols-rounded" aria-hidden="true">east</span></a>
+                                <a class="fio-button fio-button-primary" href="../aula2/topico2.html" rel="prev"><span class="material-symbols-rounded" aria-hidden="true">west</span> Tópico anterior</a>
+                                <a class="fio-button fio-button-primary" href="../aula2/topico4.html" rel="next">Próximo tópico <span class="material-symbols-rounded" aria-hidden="true">east</span></a>
                             </div>
                         </div>
                     </div>

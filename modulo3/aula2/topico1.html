@@ -47,7 +47,7 @@
     <!-- <meta name="theme-color" content="#003066" > -->
     <meta name="theme-color" content="#001833">
 
-    <title>Curso Modelos Matemáticos e Computacionais aplicados à Pesquisa em Saúde | Mod 3 | Aula 1</title>
+    <title>Curso Modelos Matemáticos e Computacionais aplicados à Pesquisa em Saúde | Mod 3 | Aula 2</title>
 
     <!-- Bootstrap CSS 5.1.3 -->
     <link rel="stylesheet" href="../../source/bootstrap-5.1.3/css/bootstrap.min.css">
@@ -193,7 +193,7 @@
                 </div>
                 <div class="sidebar__group">
                     <div class="sidebar__group-item">
-                        <span class="text class">Aula 1</span>
+                        <span class="text class">Aula 2</span>
                     </div>
                     <div class="sidebar__group-item">
                         <div class="dropend">
@@ -207,12 +207,16 @@
                                     <a class="mobile-toggle-close" tabindex="0" role="button"><span class="icon material-symbols-rounded">read_more</span></a>
                                 </li>
                                 <li class="dropdown-menu__title">
-                                    <span class="label">Aula 1</span>
-                                    <span class="title">Introdução: Modelos Matemáticos</span>
+                                    <span class="label">Aula 2</span>
+                                    <span class="title">Aprendizado Supervisionado</span>
                                 </li>
                                 <li class="dropdown-menu__item">
                                     <nav class="topic-list">
                                         <a href="topico1.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico concluído" status="visited"> <span class="material-symbols-rounded"></span>Introdução</a>
+                                        <a href="topico1.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico não concluído"> <span class="material-symbols-rounded"></span>Divisão dos Dados</a>
+                                        <a href="topico1.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico não concluído"> <span class="material-symbols-rounded"></span>Treinamento de modelos de classificação</a>
+                                        <a href="topico1.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico não concluído"> <span class="material-symbols-rounded"></span>Avaliação dos modelos de classificação</a>
+                                        <a href="topico1.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico não concluído"> <span class="material-symbols-rounded"></span>Predição com novos dados</a>
                                     </nav>
                                 </li>
                             </ul>
@@ -239,9 +243,9 @@
                     <div class="row align-items-center hstify-content-center justify-content-xxl-start ms-lg-5">
                         <div class="col-12 col-md-10 col-lg-11">
                             <h2 class="title">
-                                <span class="label">Módulo 3 | Aula 1</span>
+                                <span class="label">Módulo 3 | Aula 2</span>
                                 <br>
-                                Modelos computacionais e Aprendizado de Máquina
+                                Aprendizado Supervisionado
                             </h2>
                         </div>
                     </div>
@@ -258,138 +262,59 @@
                                     <span class="small">Tópico 1</span>
                                     <h3 class="heading__title">Introdução</h3>
                                 </div>
-
-                                <p>A modelagem computacional possibilita a criação de representações de sistemas e processos complexos, que podem ser implementadas e analisadas com o auxílio de recursos computacionais. Essas representações permitem compreender, gerenciar e prever o comportamento desses sistemas em diferentes contextos, abrangendo desde a formulação de políticas públicas até o desenvolvimento de sistemas autônomos. Nesse cenário, a inteligência artificial se destaca como um ramo da ciência da computação voltado à construção de modelos e algoritmos capazes de processar informações, identificar padrões e resolver problemas de forma adaptativa. </p>
-
-                                <p>Esses modelos computacionais tornam-se especialmente relevantes quando lidamos com grandes volumes de dados, cujas relações complexas não são facilmente identificáveis por métodos tradicionais. Nesse contexto, técnicas baseadas em dados, como o Aprendizado de Máquina, passam a desempenhar papel central na construção de modelos capazes de aprender padrões automaticamente.</p>
-
-                                <!-- Texto à esquerda com Imagem -->
-                                <div class="row justify-content-center d-lg-block">
-                                    <!-- Imagem -->
-                                    <div class="col-md-8 col-lg-6 float-lg-end ms-lg-4 px-0 order-1 order-lg-2">
-                                        <figure class="lightbox mb-3">
-                                            <img class="img-fluid mx-auto d-block mb-3" src="../../media/modulo3/aula1-img1.png" alt="" title="Elaborada pelo autor (2026)">
-                                            <figcaption class="figure-caption fonte">Fonte: Elaborada pelo autor (2026) </figcaption>
-                                        </figure>
-                                    </div>
-
-                                    <!-- Texto -->
-                                    <div class="order-2 order-lg-1">
-                                        <p>O <strong>aprendizado de máquina</strong> é um subcampo da inteligência artificial que permite que computadores aprendam a partir de dados, reconhecendo padrões e melhorando seu desempenho conforme recebem mais informações. Já o <strong>aprendizado profundo</strong> é um subcampo do aprendizado de máquina que utiliza redes neurais, inspiradas no funcionamento do cérebro, compostas por várias camadas que ajudam o computador a entender informações de forma mais detalhada e complexa, possibilitando lidar com problemas difíceis e grandes volumes de dados.</p>
-                                    </div>
-                                </div>
-
-
+                            </div>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-md-10 col-lg-8 mb-5">
+                                <p>Dando continuidade aos conceitos apresentados na aula anterior, avançamos agora para o aprendizado supervisionado, por meio do qual os modelos são treinados a partir de <a class="" tabindex="0" role="button" data-bs-toggle="popover" data-bs-trigger="focus" title="" data-bs-html='true' data-bs-content="<p>São dados que já vêm acompanhados da resposta correta ou da classificação que se deseja prever.</p>" data-bs-original-title="Dados rotulados">dados rotulados</a>, com base em suas características, e utilizados para tarefas de classificação e regressão.</p>
+                                <p>Considerando uma <a class="" tabindex="0" role="button" data-bs-toggle="popover" data-bs-trigger="focus" title="" data-bs-html='true' data-bs-content="<p>É um conjunto de dados que já passou por etapas de preparação e organização antes de ser usado em análises ou no treinamento de modelos. Isso significa que os dados foram limpos, organizados e transformados para ficarem adequados ao uso.</p>" data-bs-original-title="Farmacovigilância">base de dados pré-processada</a>, as etapas do processo de classificação consistem em: divisão dos dados, treinamento do modelo, avaliação do modelo e predição.</p>
                             </div>
                         </div>
 
                         <div class="row justify-content-center">
                             <div class="col-12 col-md-10 col-lg-8 mb-5">
-
-                                <p>Atualmente, uma grande quantidade de dados é gerada diariamente devido ao avanço tecnológico. Por esse motivo, algoritmos de aprendizado de máquina são cada vez mais utilizados para criar modelos a partir de dados e, com isso, extrair informações relevantes. Para gerar um modelo de aprendizado de máquina, um algoritmo utiliza um conjunto de regras em uma base de dados de treino a fim de encontrar uma equação que descreva a relação de tais dados. Por fim, o modelo é capaz de receber novos dados de entrada para prever uma saída. </p>
-
-                                <!-- Imagem -->
                                 <figure class="lightbox aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
-                                    <img class="img-fluid mx-auto d-block mb-3" src="../../media/modulo3/aula1-img2.png" alt="" title="Fonte: Elaborada pelo autor (2026)">
-                                    <figcaption class="figure-caption fonte">Fonte: Elaborada pelo autor (2026) </figcaption>
+                                    <img class="img-fluid mx-auto d-block mb-3" src="https://placehold.co/1280x720/green/lightgreen" alt="Imagem aleatória de exmplo" title="Fonte: unsplash.com">
+                                    <figcaption class="figure-caption">Imagem com tamanho 1280x720</figcaption>
+                                    <figcaption class="figure-caption fonte">Fonte: unsplash.com</figcaption>
                                 </figure>
-
                             </div>
                         </div>
 
                         <div class="row justify-content-center">
                             <div class="col-12 col-md-10 col-lg-8 mb-5">
-                                <p>Para verificar se o modelo consegue representar bem os dados, são utilizadas métricas de validação para avaliá-lo. Ao construir um modelo de aprendizado de máquina, não basta que ele funcione bem apenas para os dados utilizados no treinamento. Um aspecto central é sua capacidade de generalizar, isto é, de produzir boas previsões quando exposto a novos dados. Um modelo deve apresentar boa capacidade de generalização e, portanto, não deve sofrer de <strong>Underfitting</strong> nem de <strong>Overfitting</strong>. </p>
-                            </div>
-                        </div>
-
-                        <div class="row justify-content-center">
-                            <div class="col-12 col-md-10 col-lg-8 mb-5">
-
-                                <div class="row justify-content-center">
-                                    <div class="col-12 col-md-10 col-lg-6 mb-5">
-                                        <div class="card ">
-
-                                            <div class="card-header">
-                                                <span class="">UNDERFITTING</span>
-                                            </div>
-
-                                            <div class="card-body">
-                                                <p>Acontece quando o algoritmo não consegue identificar padrões significativos nos dados de treinamento (dados utilizados para treinar o modelo).</p>
-
-                                                <p><strong>Problema:</strong> ao inserir novos dados no modelo, as previsões não terão significado útil, levando a um desempenho insatisfatório.</p>
-                                            </div>
+                                <!-- FAÇA VOCÊ MESMO -->
+                                <div class="faca-voce-mesmo aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
+                                    <div class="olho-de-texto my-5">
+                                        <div class="heading__block">
+                                            <h5 class="heading__title">Faça você mesmo!</h5>
                                         </div>
+                                        <p>No estudo de Aprendizado de Máquina, uma das bases de dados amplamente utilizada é a base Íris, que será utilizada no material prático. De forma opcional, você poderá acessar scripts relacionados aos conteúdos apresentados nesta aula por meio do <a href="http://" target="_blank" rel="noopener noreferrer">link disponibilizado</a>.</p>
                                     </div>
-
-                                    <div class="col-12 col-md-10 col-lg-6 mb-5">
-                                        <div class="card ">
-
-                                            <div class="card-header">
-                                                <span class="">OVERFITTING</span>
-                                            </div>
-
-                                            <div class="card-body">
-                                                <p>Acontece quando um modelo é excessivamente ajustado aos dados de treinamento.</p>
-
-                                                <p><strong>Problema:</strong> ao inserir novos dados, o modelo buscará padrões que estão presentes somente nos dados de treinamento e, ao não encontrá-los, seu desempenho será comprometido.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-
-                                </div>
-
-                            </div>
-                        </div>
-
-                        <div class="row justify-content-center">
-                            <div class="col-12 col-md-10 col-lg-8 mb-5">
-                                <!-- Accordion -->
-                                <div class="accordion accordion-flush aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="800" id="accordionExample">
-                                    <div class="accordion-item">
-                                        <h5 class="accordion-header" id="heading1-item1">
-                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1-item1" aria-expanded="true" aria-controls="collapse1-item1">Modelos preditivos</button>
-                                        </h5>
-                                        <div id="collapse1-item1" class="accordion-collapse collapse" aria-labelledby="heading1-item1" data-bs-parent="">
-                                            <div class="accordion-body">
-
-                                                <p>Identificam padrões e relações em dados rotulados e usam essas informações para prever a ocorrência de eventos futuros ou estimar valores de um novo conjunto de amostras. Os algoritmos de aprendizado supervisionado são considerados preditivos, pois utilizam dados com saídas conhecidas para treinar um modelo. No processo de aprendizado supervisionado, temos as seguintes tarefas:</p>
-
-                                                <!-- Lista Não-Ordenada -->
-                                                <div class="list">
-                                                    <ul class="list-group">
-                                                        <li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200"><strong>Classificação:</strong> utilizada quando a variável de saída é discreta. Exemplo: prever a espécie da flor íris. </li>
-                                                        <li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200"><strong>Regressão:</strong> utilizada quando a variável de saída é contínua. Exemplo: prever o preço de uma casa com base em suas características.</li>
-
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="accordion-item">
-                                        <h5 class="accordion-header" id="heading1-item2">
-                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1-item2" aria-expanded="false" aria-controls="collapse1-item2">Modelos descritivos</button>
-                                        </h5>
-                                        <div id="collapse1-item2" class="accordion-collapse collapse" aria-labelledby="heading1-item2" data-bs-parent="">
-                                            <div class="accordion-body">
-                                                <p>Identificam padrões e relações nos dados sem depender de um elemento externo para orientar o aprendizado. São usados para entender melhor os dados disponíveis, ou seja, são comumente aplicados em análises exploratórias para descobrir novas informações a partir dos dados. Os algoritmos de aprendizado não supervisionado são considerados descritivos, pois utilizam dados não rotulados para treinar um modelo. Uma tarefa clássica do aprendizado não supervisionado é o:</p>
-
-                                                <!-- Lista Não-Ordenada -->
-                                                <div class="list">
-                                                    <ul class="list-group">
-                                                        <li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200"><strong>Agrupamento de dados:</strong> utilizado para agrupar dados em subconjuntos que compartilhem características semelhantes. Exemplo: segmentar clientes em diferentes grupos com base em seu comportamento de compra.</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
                                 </div>
                             </div>
                         </div>
 
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-md-10 col-lg-8 mb-5">
+                                <!-- Saiba Mais - Dropdown -->
+                                <div class="saiba-mais pb-5">
+                                    <div class="row aos-init aos-animate" data-aos="fade-left" data-aos-easing="ease-out" data-aos-duration="600">
+                                        <div class="col-12 d-flex justify-content-center">
+                                            <button class="saiba-mais fio-button button-md fio-button-secondary collapsed" type="collapsed" data-bs-toggle="collapse" data-bs-target="#saiba-mais1" aria-expanded="false" aria-controls="saiba-mais1"><span class="icone material-symbols-rounded" aria-hidden="true"></span> Você sabia?</button>
+                                        </div>
+
+                                        <div class="col-12">
+                                            <div class="mt-3 collapse" id="saiba-mais1">
+                                                <p>A base de dados <strong>Iris flower</strong>, que chamaremos de <strong>base íris</strong>, é uma base composta por <strong>150 amostras</strong> (registros ou observações) de <strong>três espécies de íris</strong>: setosa, virginica e versicolor.</p>
+                                                <p>Cada amostra é descrita por <strong>quatro características</strong> (também chamadas de features, variáveis ou atributos): o <strong>comprimento</strong> (length) e a <strong>largura</strong> (width) das <strong>sépalas</strong> (sepal) e <strong>pétalas</strong> (petal) medidos em centímetros.</p>
+                                                <p>A variável <strong>Species</strong> representa o <strong>rótulo (label)</strong> da base de dados, ou seja, indica a espécie associada a cada registro.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </section>
             </div>
@@ -400,8 +325,8 @@
                     <div class="row justify-content-center">
                         <div class="col-12 col-md-10 col-lg-8">
                             <div class="page-nav d-flex justify-content-evenly">
-                                <a class="fio-button fio-button-primary" href="../../modulo2/apresentacao.html" rel="prev"><span class="material-symbols-rounded" aria-hidden="true">west</span> Apresentação do módulo</a>
-                                <a class="fio-button fio-button-primary" href="../aula2/topico1.html" rel="next">Aula 2 <span class="material-symbols-rounded" aria-hidden="true">east</span></a>
+                                <a class="fio-button fio-button-primary" href="../../modulo3/apresentacao.html" rel="prev"><span class="material-symbols-rounded" aria-hidden="true">west</span> Apresentação do módulo</a>
+                                <a class="fio-button fio-button-primary" href="../aula2/topico2.html" rel="next">Próximo tópico <span class="material-symbols-rounded" aria-hidden="true">east</span></a>
                             </div>
                         </div>
                     </div>
