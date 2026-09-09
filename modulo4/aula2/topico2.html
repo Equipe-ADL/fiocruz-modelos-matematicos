@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="robots" content="noindex">
+    <meta name="author" content="Fiocruz, Campus Virtual">
+    <meta name="description" content="Curso Modelos Matemáticos e Computacionais aplicados à Pesquisa em Saúde">
+
+    <!-- Facebook Open Graph -->
+    <meta property="og:url" content="https://mooc.campusvirtual.fiocruz.br/rea/modelos-matematicos-e-computacionais-aplicados-a-pesquisa-em-saude">
+    <meta property="og:title" content="Campus Virtual Fiocruz | Curso Modelos Matemáticos e Computacionais aplicados à Pesquisa em Saúde">
+    <meta property="og:description" content="Curso Modelos Matemáticos e Computacionais aplicados à Pesquisa em Saúde">
+    <meta property="og:image" content="https://mooc.campusvirtual.fiocruz.br/rea/modelos-matematicos-e-computacionais-aplicados-a-pesquisa-em-saude/media/images/share/thumbcurso-1080x1080.png">
+    <meta property="og:image:width" content="1080">
+    <meta property="og:image:height" content="1080">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Campus Virtual Fiocruz | Curso Modelos Matemáticos e Computacionais aplicados à Pesquisa em Saúde">
+    <meta name="twitter:url" content="https://mooc.campusvirtual.fiocruz.br/rea/modelos-matematicos-e-computacionais-aplicados-a-pesquisa-em-saude">
+    <meta name="twitter:description" content="Campus Virtual Fiocruz | Curso Modelos Matemáticos e Computacionais aplicados à Pesquisa em Saúde">
+    <meta name="twitter:image:src" content="https://mooc.campusvirtual.fiocruz.br/rea/modelos-matematicos-e-computacionais-aplicados-a-pesquisa-em-saude/media/images/share/thumbcurso-1080x1080.png">
+
+    <!-- Favicons and Touch Icons -->
+    <link rel="apple-touch-icon" sizes="57x57" href="../../media/icons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../../media/icons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../../media/icons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../../media/icons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../../media/icons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../../media/icons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../../media/icons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../../media/icons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../../media/icons/apple-icon-180x180.png">
+
+    <link rel="icon" type="image/png" sizes="192x192" href="../../media/icons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../media/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../../media/icons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../media/icons/favicon-16x16.png">
+    <link rel="manifest" href="../media/icons/manifest.json">
+
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="../../media/icons/ms-icon-144x144.png">
+    <!-- <meta name="theme-color" content="#003066" > -->
+    <meta name="theme-color" content="#001833">
+
+    <title>Curso Modelos Matemáticos e Computacionais aplicados à Pesquisa em Saúde | Mod 4 | Aula 2</title>
+
+    <!-- Bootstrap CSS 5.1.3 -->
+    <link rel="stylesheet" href="../../source/bootstrap-5.1.3/css/bootstrap.min.css">
+
+    <!-- Project CSS -->
+    <link rel="stylesheet" href="../../assets/css/style.css">
+</head>
+
+<body>
+    <div id="links-acessibilidade">
+        <a href="#links-acessibilidade" accesskey="1" class="skip-link">Aperte TAB e escolha uma área da página</a>
+        <a href="#menu-global" accesskey="2" class="skip-link">Ir para o menu global de navegação</a>
+        <a href="#sidebar" accesskey="3" class="skip-link">Ir para o menu de navegação dos módulos</a>
+        <a href="#page-title" accesskey="4" class="skip-link">Ir para o conteúdo da página</a>
+        <a href="#nav-topics" accesskey="5" class="skip-link">Ir para o final da página</a>
+    </div>
+
+    <header id="menu-global" class="header">
+        <div class="mobile-toggle-open">
+            <a class="mobile-toggle__button" tabindex="0" role="button">
+                <span class="icon material-symbols-rounded">read_more</span>
+            </a>
+        </div>
+        <div class="brand">
+            <img class="img-fluid logo-black" src="../../media/logos/header-fiocruz-campus-virtual.png" alt="Campus Virtual Fiocruz">
+        </div>
+        <div class="title">
+            <h1>Modelos Matemáticos e Computacionais aplicados à Pesquisa em Saúde</h1>
+        </div>
+        <ul class="nav nav-pills">
+            <li class="nav-item"><a href="../../index.html" class="nav-link">Início</a></li>
+            <li class="nav-item"><a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#modal-creditos">Créditos</a></li>
+        </ul>
+    </header>
+    <div class="main">
+        <div id="sidebar" class="sidebar" role="navigation">
+            <div class="sidebar__inner" style="position: relative">
+                <div class="sidebar__group d-lg-none">
+                    <div class="sidebar__group-item">
+                        <div class="sidebar__header">
+                            <span>Curso</span>
+                            <a class="mobile-toggle-close" tabindex="0" role="button"><span class="icon material-symbols-rounded">read_more</span></a>
+                        </div>
+                    </div>
+                    <div class="sidebar__group-item">
+                        <div class="sidebar__title">
+                            <h1>Modelos Matemáticos e Computacionais aplicados à Pesquisa em Saúde</h1>
+                        </div>
+                    </div>
+                    <div class="sidebar__group-item">
+                        <ul class="nav">
+                            <li class="nav-item">
+                                <a href="../../index.html" class="nav-link" tabindex="0"><span class="icon material-symbols-rounded" aria-hidden="true">home</span>Início</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link" tabindex="0" data-bs-toggle="modal" data-bs-target="#modal-creditos"><span class="icon material-symbols-rounded" aria-hidden="true"> format_list_bulleted</span>Créditos</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="sidebar__group">
+                    <div class="sidebar__group-item">
+                        <div class="dropend">
+                            <button id="dropdown-modulos" type="button" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside" data-bs-offset="0,30">
+                                <span class="icon material-symbols-rounded" aria-hidden="true">grid_view</span>
+                                <span class="label">Módulos</span>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdown-modulos">
+                                <li class="d-lg-none dropdown-menu__header">
+                                    <a class="dropdown-menu__back-button" tabindex="0" role="button"><span class="icon material-symbols-rounded">chevron_left</span> Voltar</a>
+                                    <a class="mobile-toggle-close" tabindex="0" role="button"><span class="icon material-symbols-rounded">read_more</span></a>
+                                </li>
+                                <li class="dropdown-menu__item">
+                                    <a class="dropdown-menu__item-link" tabindex="0" role="link" href="../../modulo1/apresentacao.html"><strong>Módulo 1</strong><br>Introdução à Grandes Bases de Dados</a>
+                                </li>
+                                <li class="dropdown-menu__item">
+                                    <a class="dropdown-menu__item-link" tabindex="0" role="link" href="../../modulo2/apresentacao.html"><strong>Módulo 2</strong><br>Modelos Matemáticos</a>
+                                </li>
+                                <li class="dropdown-menu__item">
+                                    <a class="dropdown-menu__item-link" tabindex="0" role="link" href="../../modulo3/apresentacao.html"><strong>Módulo 3</strong><br>Modelos Computacionais</a>
+                                </li>
+                                <li class="dropdown-menu__item">
+                                    <a class="dropdown-menu__item-link" tabindex="0" role="link" href="../../modulo4/apresentacao.html"><strong>Módulo 4</strong><br>Consolidação dos Conceitos – Modelos Matemáticos e Computacionais</a>
+                                </li>
+                                <!-- <li class="dropdown-menu__item">
+                                    <span class="dropdown-menu__item-link"><strong>Módulo 3</strong><br >Modelos estatísticos <strong class="em-breve">(em breve)</strong></span>
+                                    <a class="dropdown-menu__item-link" tabindex="0" role="link" href="../modulo3/apresentacao.html"><strong>Módulo 3</strong><br >Modelos Computacionais</a>
+                                </li> -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="divider">
+                    <hr>
+                </div>
+                 <div class="sidebar__group">
+                    <div class="sidebar__group-item">
+                        <span class="text module">Módulo <br class="d-none d-lg-block"><span>4</span></span>
+                    </div>
+                    <div class="sidebar__group-item">
+                        <div class="dropend">
+                            <button type="button" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside" data-bs-offset="0,30">
+                                <span class="icon material-symbols-rounded" aria-hidden="true">apps</span>
+                                <span class="label">Conteúdo</span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li class="d-lg-none dropdown-menu__header">
+                                    <a class="dropdown-menu__back-button" tabindex="0" role="button"><span class="icon material-symbols-rounded">chevron_left</span> Voltar</a>
+                                    <a class="mobile-toggle-close" tabindex="0" role="button"><span class="icon material-symbols-rounded">read_more</span></a>
+                                </li>
+                                <li class="dropdown-menu__title">
+                                    <span class="label">Módulo 4</span>
+                                    <span class="title">Consolidação dos conceitos – Modelos Matemáticos e Computacionais</span>
+                                </li>
+                                <li class="dropdown-menu__item">
+                                    <a class="dropdown-menu__item-link" tabindex="0" role="link" href="../apresentacao.html"><strong>Apresentação do módulo</strong></a>
+                                </li>
+                                <li class="dropdown-menu__item">
+                                    <a class="dropdown-menu__item-link" tabindex="0" role="link" href="../aula1/topico1.html"><strong>Aula 1: </strong>Fixação e integração de conceitos</a>
+                                </li>
+                                <li class="dropdown-menu__item">
+                                    <a class="dropdown-menu__item-link" tabindex="0" role="link" href="topico1.html"><strong>Aula 2: </strong>Síntese conceitual e aplicações dos modelos</a>
+                                </li>
+                                
+                                <li class="dropdown-menu__item">
+                                    <a class="dropdown-menu__item-link" tabindex="0" role="link" href="../atividade.html"><strong>Atividade</strong></a>
+                                </li>
+                                <li class="dropdown-menu__item">
+                                    <a class="dropdown-menu__item-link" tabindex="0" role="link" href="../encerramento.html"><strong>Resumo do módulo</strong></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="divider">
+                    <hr>
+                </div>
+                <div class="sidebar__group">
+                    <div class="sidebar__group-item">
+                        <span class="text class">Aula 2</span>
+                    </div>
+                    <div class="sidebar__group-item">
+                        <div class="dropend">
+                            <button type="button" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside" data-bs-offset="00,30">
+                                <span class="icon material-symbols-rounded" aria-hidden="true"> format_list_bulleted</span>
+                                <span class="label">Tópicos</span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li class="d-lg-none dropdown-menu__header">
+                                    <a class="dropdown-menu__back-button" tabindex="0" role="button"><span class="icon material-symbols-rounded">chevron_left</span> Voltar</a>
+                                    <a class="mobile-toggle-close" tabindex="0" role="button"><span class="icon material-symbols-rounded">read_more</span></a>
+                                </li>
+                                <li class="dropdown-menu__title">
+                                    <span class="label">Aula 2</span>
+                                    <span class="title">Síntese conceitual e aplicações dos modelos</span>
+                                </li>
+                                <li class="dropdown-menu__item">
+                                    <nav class="topic-list">
+                                        <a href="topico1.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico concluído" status="visited"> <span class="material-symbols-rounded"></span>Introdução</a>
+                                        <a href="topico2.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico concluído" status="visited"> <span class="material-symbols-rounded"></span>Principais aplicações em modelos computacionais</a>
+                                         <a href="topico2.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico não concluído"> <span class="material-symbols-rounded"></span>Comparação dos métodos de modelagem</a>
+                                    </nav>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="divider">
+                    <hr>
+                </div>
+                <div class="sidebar__group extra">
+                    <div class="sidebar__group-item">
+                        <button type="button" class="" data-bs-toggle="modal" data-bs-target="#modal-bibliografiaMod1">
+                            <span class="icon material-symbols-rounded" aria-hidden="true"> menu_book</span>
+                            <span class="label">Bibliografia</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content">
+            <div id="page-title">
+                <div class="container">
+                    <div class="row align-items-center hstify-content-center justify-content-xxl-start ms-lg-5">
+                        <div class="col-12 col-md-10 col-lg-11">
+                            <h2 class="title">
+                                <span class="label">Módulo 4 | Aula 2</span>
+                                <br>
+                               Síntese conceitual e aplicações dos modelos
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="page-content" class="">
+                <!-- Inserir o conteúdo aqui -->
+                <section>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-md-10 col-lg-8 mb-5">
+                                <div class="heading__block">
+                                    <span class="small">Tópico 2</span>
+                                    <h3 class="heading__title">Principais aplicações em modelos computacionais</h3>
+                                </div>
+
+                                <p>Uma das aplicações mais conhecidas de modelos computacionais na área da saúde é a <a class="" tabindex="0" role="button" data-bs-toggle="popover" data-bs-trigger="focus" title="" data-bs-html='true' data-bs-content="<p>Eletrofisiologia é a área que estuda as características elétricas das células, tecidos e órgãos. Uma aplicação de eletrofisiologia em cardiologia é o eletrocardiograma, que mede a atividade elétrica do coração permitindo o diagnóstico de arritmias.</p>" data-bs-original-title="Eletrofisiologia do coração">eletrofisiologia cardíaca</a>, campo que reúne vasto conhecimento teórico e grande quantidade de dados. Nesse cenário, a criação de modelos computacionais que simulem o funcionamento do coração auxilia na compreensão do efeito de novas drogas ou tratamentos, uma vez que os modelos computacionais não estão sujeitos às limitações impostas pelos modelos matemáticos para a resolução analítica dos problemas. Esses modelos permitem ainda a avaliação, em nível individual, do efeito de medicamentos e intervenções terapêuticas sobre diferentes desfechos clínicos.</p>
+
+                               
+                            </div>
+                        </div>
+
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-md-10 col-lg-8 mb-5">
+                               
+                                <!-- Swipper Effect Card -->
+                                <div class="swiper swiper--effect-card card">
+                                    <div class="swiper-wrapper">
+                                        
+                                        <div class="swiper-slide">
+                                            <div class="card-thumb">
+                                                <img src="../../media/modulo4/aula2-img2.png" alt="">
+                                            </div>
+                                
+                                            <div class="card-header">
+                                                <span class="h6">Exemplo de modelo computacional que simula a eletromecânica do coração.</span>
+                                            </div>
+                                
+                                            <div class="card-body">
+                                                <p>Nesse exemplo, o modelo computacional simula a eletromecânica do coração utilizando, como base, modelos matemáticos que descrevem a atividade elétrica e a mecânica cardíaca. Esse tipo de abordagem permite representar a arquitetura do coração em sua totalidade, incluindo a propagação de impulsos elétricos, a contração das fibras musculares e a dinâmica do fluxo sanguíneo, possibilitando a avaliação integrada do funcionamento cardíaco em diferentes condições fisiológicas e patológicas.</p>
+                                            </div>
+                                        </div>
+                                
+                                        <div class="swiper-slide">
+                                            <div class="card-thumb">
+                                                <img src="../../media/modulo4/aula2-img3.png" alt="">
+                                            </div>
+                                
+                                            <div class="card-header">
+                                                <span class="h6">Slider 2</span>
+                                            </div>
+                                
+                                            <div class="card-body">
+                                                <p>Esquema representativo de um modelo computacional que integra os processos eletrofisiológicos e mecânicos envolvidos na simulação do funcionamento do coração humano.</p>
+
+                                                <p class="figure-caption fonte mt-5">Fonte: https://www.sciencedirect.com/science/article/pii/S0045782523001068</p>
+                                
+                                            </div>
+                                        </div>
+                                
+                                    </div>
+                                    <div class="swiper-pagination swiper-pagination3"></div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                         <div class="row justify-content-center">
+                             <div class="col-12 col-md-10 col-lg-8 mb-5">
+                               <!-- Box de Saiba Mais -->
+                               <div class="box" data-box="saiba mais">
+                                   <div class="card ">
+                                       <div class="card-header">
+                                           <span class="icone material-symbols-rounded" aria-hidden="true"></span>
+                                           <span class="label">Saiba Mais</span>
+                                       </div>
+                                       <div class="card-body">
+                                           <p>Entre os modelos computacionais, ferramentas amplamente utilizadas, como Aprendizado de Máquina (Machine Learning) e Inteligência Artificial, também podem ser classificadas como statistical learning, podendo, portanto, ser integradas a modelos estatísticos. No entanto, neste curso, Aprendizado de Máquina e Inteligência Artificial estão sendo tratados dentro da categoria de modelos computacionais.</p>
+                                       </div>
+                                   </div>
+                               </div>
+                               
+                             </div>
+                         </div>
+
+                         <div class="row justify-content-center">
+                             <div class="col-12 col-md-10 col-lg-8 mb-5">
+                                <p>A <a class="" tabindex="0" role="button" data-bs-toggle="popover" data-bs-trigger="focus" title="" data-bs-html='true' data-bs-content="<p>O Aprendizado de Máquina é um subcampo da Inteligência Artificial que permite que computadores aprendam a partir de dados, reconhecendo padrões e melhorando seu desempenho conforme recebem mais informações.</p>" data-bs-original-title="Abordagem via aprendizado de máquina">abordagem via aprendizado de máquina</a> é muito utilizada para a criação de modelos prognósticos. Durante o início da pandemia de covid-19, múltiplos modelos utilizando essa abordagem foram desenvolvidos com o intuito de melhorar a triagem de pacientes com alto risco de desenvolver covid-19 grave. Porém, esses modelos requerem grande volume de dados para treinamento; além disso, é importante que qualquer modelo usado para predição de eventos seja avaliado em um conjunto de dados externo à base de dados utilizada para treinamento. Isso é feito para garantir que o modelo tem bom comportamento, uma vez que <a class="" tabindex="0" role="button" data-bs-toggle="popover" data-bs-trigger="focus" title="" data-bs-html='true' data-bs-content="<p>O <em>overfitting</em> ocorre quando um modelo é excessivamente ajustado aos dados de treinamento. Assim, o modelo aprende “demais” os dados de treino e perde capacidade de generalização.</p>" data-bs-original-title="<em>overfitting</em>"><em>overfitting</em></a>  pode ocorrer facilmente nos modelos de Aprendizado de Máquina. A validação dos modelos é etapa primordial para a garantia da robustez do modelo. </p>
+                             </div>
+                         </div>
+
+                          <div class="row justify-content-center">
+                             <div class="col-12 col-md-10 col-lg-8 mb-5">
+                                <!-- Imagem -->
+                                <figure class="lightbox aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
+                                    <img class="img-fluid mx-auto d-block mb-3" src="../../media/modulo4/aula2-img1.png" alt="Diagrama de um modelo SIR" title="Fonte: Elaborado pelo autor (2026)">
+                                    <figcaption class="figure-caption">Métodos computacionais em imunologia</figcaption>
+                                    <figcaption class="figure-caption fonte">Fonte: https://www.nature.com/articles/s41577-023-00835-3</figcaption>
+                                </figure>
+                             </div>
+                         </div>
+
+
+                    </div>
+                </section>
+            </div>
+
+            <!-- Navegação da aula -->
+            <section id="nav-topics">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-md-10 col-lg-8">
+                            <div class="page-nav d-flex justify-content-evenly">
+                                <a class="fio-button fio-button-primary" href="topico1.html" rel="prev"><span class="material-symbols-rounded" aria-hidden="true">west</span> Tópico Anterior</a>
+                                <a class="fio-button fio-button-primary" href="topico3.html" rel="next">Próximo Tópico <span class="material-symbols-rounded" aria-hidden="true">east</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <footer>
+            <div class="container-fluid">
+                <div class="row justify-content-center align-items-center linha-de-marcas">
+                    <div class="col-11">
+                        <ul class="logos">
+                            <!-- <li class="realizacao"> -->
+                            <li>
+                                <img class="img-fluid logo1" src="../../media/logos/footer-cidacs.png" alt="Logo do Centro de Integração de Dados e Conhecimentos para Saúde" height="">
+                            </li>
+                            <li>
+                                <img class="img-fluid logo2" src="../../media/logos/footer-campus-virtual.png" alt="Logo do Campus Virtual Fiocruz" height="">
+                            </li>
+                            <li>
+                                <img class="img-fluid logo3" src="../../media/logos/footer-fiocruz.png" alt="Logo da Fiocruz" height="">
+                            </li>
+                            
+                            <li>
+                                <img class="img-fluid logo5" src="../../media/logos/footer-sus.png" alt="Logos SUS" height="">
+                            </li>
+                            <li>
+                                <img class="img-fluid logo6" src="../../media/logos/footer-ms.png" alt="Ministério da Saúde" height="">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row image-bottom">
+                    <div class="col-12">
+                        <img src="media/home/footer-bg.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!--  Bootstrap JS and Popper -->
+    <script src="../../source/bootstrap-5.1.3/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Sticky Sidebar -->
+    <script type="text/javascript" src="../../assets/js/ResizeSensor.js"></script>
+    <script type="text/javascript" src="../../assets/js/sticky-sidebar.js"></script>
+    <script type="text/javascript" src="../../assets/js/sidebar.js"></script>
+
+    <script type="text/javascript">
+        var sidebar = new StickySidebar('.sidebar', {
+            topSpacing: 0,
+            bottomSpacing: 0,
+            containerSelector: '.main',
+            innerWrapperSelector: '.sidebar__inner',
+            minWidth: 991,
+        });
+    </script>
+
+    <!-- Swiper -->
+    <script src="../../assets/js/swiper-bundle.min.js"></script>
+    <script src="../../assets/js/swiper-init.js"></script>
+
+    <script type="text/javascript" src="../../assets/js/scripts.js"></script>
+    <script type="text/javascript" src="../../assets/js/custom-anime.js"></script>
+    <script type="text/javascript" src="../../source/animate/aos/dist/aos.js"></script>
+
+    <!-- Timeline horizontal -->
+    <script src="../../assets/js/timeline-horizontal/util.js"></script>
+    <!-- util functions included in the CodyHouse framework -->
+    <script src="../../assets/js/timeline-horizontal/swipe-content.js"></script>
+    <!-- A Vanilla JavaScript plugin to detect touch interactions -->
+    <script src="../../assets/js/timeline-horizontal/main.js"></script>
+    <!-- Start the Timeline -->
+    <script>
+        document.getElementsByTagName('html')[0].className += ' js';
+    </script>
+
+</body>
+
+</html>
