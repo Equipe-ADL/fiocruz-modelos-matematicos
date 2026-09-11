@@ -172,7 +172,7 @@
                                     <a class="dropdown-menu__item-link" tabindex="0" role="link" href="../aula2/topico1.html"><strong>Aula 2: </strong>Processamento paralelo</a>
                                 </li>
                                 <li class="dropdown-menu__item">
-                                    <a class="dropdown-menu__item-link" tabindex="0" role="link" href="../aula3/topico1.html"><strong>Aula 3: </strong>ETL (Extract, Load, Transform)</a>
+                                    <a class="dropdown-menu__item-link" tabindex="0" role="link" href="../aula3/topico1.html"><strong>Aula 3: </strong>ELT (Extract, Load, Transform)</a>
                                 </li>
                                 <li class="dropdown-menu__item">
                                     <a class="dropdown-menu__item-link" tabindex="0" role="link" href="atividade.html"><strong>Atividade</strong></a>
@@ -204,7 +204,7 @@
                                 </li>
                                 <li class="dropdown-menu__title">
                                     <span class="label">Aula 3</span>
-                                    <span class="title">ETL (Extract, Load, Transform)</span>
+                                    <span class="title">ELT (Extract, Load, Transform)</span>
                                 </li>
                                 <li class="dropdown-menu__item">
                                     <nav class="topic-list">
@@ -240,7 +240,7 @@
                             <h2 class="title">
                                 <span class="label">Módulo 1 | Aula 3</span>
                                 <br>
-                                ETL (<em>Extract, Load, Transform</em>)
+                                ELT (<em>Extract, Load, Transform</em>)
                             </h2>
                         </div>
                     </div>
@@ -258,8 +258,7 @@
                                     <h3 class="heading__title">Introdução</h3>
                                 </div>
 
-                                <p>Como já vimos, <strong>ETL</strong> é um processo fundamental para a integração de dados. Ele envolve a extração de dados de diversas fontes, tanto estruturadas (como bancos de dados relacionais) quanto não estruturadas (como arquivos de texto e dados de redes sociais). Em seguida, esses dados são <strong>carregados em um sistema de armazenamento</strong>, como um <a class="" tabindex="0" role="button" data-bs-toggle="popover" data-bs-trigger="focus" title="" data-bs-html='true' data-bs-content="<p>Um <strong><em>data lake</em> (lago de dados)</strong> é um repositório que armazena grandes volumes de dados em diferentes formatos (estruturados e não estruturados), preservando os dados brutos como estão, sem precisar primeiro estruturá-los e executar diferentes tipos de análise, permitindo transformações posteriores em escala, desde painéis e visualizações até processamento de Big Data, análise em tempo real e machine learning para orientar melhores decisões.</p> <p class='small'>Fonte: <a href='https://aws.amazon.com/pt/what-is/data-lake/ ' target='_blank' rel='noopener noreferrer'>AWS</a></p>" data-bs-original-title="Data lake"> <em>data lake</em></a>, para então passarem pelas transformações necessárias — como limpeza, formatação e agregação —, garantindo que fiquem prontos para análise. Dessa forma, os dados tornam-se acessíveis e realmente úteis para apoiar a tomada de decisão e análises mais aprofundadas. A figura a seguir ilustra o processo de ETL.</p>
-                            </div>
+                                <p>Os processos de integração de dados podem seguir duas abordagens principais: <strong>ETL</strong> (<em>Extract, Transform, Load</em>) ou <strong>ELT</strong> (<em>Extract, Load, Transform</em>). A escolha entre elas depende da arquitetura, da infraestrutura disponível e dos objetivos do projeto. Nesta aula, como o foco é o processamento de grandes volumes de dados em ambientes de Big Data e Data Lakes, adotaremos a abordagem ELT, na qual os dados são carregados inicialmente e transformados posteriormente no ambiente de armazenamento. A integração de dados é um processo fundamental para reunir informações provenientes de diferentes fontes, tanto estruturadas (como bancos de dados relacionais) quanto não estruturadas (como arquivos de texto e dados de redes sociais). Na abordagem ELT, esses dados são inicialmente extraídos e carregados em um sistema de armazenamento, como um <a class="" tabindex="0" role="button" data-bs-toggle="popover" data-bs-trigger="focus" title="" data-bs-html='true' data-bs-content="<p>Um <strong><em>data lake</em> (lago de dados)</strong> é um repositório que armazena grandes volumes de dados em diferentes formatos (estruturados e não estruturados), preservando os dados brutos como estão, sem precisar primeiro estruturá-los e executar diferentes tipos de análise, permitindo transformações posteriores em escala, desde painéis e visualizações até processamento de Big Data, análise em tempo real e machine learning para orientar melhores decisões.</p> <p class='small'>Fonte: <a href='https://aws.amazon.com/pt/what-is/data-lake/ ' target='_blank' rel='noopener noreferrer'>AWS</a></p>" data-bs-original-title="Data lake"> <em>data lake</em></a>. Somente depois são realizadas as transformações necessárias (como limpeza, padronização, enriquecimento e agregação), aproveitando a capacidade de processamento do próprio ambiente. Dessa forma, os dados tornam-se acessíveis e preparados para análises em larga escala, apoiando a tomada de decisão e a geração de conhecimento. A figura a seguir ilustra o processo de ELT.</p>
                         </div>
 
                         <div class="row justify-content-center">
@@ -285,11 +284,11 @@
 
                                     <!-- Texto -->
                                     <div class="order-2 order-lg-1">
-                                        <p><strong>Então, por que o profissional do SUS precisa entender ETL?</strong></p>
+                                        <p><strong>Então, por que o profissional do SUS precisa entender ELT?</strong></p>
 
                                         <p>No dia a dia do SUS você trabalha com dados que vêm de diferentes sistemas: SINAN, SIM, SINASC, SIH, SIA, e-SUS AB, entre outros. Cada sistema tem seu próprio forma-to, suas próprias variáveis, e frequentemente os dados precisam ser combinados para gerar análises epidemiológicas ou relatórios de gestão. </p>
 
-                                        <p>O processo de ETL é exatamente o que você faz (muitas vezes manualmente no Excel) quando precisa:</p>
+                                        <p>O processo de ELT é exatamente o que você faz (muitas vezes manualmente no Excel) quando precisa:</p>
                                     </div>
                                 </div>
                             </div>
@@ -300,7 +299,7 @@
                                 <!-- Lista Não-Ordenada -->
                                 <div class="list">
                                     <ul class="list-group">
-                                        <li class="list-group-item pb-3" list-style="default">Baixar dados de diferentes sis-temas.</li>
+                                        <li class="list-group-item pb-3" list-style="default">Baixar dados de diferentes sistemas.</li>
 
                                         <li class="list-group-item pb-3" list-style="default">Limpar inconsistências e valores faltantes.</li>
 
