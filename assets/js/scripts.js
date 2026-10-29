@@ -582,6 +582,86 @@ const modalInfos = {
 			</div>
 		`,
     },
+    
+    bibliografiaMod4: {
+        ariaLabel: "bibliografiaMod4",
+        modalSize: "modal-xl",
+        modalTitle: "Bibliografia Módulo 4",
+        modalBody: `
+            <div class="row justify-content-center pt-5">
+                <div class="col-12 col-md-11">
+                    <div class="mb-5">
+
+                        <!-- Accordion -->
+                        <div class="accordion accordion-flush" id="accordionBibliografiaMod4">
+
+                            <!-- Aula 1 -->
+                            <div class="accordion-item">
+                                <h5 class="accordion-header" id="heading4-item1">
+                                    <button class="accordion-button collapsed" type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#collapse4-item1"
+                                        aria-expanded="false"
+                                        aria-controls="collapse4-item1">
+                                        Aula 1
+                                    </button>
+                                </h5>
+
+                                <div id="collapse4-item1"
+                                    class="accordion-collapse collapse"
+                                    aria-labelledby="heading4-item1"
+                                    data-bs-parent="">
+
+                                    <div class="accordion-body">
+                                        <div class="list">
+                                            <ul class="list-group">
+
+                                                <!-- Inserir bibliografia da Aula 1 aqui -->
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Aula 2 -->
+                            <div class="accordion-item">
+                                <h5 class="accordion-header" id="heading4-item2">
+                                    <button class="accordion-button collapsed" type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#collapse4-item2"
+                                        aria-expanded="false"
+                                        aria-controls="collapse4-item2">
+                                        Aula 2
+                                    </button>
+                                </h5>
+
+                                <div id="collapse4-item2"
+                                    class="accordion-collapse collapse"
+                                    aria-labelledby="heading4-item2"
+                                    data-bs-parent="">
+
+                                    <div class="accordion-body">
+                                        <div class="list">
+                                            <ul class="list-group">
+
+                                                <!-- Inserir bibliografia da Aula 2 aqui -->
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- Fim do Accordion -->
+
+                    </div>
+                </div>
+            </div>
+        `,
+    },
+
     autorMod1Aula1: {
         ariaLabel: "autorMod1Aula1",
         modalSize: "modal-xl",
