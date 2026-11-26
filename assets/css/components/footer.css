@@ -1,7 +1,7 @@
 /* --- FOOTER --- */
 
 :root {
-	--logo-space: 60px;
+	--logo-space: 20px;
 }
 
 footer {
@@ -54,7 +54,7 @@ footer .logos.principais {
 }
 
 footer .logos img {
-	max-height: 100px;
+	max-height: 120px;
 	width: auto;
 }
 /*
@@ -71,6 +71,9 @@ footer .image-bottom img {
 }
 
 @media (min-width: 768px) {
+	:root {
+		--logo-space: 40px;
+	}
 	footer .col-auto {
 		width: auto;
 		border-right: 1px solid var(--fio-sys-color-neutral-light);
@@ -79,7 +82,7 @@ footer .image-bottom img {
 	}
 
 	footer .logos {
-		grid-template: repeat(3, 120px) / repeat(3, 1fr);
+		grid-template: repeat(2, 1fr) / repeat(3, 1fr);
 	}
 
 	/* footer .logos {
@@ -99,39 +102,12 @@ footer .image-bottom img {
 	}
 }
 @media (min-width: 992px) {
-	/* :root {
+	:root {
 		--logo-space: 30px;
 	}
 	footer {
 		margin-left: 120px;
 	}
-
-	footer .logos {
-		gap: var(--logo-space);
-	}
-	footer .logos img {
-		height: 40px;
-	}
-
-	footer .logos img.logo1 {
-		height: 70px;
-	}
-
-	footer .logos img.logo2 {
-		height: 120px;
-	}
-
-	footer .logos img.logo3 {
-		height: 120px;
-	}
-
-	footer .logos img.logo4 {
-		height: 60px;
-	}
-
-	footer .logos img.logo5 {
-		height: 150px;
-	} */
 }
 @media (min-width: 1200px) {
 	footer {
@@ -147,7 +123,7 @@ footer .image-bottom img {
 }
 @media (min-width: 1320px) {
 	footer .logos {
-		grid-template: repeat(1, 120px) / repeat(6, 1fr);
+		grid-template: repeat(1, auto) / repeat(6, auto);
 	}
 	/* :root {
 		--logo-space: 50px;
